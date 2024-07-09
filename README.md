@@ -27,7 +27,7 @@ Run the command `swift package update` to download the package and its dependenc
 
 To initiate the Wallet flow, import StaqWallet and utilize the `AppFlowCoordinator` it provides. To start the flow, firstly you need to initialize user and trigger Wallet flow using `AppFlowCoordinator`.
 
-To enable Face ID, open the plist and add the parameter `Privacy` - `Face ID Usage Description` with your description value.
+To enable Face ID, open the plist file and insert the new key NSFaceIDUsageDescription and set the description value. If this permission is not added your application will crash.
 
 ```swift
 import StaqWallet
