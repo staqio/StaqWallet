@@ -1,13 +1,40 @@
 {
-  "originHash" : "5e417a7b9cff235ea7cfaafeca824395cd7db777fe60db879a25c62768cbe1a3",
+  "originHash" : "e6bac8defcae9183335bc946dc0ac23be0a70559473cf5d8daf16c40181d9e07",
   "pins" : [
+    {
+      "identity" : "dot-ios-sdk-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/innovatrics/dot-ios-sdk-spm",
+      "state" : {
+        "revision" : "754419b9a9fa4a309dfd04944bb61fcb6cfdef60",
+        "version" : "8.3.2"
+      }
+    },
+    {
+      "identity" : "ios-maps-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googlemaps/ios-maps-sdk",
+      "state" : {
+        "revision" : "0cd72dd45109b0225dd920ff17e0362a96489ec0",
+        "version" : "9.0.0"
+      }
+    },
+    {
+      "identity" : "ios-places-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/googlemaps/ios-places-sdk",
+      "state" : {
+        "revision" : "5eaf8e9a64f6a2ea27fdc845f4653fdc26231cc3",
+        "version" : "9.0.0"
+      }
+    },
     {
       "identity" : "trustlesssdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/staqio/TrustlessSDK",
       "state" : {
-        "branch" : "feat/dev-finlab",
-        "revision" : "9ebd0c3dd76f3607705f519442d854a825ed3c35"
+        "revision" : "02f515d58ae440ee7c9f5a8c0b7fd10dc15525e6",
+        "version" : "0.7.0"
       }
     }
   ],

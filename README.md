@@ -8,14 +8,15 @@ Add the package dependency to your `Package.swift` file and add the dependency t
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/TrustlessSDK", branch: "0.5.2"),
-    .package(url: "https://github.com/staqio/StaqWallet", from: "0.8.0")
+    .package(url: "https://github.com/staqio/StaqWallet", from: "0.9.0")
 ]
 ```
 
 ```swift
 targets: [
-    .target(name: "TargetName", dependencies:["StaqWallet", "TrustlessSDK"])
+    .target(name: "TargetName", dependencies:[
+        "StaqWallet"
+    ])
 ]
 ```
 
@@ -27,7 +28,9 @@ Run the command `swift package update` to download the package and its dependenc
 
 To initiate the Wallet flow, import StaqWallet and utilize the `AppFlowCoordinator` it provides. To start the flow, firstly you need to initialize user and trigger Wallet flow using `AppFlowCoordinator`.
 
-To enable Face ID, open the plist file and insert the new key NSFaceIDUsageDescription and set the description value. If this permission is not added your application will crash.
+To enable Face ID, open the Info.plist and add the parameter `Privacy - Face ID Usage Description` (NSFaceIDUsageDescription) with your description value. If this permission is not added your application will crash.
+
+To enable document scanning and KYC verification, open the Info.plist file and add the `Privacy - Camera Usage Description` (`NSCameraUsageDescription`) and `Privacy - Microphone Usage Description` (`NSMicrophoneUsageDescription`) keys with appropriate description values. If this permissions are not added your application will crash.
 
 ```swift
 import StaqWallet
