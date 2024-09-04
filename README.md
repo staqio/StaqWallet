@@ -22,8 +22,6 @@ targets: [
 
 Run the command `swift package update` to download the package and its dependencies.
 
-> ! Note: You need to add the TrustlessSDK package as well because StaqWallet depends on it.
-
 ### Usage
 
 To initiate the Wallet flow, import StaqWallet and utilize the `AppFlowCoordinator` it provides. To start the flow, firstly you need to initialize user and trigger Wallet flow using `AppFlowCoordinator`.
