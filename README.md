@@ -8,7 +8,7 @@ Add the package dependency to your `Package.swift` file and add the dependency t
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", from: "0.9.0")
+    .package(url: "https://github.com/staqio/StaqWallet", from: "0.9.1")
 ]
 ```
 
@@ -24,11 +24,35 @@ Run the command `swift package update` to download the package and its dependenc
 
 ### Usage
 
-To initiate the Wallet flow, import StaqWallet and utilize the `AppFlowCoordinator` it provides. To start the flow, firstly you need to initialize user and trigger Wallet flow using `AppFlowCoordinator`.
+To start the Wallet flow, import the `StaqWallet` framework and use the `AppFlowCoordinator` it provides. This flow allows users to initiate the wallet process after setting up some configuration. Here’s a step-by-step guide:
 
-To enable Face ID, open the Info.plist and add the parameter `Privacy - Face ID Usage Description` (NSFaceIDUsageDescription) with your description value. If this permission is not added your application will crash.
+#### Face ID Setup
 
-To enable document scanning and KYC verification, open the Info.plist file and add the `Privacy - Camera Usage Description` (`NSCameraUsageDescription`) and `Privacy - Microphone Usage Description` (`NSMicrophoneUsageDescription`) keys with appropriate description values. If this permissions are not added your application will crash.
+Make sure to enable Face ID in your app by adding the following key to your Info.plist file:
+
+```xml
+<key>NSFaceIDUsageDescription</key>
+<string>We use Face ID to authenticate your identity quickly and securely.</string>
+```
+
+If this key is not added, your application will crash when attempting to use Face ID.
+
+#### Document Scanning & KYC Verification
+
+For features like document scanning and KYC verification, you need to add camera and microphone permissions to your Info.plist:
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>We need access to the camera to capture your documents for verification purposes.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>We need access to the microphone to assist in the verification process.</string>
+```
+
+Again, if these permissions are missing, the app will crash when the camera or microphone is required.
+
+### Example Code to Start the Wallet Flow
+
+Below is a minimal implementation in your SceneDelegate to initialize the Wallet flow:
 
 ```swift
 import StaqWallet

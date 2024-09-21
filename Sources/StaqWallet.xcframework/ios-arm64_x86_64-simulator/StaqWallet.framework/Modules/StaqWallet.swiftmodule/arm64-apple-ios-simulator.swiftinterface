@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.7.6 clang-1600.0.24.1)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StaqWallet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -107,6 +107,7 @@ public let KYCUploaderInstance: StaqWallet.KYCUploder
   public func inspectDocuments() throws -> StaqWallet.DocumentInspectionResponse
   public func inspectDocumentsAsync(completion: @escaping (Swift.Result<StaqWallet.DocumentInspectionResponse, StaqWallet.BaeError>) -> Swift.Void)
   public func awaitForQueueToFinish()
+  public func removeCustomerID()
   @objc deinit
 }
 public let KYCApiInstance: StaqWallet.KycSDKApi
@@ -117,16 +118,15 @@ public struct KycSDKErrors {
   public var initializationError: StaqWallet.BaeError?
 }
 public struct KycSDKState {
-  public var frontScan: UIKit.UIImage?
-  public var backScan: UIKit.UIImage?
-  public var selfieScan: UIKit.UIImage?
+  public var frontScan: Foundation.Data?
+  public var backScan: Foundation.Data?
+  public var selfieScan: Foundation.Data?
   public var video: Foundation.URL?
 }
 public struct KYCDocumentData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-
 
 
 
@@ -189,7 +189,6 @@ extension DotFaceCore.EyesExpression : Swift.Encodable {
 extension DotFaceCore.FaceQuality : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
-
 
 
 
@@ -413,6 +412,7 @@ extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, duration: Swift.Double, bounce: Swift.Bool = false, delay: Swift.Double = 0.25) -> some SwiftUICore.View
   
 }
+
 
 
 
