@@ -1,8 +1,13 @@
 # StaqWallet
 
+### Requirements
+
+- Xcode 16
+- Apple Swift version 6.0
+
 ### Installation
 
-### Using Swift Package Manager (SPM)
+#### Using Swift Package Manager (SPM)
 
 Add the package dependency to your `Package.swift` file and add the dependency to the `dependencies` array. Here's an example:
 
