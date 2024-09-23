@@ -132,9 +132,12 @@ public struct KYCDocumentData : Swift.Codable {
 
 
 
-@_hasMissingDesignatedInitializers public class BaeError : Swift.Error {
+@_hasMissingDesignatedInitializers public class BaeError : Foundation.LocalizedError {
   final public var code: StaqWallet.BaeErrorCodes
   final public var message: Swift.String
+  public var errorDescription: Swift.String? {
+    get
+  }
   @objc deinit
 }
 public enum BaeErrorCodes {
