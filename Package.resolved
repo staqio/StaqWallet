@@ -1,13 +1,13 @@
 {
-  "originHash" : "a424490c19d1df826f8c7fc10a17849c6ca36e9dc7402a48cf4507af82cc0980",
+  "originHash" : "f6b485159241a86b0916b0b47e8faa7686cd013516277aa60bcc0f9e103b0dff",
   "pins" : [
     {
       "identity" : "dot-ios-sdk-spm",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/innovatrics/dot-ios-sdk-spm",
       "state" : {
-        "revision" : "754419b9a9fa4a309dfd04944bb61fcb6cfdef60",
-        "version" : "8.3.2"
+        "revision" : "4795f4a9f1b8991f729a0c332049bee9e2712807",
+        "version" : "8.4.0"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/staqio/TrustlessSDK",
       "state" : {
-        "revision" : "5dc50f851456721a9918d4166e2bf260fae28b01",
-        "version" : "0.7.1"
+        "revision" : "c3fd82ac87f0f0765218ca918900f34f7d48cd53",
+        "version" : "0.7.2"
       }
     }
   ],
