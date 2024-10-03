@@ -17760,14 +17760,14 @@
       "kind": "StringLiteral",
       "offset": 677,
       "length": 7,
-      "value": "\"0.9.3\""
+      "value": "\"0.9.6\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 10,
-      "value": "1724338800"
+      "value": "1727946000"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Info\/InfoMessageView.swift",
@@ -19130,14 +19130,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Innovatrics\/API\/KYCBaseRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3168,
+      "offset": 3185,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Innovatrics\/API\/KYCBaseRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3216,
+      "offset": 3233,
       "length": 26,
       "value": "\"application\/octet-stream\""
     },

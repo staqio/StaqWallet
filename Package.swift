@@ -30,7 +30,6 @@ let package = Package(
             dependencies: [
                 .product(name: "DotDocument", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceBackgroundUniformity", package: "dot-ios-sdk-spm"),
-                .product(name: "DotFaceDetectionBalanced", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceDetectionFast", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceExpressionNeutral", package: "dot-ios-sdk-spm"),
                 .product(name: "GoogleMaps", package: "ios-maps-sdk"),
