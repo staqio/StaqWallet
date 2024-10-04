@@ -17760,7 +17760,7 @@
       "kind": "StringLiteral",
       "offset": 677,
       "length": 7,
-      "value": "\"0.9.6\""
+      "value": "\"0.9.7\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
