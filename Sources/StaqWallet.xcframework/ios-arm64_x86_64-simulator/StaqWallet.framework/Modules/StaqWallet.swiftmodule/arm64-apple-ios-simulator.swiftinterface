@@ -397,8 +397,6 @@ extension DotDocument.ImageParameters : Swift.Encodable {
   @objc deinit
 }
 
-
-
 @_Concurrency.MainActor @preconcurrency public struct Shimmer : SwiftUICore.ViewModifier {
   @_Concurrency.MainActor @preconcurrency public init(animation: SwiftUICore.Animation = Self.defaultAnimation, gradient: SwiftUICore.Gradient = Self.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3)
   @_Concurrency.MainActor @preconcurrency public static let defaultAnimation: SwiftUICore.Animation

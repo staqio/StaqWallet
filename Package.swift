@@ -16,8 +16,6 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/innovatrics/dot-ios-sdk-spm", exact: "8.4.0"),
-        .package(url: "https://github.com/googlemaps/ios-maps-sdk", exact: "9.0.0"),
-        .package(url: "https://github.com/googlemaps/ios-places-sdk", exact: "9.0.0"),
         .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.7.2")
     ],
     targets: [
@@ -32,8 +30,6 @@ let package = Package(
                 .product(name: "DotFaceBackgroundUniformity", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceDetectionFast", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceExpressionNeutral", package: "dot-ios-sdk-spm"),
-                .product(name: "GoogleMaps", package: "ios-maps-sdk"),
-                .product(name: "GooglePlaces", package: "ios-places-sdk"),
                 .product(name: "TrustlessSDK", package: "TrustlessSDK"),
                 .target(name: "StaqWallet")
             ],

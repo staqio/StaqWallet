@@ -23,17 +23,6 @@
       },
       {
         "kind": "Import",
-        "name": "GoogleMaps",
-        "printedName": "GoogleMaps",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -536,17 +525,6 @@
         "declKind": "Import",
         "moduleName": "StaqWallet",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMaps",
-        "printedName": "GoogleMaps",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -5393,16 +5371,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5425,17 +5393,6 @@
         "declKind": "Import",
         "moduleName": "StaqWallet",
         "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMaps",
-        "printedName": "GoogleMaps",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly",
           "RawDocComment"
         ]
       },
@@ -11280,16 +11237,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12067,26 +12014,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMaps",
-        "printedName": "GoogleMaps",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -12156,27 +12083,6 @@
         "printedName": "TrustlessSDK",
         "declKind": "Import",
         "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleMaps",
-        "printedName": "GoogleMaps",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "GooglePlaces",
-        "printedName": "GooglePlaces",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -15908,13 +15814,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Extentions\/GMSMarker+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 215,
-      "length": 16,
-      "value": "\"locationMarker\""
-    },
-    {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Cards\/Card\/Components\/FreezeCardModalView.swift",
       "kind": "BooleanLiteral",
       "offset": 1400,
@@ -16253,14 +16152,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/VerificationCodeScreen.swift",
       "kind": "StringLiteral",
-      "offset": 3122,
+      "offset": 3130,
       "length": 8,
       "value": "\"123456\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/VerificationCodeScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3143,
+      "offset": 3151,
       "length": 5,
       "value": "false"
     },
@@ -17427,6 +17326,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/NearestLocation\/Sheet\/Main\/BottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2685,
+      "length": 3,
+      "value": "150"
+    },
+    {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Biometric\/BiometricAuth\/Children\/FaceId\/OnboardingEnableFaceIDViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 559,
@@ -18085,13 +17991,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/NearestLocation\/Sheet\/Views\/LocationItem\/LocationItemView.swift",
-      "kind": "StringLiteral",
-      "offset": 3740,
-      "length": 9,
-      "value": "\"#1A1E22\""
-    },
-    {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Cards\/Transaction\/CardTransactionViewModel.swift",
       "kind": "StringLiteral",
       "offset": 1170,
@@ -18255,7 +18154,7 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/WalletCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1363,
+      "offset": 1365,
       "length": 4,
       "value": "true"
     },
@@ -18629,20 +18528,6 @@
       "offset": 3104,
       "length": 31,
       "value": "\"onboarding-verification-video\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/NearestLocation\/Map\/GoogleMapsView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 230,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/NearestLocation\/Map\/GoogleMapsView.swift",
-      "kind": "Array",
-      "offset": 260,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Cards\/CardCoordinator.swift",

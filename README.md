@@ -13,7 +13,7 @@ Add the package dependency to your `Package.swift` file and add the dependency t
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", from: "0.9.7")
+    .package(url: "https://github.com/staqio/StaqWallet", from: "0.9.8")
 ]
 ```
 
@@ -82,7 +82,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             email: "user-email",
             mobileNumber: "user-mobile-phone-number",
             language: .en, // or .ar
-            googleMapsApiKey: "app-google-maps-api-key",
         )
         AppFlowCoordinator(config: config).start()
     }

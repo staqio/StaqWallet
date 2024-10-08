@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/StaqWallet-Swift.h</key>
 		<data>
-		y5uYlN42G13JZNV1jk9yK8YQc2U=
+		TUXL+guWq6kzlMhrtgzrykbZ1yk=
 		</data>
 		<key>Headers/StaqWallet.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		c4cUWGQ7bObnX5jA3Cqme0ZKvPU=
+		fNNfTUBRk3E5Le5N6iRw8jZWwxg=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fwOYSC+4V5YqTv8+uYvliPOmzAk=
+		NAnENl7xwmuDEVzAMhsbvSSYFzs=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fwOYSC+4V5YqTv8+uYvliPOmzAk=
+		NAnENl7xwmuDEVzAMhsbvSSYFzs=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pZfDHgFbGnUC9KRPSevi2UbmnAQ=
+		vVwisnPXBS58JYUPPt+iwyo4BAo=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		c4cUWGQ7bObnX5jA3Cqme0ZKvPU=
+		fNNfTUBRk3E5Le5N6iRw8jZWwxg=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hMvkKknzs7a+g99mdl8QPbz8UR4=
+		Unl6uE4kQ0LOwANJ2gHkfDuq5P0=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hMvkKknzs7a+g99mdl8QPbz8UR4=
+		Unl6uE4kQ0LOwANJ2gHkfDuq5P0=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jB6HF+JH/wuAimmjMW6et6EMBGE=
+		WzQRAZOjc4TcSRaT7shvqVrsch4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			evjE7Q5Cxd49/qxUAaAXTnLK3Yqa1E5hVrc3BvBJjQ0=
+			nr6RR8Bt9SZ/aNx05rr8ccM3iOdaOflmfYbZ/UtnfSs=
 			</data>
 		</dict>
 		<key>Headers/StaqWallet.h</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yGcxF7DGvmYq6HhVtbpHZoZGHx6UOiuYNVkvaCYx8bE=
+			EKXdIwCXjUs33a6iis75RxBs1uYxbCWFx82ixfw8yyc=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke4rhkenUyU3S2d1JBLrUrSKeJleesBZt/eK/oobzXA=
+			VT97qJEww4U58THcwz7nSpkmqm1iLt9+9cgTrJDhv3A=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -155,28 +155,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ke4rhkenUyU3S2d1JBLrUrSKeJleesBZt/eK/oobzXA=
+			VT97qJEww4U58THcwz7nSpkmqm1iLt9+9cgTrJDhv3A=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+4E+BU/HSXfgLLLNGX0srzWzWEHnmC+frvTsPuo4C3Y=
+			M+9XTnOzxL0nZPz5x6ZWMibHZfnNEtNOZC0GvLpG9iE=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yGcxF7DGvmYq6HhVtbpHZoZGHx6UOiuYNVkvaCYx8bE=
+			EKXdIwCXjUs33a6iis75RxBs1uYxbCWFx82ixfw8yyc=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8r1YlBZbdjEN0YtMa3bzaGMYWyM4hGbsCT1t2ZlQbSE=
+			+Wql9mJ+wpbe9sj7UFyEraWgyOYEwjkbcxxQqJdPUiU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -190,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8r1YlBZbdjEN0YtMa3bzaGMYWyM4hGbsCT1t2ZlQbSE=
+			+Wql9mJ+wpbe9sj7UFyEraWgyOYEwjkbcxxQqJdPUiU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tNkogEh33jYjo7uLMfU4vGY4zLEvUtiPVEYIrlPNkX0=
+			L6W5yV29lM/8jC4ASplBqvlR3OMSKGNWyoTA+C49fDE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
