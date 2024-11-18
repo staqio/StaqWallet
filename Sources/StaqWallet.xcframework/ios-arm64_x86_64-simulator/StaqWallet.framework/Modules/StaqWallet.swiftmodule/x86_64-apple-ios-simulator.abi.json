@@ -16614,49 +16614,49 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 837,
       "length": 38,
       "value": "\"onboarding.pickUp.flightNumber.label\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 932,
       "length": 32,
       "value": "\"onboarding.pickUp.flight.label\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4991,
+      "offset": 4995,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5118,
+      "offset": 5122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5161,
+      "offset": 5165,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5197,
+      "offset": 5201,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/Wallet\/Views\/CardPickUpLocationView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5254,
+      "offset": 5258,
       "length": 5,
       "value": "false"
     },
@@ -17658,20 +17658,20 @@
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 579,
-      "length": 15,
-      "value": "\"+966920001000\""
+      "length": 16,
+      "value": "\"00966920005455\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 678,
       "length": 7,
       "value": "\"0.9.7\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 745,
+      "offset": 746,
       "length": 10,
       "value": "1727946000"
     },
@@ -18003,34 +18003,6 @@
       "offset": 1237,
       "length": 20,
       "value": "\"MMMM d, 'at' h:mma\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Extentions\/RadioButtonOption+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 245,
-      "length": 24,
-      "value": "\"jeddah.pickup.location\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Extentions\/RadioButtonOption+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 298,
-      "length": 38,
-      "value": "\"King Abdulaziz International Airport\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Extentions\/RadioButtonOption+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 407,
-      "length": 25,
-      "value": "\"madinah.pickup.location\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Extentions\/RadioButtonOption+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 461,
-      "length": 53,
-      "value": "\"Prince Mohammad bin Abdulaziz International Airport\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/ProgressBar.swift",
