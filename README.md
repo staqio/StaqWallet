@@ -13,7 +13,7 @@ Add the package dependency to your `Package.swift` file and add the dependency t
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", from: "1.0.1")
+    .package(url: "https://github.com/staqio/StaqWallet", from: "1.1.0")
 ]
 ```
 
@@ -29,7 +29,21 @@ Run the command `swift package update` to download the package and its dependenc
 
 ### Usage
 
-To start the Wallet flow, import the `StaqWallet` framework and use the `AppFlowCoordinator` it provides. This flow allows users to initiate the wallet process after setting up some configuration. Here’s a step-by-step guide:
+To start the Wallet flow, import the `StaqWallet` framework and use the `AppFlowCoordinator` it provides. This flow allows users to initiate the wallet process after setting up some configuration.
+
+```swift
+let coordinator = AppFlowCoordinator(
+    navController,
+    config: StaqWalletConfig(...)
+)
+coordinator.start()
+```
+
+#### Navigation Controller Setup
+
+You can provide a UINavigationController to the SDK for navigation purposes. This navigation controller will be used internally by the SDK for pushing and presenting views.
+
+If no UINavigationController is provided (or if you pass nil), the SDK will automatically attempt to use the first navigation controller found in the UIWindow of your application.
 
 #### Face ID Setup
 
@@ -83,7 +97,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             mobileNumber: "user-mobile-phone-number",
             language: .en, // or .ar
         )
-        AppFlowCoordinator(config: config).start()
+        AppFlowCoordinator(navController, config: config).start()
     }
 }
 ```

@@ -204,7 +204,7 @@ extension DotCore.PointDouble : Swift.Encodable {
 }
 
 @_hasMissingDesignatedInitializers final public class AppFlowCoordinator : StaqWallet.BaseFlowCoordinator {
-  public init(config: StaqWallet.StaqWalletConfig)
+  public init(_ navigationController: UIKit.UINavigationController? = nil, config: StaqWallet.StaqWalletConfig)
   @objc deinit
   final public func start()
 }
