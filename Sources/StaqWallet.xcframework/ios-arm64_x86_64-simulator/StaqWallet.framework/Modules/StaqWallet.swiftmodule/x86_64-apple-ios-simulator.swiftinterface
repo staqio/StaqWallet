@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StaqWallet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -37,6 +37,7 @@ public enum StaqWalletEnvironment {
 }
 
 
+
 public struct StaqWalletConfig {
   public init(userId: Swift.String, secret: Swift.String, email: Swift.String? = nil, mobileNumber: Swift.String? = nil, language: StaqWallet.SupportedLanguage, googleMapsApiKey: Swift.String = "", walletEnv: StaqWallet.StaqWalletEnvironment = .production)
 }
@@ -57,6 +58,7 @@ public enum SupportedLanguage : Swift.String {
 
 
 
+
 extension TrustlessSDK.TrustlessError : Swift.Equatable {
   public static func == (lhs: TrustlessSDK.TrustlessError, rhs: TrustlessSDK.TrustlessError) -> Swift.Bool
 }
@@ -70,7 +72,6 @@ extension TrustlessSDK.TrustlessError : Swift.Identifiable {
   public var id: Swift.String {
     get
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Swift.String
 }
 @_hasMissingDesignatedInitializers public class KYCUploder {
@@ -127,6 +128,7 @@ public struct KYCDocumentData : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+
 
 
 
@@ -199,8 +201,30 @@ extension DotFaceCore.FaceQuality : Swift.Encodable {
 
 
 
+
 extension DotCore.PointDouble : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
+}
+
+@_Concurrency.MainActor @preconcurrency public struct WalletPayDetailsModalView : SwiftUICore.View {
+  @SwiftUICore.Binding @_projectedValueProperty($isPresented) @_Concurrency.MainActor @preconcurrency public var isPresented: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  @_Concurrency.MainActor @preconcurrency public var $isPresented: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public let balance: Swift.Double
+  @_Concurrency.MainActor @preconcurrency public let params: StaqWallet.WalletPayParams
+  @_Concurrency.MainActor @preconcurrency public var didDismiss: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var didTapConfirm: ((_ dismiss: () -> Swift.Void) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B19PayDetailsModalViewV4bodyQrvp", 0) __
 }
 
 @_hasMissingDesignatedInitializers final public class AppFlowCoordinator : StaqWallet.BaseFlowCoordinator {
@@ -216,15 +240,41 @@ extension DotCore.PointDouble : Swift.Encodable {
 
 
 
+
 extension DotDocument.DetectionPosition : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
 
 
+public struct WalletPayParams {
+  public init(totalAmount: Swift.Double, subtotalAmount: Swift.Double, currencyCode: Swift.String = "SAR", fees: Swift.Double, productId: Swift.String, sku: Swift.String, narative: Swift.String?)
+}
 @_hasMissingDesignatedInitializers final public class SecurityService {
   public static func checkSecurity()
   @objc deinit
 }
+
+
+
+
+
+
+@_Concurrency.MainActor @preconcurrency public struct WalletPayView : SwiftUICore.View {
+  public enum Variant {
+    case inline
+    case breakdown
+    public static func == (a: StaqWallet.WalletPayView.Variant, b: StaqWallet.WalletPayView.Variant) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B7PayViewV4bodyQrvp", 0) __
+}
+
 
 
 
@@ -392,6 +442,12 @@ extension DotDocument.DocumentDetector.Document : Swift.Encodable {
 extension DotDocument.ImageParameters : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
+extension UIKit.UIFont {
+  public static func registerCustomFonts()
+}
+extension UIKit.UIFont {
+  public static func jbs_registerFont(withFilenameString filenameString: Swift.String, bundle: Foundation.Bundle)
+}
 
 @_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
   @objc deinit
@@ -403,7 +459,6 @@ extension DotDocument.ImageParameters : Swift.Encodable {
   @_Concurrency.MainActor @preconcurrency public static let defaultGradient: SwiftUICore.Gradient
   @_Concurrency.MainActor @preconcurrency public func body(content: StaqWallet.Shimmer.Content) -> some SwiftUICore.View
   
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
 }
 extension SwiftUICore.View {
@@ -424,12 +479,28 @@ extension UIKit.UIViewController {
   }
 }
 
+
 extension DotCore.ImageSize : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
+}
+
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class UIWalletPayView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var isSelected: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, isSelected: Swift.Bool, variant: StaqWallet.WalletPayView.Variant, balance: Swift.Double, params: StaqWallet.WalletPayParams)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func setSelected(_ isSelected: Swift.Bool)
+  @objc deinit
+}
+public enum WalletPayPresenter {
+  public static func presentPaymentDetails(from parent: UIKit.UIViewController, balance: Swift.Double, params: StaqWallet.WalletPayParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: () -> Swift.Void) -> Swift.Void)? = nil)
 }
 extension DotCore.BgraRawImage : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
+
 
 
 
@@ -448,6 +519,10 @@ extension StaqWallet.SupportedLanguage : Swift.Hashable {}
 extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
 extension StaqWallet.BaeErrorCodes : Swift.Equatable {}
 extension StaqWallet.BaeErrorCodes : Swift.Hashable {}
+extension StaqWallet.WalletPayDetailsModalView : Swift.Sendable {}
+extension StaqWallet.WalletPayView : Swift.Sendable {}
+extension StaqWallet.WalletPayView.Variant : Swift.Equatable {}
+extension StaqWallet.WalletPayView.Variant : Swift.Hashable {}
 extension StaqWallet.ErrorCode : Swift.Equatable {}
 extension StaqWallet.ErrorCode : Swift.Hashable {}
 extension StaqWallet.Shimmer : Swift.Sendable {}
