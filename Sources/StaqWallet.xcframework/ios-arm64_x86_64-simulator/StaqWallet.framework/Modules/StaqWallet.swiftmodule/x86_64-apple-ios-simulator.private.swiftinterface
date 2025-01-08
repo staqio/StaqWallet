@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StaqWallet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -72,6 +72,7 @@ extension TrustlessSDK.TrustlessError : Swift.Identifiable {
   public var id: Swift.String {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Swift.String
 }
 @_hasMissingDesignatedInitializers public class KYCUploder {
@@ -224,6 +225,7 @@ extension DotCore.PointDouble : Swift.Encodable {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B19PayDetailsModalViewV4bodyQrvp", 0) __
 }
 
@@ -272,6 +274,7 @@ public struct WalletPayParams {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B7PayViewV4bodyQrvp", 0) __
 }
 
@@ -459,6 +462,7 @@ extension UIKit.UIFont {
   @_Concurrency.MainActor @preconcurrency public static let defaultGradient: SwiftUICore.Gradient
   @_Concurrency.MainActor @preconcurrency public func body(content: StaqWallet.Shimmer.Content) -> some SwiftUICore.View
   
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
 }
 extension SwiftUICore.View {
