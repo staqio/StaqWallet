@@ -3370,8 +3370,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "StaqWallet",
-        "printedName": "StaqWallet",
+        "name": "StaqWalletManager",
+        "printedName": "StaqWalletManager",
         "children": [
           {
             "kind": "Function",
@@ -3397,8 +3397,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10StaqWalletAAC5start10withConfig24fromNavigationControlleryAA0abE0V_So012UINavigationH0CtFZ",
-            "mangledName": "$s10StaqWalletAAC5start10withConfig24fromNavigationControlleryAA0abE0V_So012UINavigationH0CtFZ",
+            "usr": "s:10StaqWallet0aB7ManagerC5start10withConfig24fromNavigationControlleryAA0abF0V_So012UINavigationI0CtFZ",
+            "mangledName": "$s10StaqWallet0aB7ManagerC5start10withConfig24fromNavigationControlleryAA0abF0V_So012UINavigationI0CtFZ",
             "moduleName": "StaqWallet",
             "static": true,
             "declAttributes": [
@@ -3437,8 +3437,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10StaqWalletAAC29setPackagesNavigationCallbackyyyycFZ",
-            "mangledName": "$s10StaqWalletAAC29setPackagesNavigationCallbackyyyycFZ",
+            "usr": "s:10StaqWallet0aB7ManagerC29setPackagesNavigationCallbackyyyycFZ",
+            "mangledName": "$s10StaqWallet0aB7ManagerC29setPackagesNavigationCallbackyyyycFZ",
             "moduleName": "StaqWallet",
             "static": true,
             "declAttributes": [
@@ -3449,8 +3449,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:10StaqWalletAAC",
-        "mangledName": "$s10StaqWalletAAC",
+        "usr": "s:10StaqWallet0aB7ManagerC",
+        "mangledName": "$s10StaqWallet0aB7ManagerC",
         "moduleName": "StaqWallet",
         "declAttributes": [
           "Final",
@@ -19791,14 +19791,14 @@
       "value": "10"
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/StaqWallet.swift",
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/StaqWalletManager.swift",
       "kind": "BooleanLiteral",
       "offset": 383,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/StaqWallet.swift",
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/StaqWalletManager.swift",
       "kind": "BooleanLiteral",
       "offset": 420,
       "length": 5,
@@ -23678,84 +23678,84 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 954,
+      "offset": 961,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1366,
+      "offset": 1373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1608,
+      "offset": 1615,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1737,
+      "offset": 1744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1895,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2258,
+      "offset": 2265,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3016,
+      "offset": 3023,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5104,
+      "offset": 5111,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5354,
+      "offset": 5361,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 5551,
+      "offset": 5558,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6013,
+      "offset": 6020,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/trustless-sdk-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6418,
+      "offset": 6425,
       "length": 4,
       "value": "true"
     },
