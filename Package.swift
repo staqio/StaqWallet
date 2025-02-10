@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/innovatrics/dot-ios-sdk-spm", exact: "8.4.0"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.7.2")
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.8.0")
     ],
     targets: [
         .binaryTarget(
