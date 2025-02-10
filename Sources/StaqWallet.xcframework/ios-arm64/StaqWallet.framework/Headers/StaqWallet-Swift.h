@@ -339,8 +339,32 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
 @class NSCoder;
 
+/// A UIKit wrapper for embedding a Wallet Pay SwiftUI view.
+/// <code>UIWalletPayView</code> is a <code>UIView</code> that hosts a SwiftUI view (<code>WalletPayWrapperView</code>) using
+/// <code>UIHostingController</code>. It provides an interface for updating and interacting with the Wallet Pay view
+/// in a UIKit environment.
+/// <h2>Features</h2>
+/// <ul>
+///   <li>
+///     Exposes the <code>isSelected</code> and <code>balance</code> properties for interaction.
+///   </li>
+///   <li>
+///     Provides methods to update the Wallet Pay view’s state dynamically.
+///   </li>
+///   <li>
+///     Embeds a SwiftUI view seamlessly into UIKit.
+///   </li>
+/// </ul>
+/// \param variant Specifies the layout type of the Wallet Pay view (<code>inline</code> or <code>breakdown</code>).
+///
+/// \param state An observable state object (<code>WalletPayViewState</code>) that manages the Wallet Pay view’s behavior and balance.
+///
+/// \param params The parameters for the payment order (<code>StaqWalletPay.PaymentOrderParams</code>).
+///
 SWIFT_CLASS("_TtC10StaqWallet15UIWalletPayView")
 @interface UIWalletPayView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
