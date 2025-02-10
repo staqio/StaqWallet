@@ -133,7 +133,7 @@ public struct KYCDocumentData : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 
-@_hasMissingDesignatedInitializers final public class StaqWallet {
+@_hasMissingDesignatedInitializers final public class StaqWalletManager {
   public static func start(withConfig config: StaqWallet.StaqWalletConfig, fromNavigationController rootNavigationController: UIKit.UINavigationController)
   public static func setPackagesNavigationCallback(_ callback: @escaping () -> Swift.Void)
   @objc deinit

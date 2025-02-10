@@ -13,7 +13,7 @@ Add the package dependency to your Package.swift file and add the dependency to 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", from: "1.2.0")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "2.0.0-beta.2")
 ]
 ```
 
@@ -29,7 +29,7 @@ Run the command `swift package update` to download the package and its dependenc
 
 ### Usage
 
-To start the wallet flow, import the StaqWallet framework and utilize the `StaqWallet` class it provides. This class enables users to initiate the wallet process after setting up the necessary configuration.
+To start the wallet flow, import the StaqWallet framework and utilize the `StaqWalletManager` class it provides. This class enables users to initiate the wallet process after setting up the necessary configuration.
 
 #### StaqWalletConfig
 
@@ -48,7 +48,7 @@ A struct representing the configuration parameters required to initialize and au
 ```swift
 import StaqWallet
 
-StaqWallet.start(
+StaqWalletManager.start(
     withConfig: StaqWalletConfig(...),
     fromNavigationController: navigationController
 )
@@ -99,10 +99,10 @@ This ensures that your app can check if the Nafath app is installed and seamless
 
 #### Handling Navigation for Ordered Packages
 
-The domestic wallet does not provide built-in navigation functionality for displaying ordered packages. Therefore, you must handle navigation manually by supplying a navigation callback to the `setPackagesNavigationCallback` method on the StaqWallet instance.
+The domestic wallet does not provide built-in navigation functionality for displaying ordered packages. Therefore, you must handle navigation manually by supplying a navigation callback to the `setPackagesNavigationCallback` method on the StaqWalletManager class.
 
 ```swift
-StaqWallet.setPackagesNavigationCallback {
+StaqWalletManager.setPackagesNavigationCallback {
     // Implement your custom navigation logic here
 }
 ```
@@ -142,11 +142,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             language: .en,
         )
 
-        StaqWallet.setPackagesNavigationCallback {
+        StaqWalletManager.setPackagesNavigationCallback {
             // Implement your custom navigation logic here
         }
 
-        StaqWallet.start(
+        StaqWalletManager.start(
             withConfig: config,
             fromNavigationController: navigationController
         )
