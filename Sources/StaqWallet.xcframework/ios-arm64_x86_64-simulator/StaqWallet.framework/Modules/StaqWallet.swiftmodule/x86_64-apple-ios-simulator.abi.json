@@ -23001,118 +23001,118 @@
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
-      "length": 13,
-      "value": "1740434400"
+      "length": 10,
+      "value": "1741860000"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 840,
       "length": 11,
       "value": "\"nusuk-dev\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 904,
+      "offset": 901,
       "length": 12,
       "value": "\"nusuk-prod\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 965,
+      "offset": 962,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1038,
       "length": 38,
       "value": "\"2c76eedf-f29f-457f-97cd-fd1f18c23a8d\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1133,
+      "offset": 1130,
       "length": 90,
       "value": "\"mTqx0mHcqoAqIioruaISCF5lPPHj9eTL00rxzUbPsqmSwnsnNyiLqGCvFC9V079QkCo7wrNL\/LJ9KgwB5gN7Qw==\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1264,
+      "offset": 1261,
       "length": 27,
       "value": "\"https:\/\/dev-api.staq.tech\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 1331,
       "length": 38,
       "value": "\"379cc899-64c4-4eed-b9a3-dc5aa03029e6\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1424,
       "length": 90,
       "value": "\"ELrfNe9wz4+zQBJirQ26u1hfUjY8qkjcfDexLAVL7XedqbYvj9CS12Rj3OiMh8vPxCuUk0XSTjMKx1lmasx1SQ==\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1556,
       "length": 29,
       "value": "\"https:\/\/api.baas.alahli.com\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1651,
+      "offset": 1648,
       "length": 24,
       "value": "\"https:\/\/ipinfo.staq.io\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1738,
+      "offset": 1735,
       "length": 15,
       "value": "\"nafath:\/\/home\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1786,
       "length": 60,
       "value": "\"https:\/\/apps.apple.com\/sa\/app\/نفاذ-nafath\/id1598909871\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1929,
+      "offset": 1926,
       "length": 1045,
       "value": "\"Bearer aW5rX2JjYmVmODcwODdhN2ZkMDhiMjY0ZmI3MTY0YTMxOTU3Omluc19leUp0WlhSaFpHRjBZU0k2SUhzaVkyeHBaVzUwSWpvZ2V5SnBaQ0k2SUNJMk16a3lNV1UwTlMwMFltTmhMVFE1TnpBdFlUYzRZeTAzTkRNMFlXVXdZekJsWkdJaUxDQWlibUZ0WlNJNklDSlRkR0Z4SUZSbFkyaHViMnh2WjJsbGN5QW9SRWxHUXlrZ1RIUmtJbjBzSUNKc2FXTmxibk5sWDJOMWMzUnZiVjl3Y205d1pYSjBhV1Z6SWpvZ2V5SXZZMjl1ZEhKaFkzUXZaRzkwTDJScGN5OWxibUZpYkdWa0lqb2dJblJ5ZFdVaUxDQWlMMk52Ym5SeVlXTjBMMlJ2ZEM5a2FYTXZabVZoZEhWeVpYTXZjbVZoYkZScGJXVlVjbUZ1YzJGamRHbHZibEpsY0c5eWRHbHVaMUpsY1hWcGNtVmtJam9nSW5SeWRXVWlMQ0FpTDJOdmJuUnlZV04wTDJSdmRDOXlaV0ZzVkdsdFpWUnlZVzV6WVdOMGFXOXVVbVZ3YjNKMGFXNW5VbVZ4ZFdseVpXUWlPaUFpZEhKMVpTSXNJQ0l2WTI5dWRISmhZM1F2Wkc5MEwyUnBjeTlzYVdObGJuTmxWbVZ5YzJsdmJpSTZJQ0l6SW4wc0lDSmpjbVZoZEdsdmJsOTBhVzFsYzNSaGJYQWlPaUFpTURFdk1Ea3ZNakF5TlNBeE5qb3pNem95TWlCVlZFTWlMQ0FpZG1Gc2FXUmZkRzhpT2lBaU1EY3ZNRGN2TWpBeU5TQXdNRG93TURvd01DQlZWRU1pZlN3Z0luTnBaMjVoZEhWeVpTSTZJQ0o2UnpaVVdVNUlXR3BETVVnNFFsQkRUVzFyY25CcFVHWmlRazlzVFZsQldsZHhaSGxUV1VWSVJFZFhWMFFyYmpkS2NDOHhiV3hWTDJOYVl5OWxUVGRvWW5wdFFsYzViREowZW5NclFubzJXbEpoTjNKRFp6MDlJbjA9\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3016,
       "length": 49,
       "value": "\"https:\/\/dev-digital-identity-service.staq.tech\/\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3116,
+      "offset": 3113,
       "length": 1045,
       "value": "\"Bearer aW5rXzZmYWRkYTY4YjBkNGI5ZjRiNGJjOWE1ZWZkM2ZjODQ4Omluc19leUp0WlhSaFpHRjBZU0k2SUhzaVkyeHBaVzUwSWpvZ2V5SnBaQ0k2SUNJMk16a3lNV1UwTlMwMFltTmhMVFE1TnpBdFlUYzRZeTAzTkRNMFlXVXdZekJsWkdJaUxDQWlibUZ0WlNJNklDSlRkR0Z4SUZSbFkyaHViMnh2WjJsbGN5QW9SRWxHUXlrZ1RIUmtJbjBzSUNKc2FXTmxibk5sWDJOMWMzUnZiVjl3Y205d1pYSjBhV1Z6SWpvZ2V5SXZZMjl1ZEhKaFkzUXZaRzkwTDJScGN5OWxibUZpYkdWa0lqb2dJblJ5ZFdVaUxDQWlMMk52Ym5SeVlXTjBMMlJ2ZEM5a2FYTXZabVZoZEhWeVpYTXZjbVZoYkZScGJXVlVjbUZ1YzJGamRHbHZibEpsY0c5eWRHbHVaMUpsY1hWcGNtVmtJam9nSW5SeWRXVWlMQ0FpTDJOdmJuUnlZV04wTDJSdmRDOXlaV0ZzVkdsdFpWUnlZVzV6WVdOMGFXOXVVbVZ3YjNKMGFXNW5VbVZ4ZFdseVpXUWlPaUFpZEhKMVpTSXNJQ0l2WTI5dWRISmhZM1F2Wkc5MEwyUnBjeTlzYVdObGJuTmxWbVZ5YzJsdmJpSTZJQ0l6SW4wc0lDSmpjbVZoZEdsdmJsOTBhVzFsYzNSaGJYQWlPaUFpTURndk1UWXZNakF5TkNBeE9EbzBPRG8wTnlCVlZFTWlMQ0FpZG1Gc2FXUmZkRzhpT2lBaU1USXZNekF2TWpBeU5DQXdNRG93TURvd01DQlZWRU1pZlN3Z0luTnBaMjVoZEhWeVpTSTZJQ0pWYjIxTVdUVkxNMEpSVTNNMmJtcFBPWFphTDFwaGFWb3ZSUzg1WkZCRlJsTlBWV00yTlhRelpYUlVia3BIWTBkTmEzZDVUbGRJVFRsSlVtNW1WakJGVW1KbGQxSlhXQzgyZEVGcU4waFdSWE4zU25CRFVUMDlJbjA9\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4211,
+      "offset": 4208,
       "length": 35,
       "value": "\"https:\/\/identity.baas.alahli.com\/\""
     },
