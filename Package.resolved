@@ -1,5 +1,5 @@
 {
-  "originHash" : "2ad47477940fe87acdeb42fbd3c006eced8bf0b589d296cd34f9707a6fa36053",
+  "originHash" : "4b274990f4aee9a73d9035fdcfc6302277e284ee8493285cb63b27aa60b7fff5",
   "pins" : [
     {
       "identity" : "dot-ios-sdk-spm",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/staqio/TrustlessSDK",
       "state" : {
-        "revision" : "c3fd82ac87f0f0765218ca918900f34f7d48cd53",
-        "version" : "0.7.2"
+        "revision" : "0325326baf67a2d73c028eaace53a0a5750898e5",
+        "version" : "0.11.0"
       }
     }
   ],
