@@ -9,13 +9,15 @@
 
 #### Using Swift Package Manager (SPM)
 
-Add the package dependency to your Package.swift file and add the dependency to the dependencies array. Here's an example:
+To install **StaqWallet** using Swift Package Manager, add the package dependency to your **Package.swift** file and include it in the dependencies array:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "2.0.0-beta.3")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "2.0.0")
 ]
 ```
+
+Then, add it to your target dependencies:
 
 ```swift
 targets: [
@@ -25,23 +27,27 @@ targets: [
 ]
 ```
 
-Run the command `swift package update` to download the package and its dependencies.
+Run the following command to download the package and its dependencies:
+
+```sh
+swift package update
+```
 
 ### Usage
 
-To start the wallet flow, import the StaqWallet framework and utilize the `StaqWalletManager` class it provides. This class enables users to initiate the wallet process after setting up the necessary configuration.
+To start the wallet flow, import the **StaqWallet** framework and use the `StaqWalletManager` class to initiate the process.
 
 #### StaqWalletConfig
 
-A struct representing the configuration parameters required to initialize and authenticate the StaqWallet SDK.
+The `StaqWalletConfig` struct holds configuration parameters for initializing and authenticating the **StaqWallet** SDK.
 
 **Parameters**
 
-- userId: A unique identifier for the user.
-- secret: A secret key used for authentication.
-- email: (Optional) The user’s email address.
-- language: The preferred language for the wallet interface. Defaults to .en.
-- walletEnv: The environment in which the wallet operates (e.g., production, sandbox). Defaults to .production.
+- `userId`: A unique identifier for the user.
+- `secret`: A secret key used for authentication.
+- `email`: (Optional) The user’s email address.
+- `language`: The preferred language for the wallet interface (defaults to `.en`).
+- `walletEnv`: The operating environment of the wallet (default: `.production`).
 
 **Example Usage**
 
@@ -56,24 +62,22 @@ StaqWalletManager.start(
 
 #### Navigation Controller Setup
 
-You must provide a `UINavigationController` to the SDK for navigation purposes. This navigation controller will be used internally by the SDK to push and present views.
-
-Ensure that a valid UINavigationController instance is passed to the SDK, as it is required for proper navigation handling.
+A `UINavigationController` must be provided to the SDK for navigation purposes. The navigation controller is used internally for presenting views. Ensure you pass a valid instance when starting the wallet flow.
 
 #### Face ID Setup
 
-Make sure to enable Face ID in your app by adding the following key to your Info.plist file:
+Enable Face ID in your app by adding the following key to your **Info.plist** file:
 
 ```xml
 <key>NSFaceIDUsageDescription</key>
 <string>We use Face ID to authenticate your identity quickly and securely.</string>
 ```
 
-If this key is not added, your application will crash when attempting to use Face ID.
+Without this key, the application will crash when attempting to use Face ID.
 
 #### Document Scanning & KYC Verification
 
-For features like document scanning and KYC verification, you need to add camera and microphone permissions to your Info.plist:
+To enable document scanning and KYC verification, add camera and microphone permissions to your **Info.plist**:
 
 ```xml
 <key>NSCameraUsageDescription</key>
@@ -82,11 +86,11 @@ For features like document scanning and KYC verification, you need to add camera
 <string>We need access to the microphone to assist in the verification process.</string>
 ```
 
-Again, if these permissions are missing, the app will crash when the camera or microphone is required.
+If these permissions are missing, the app will crash when trying to access the camera or microphone.
 
 #### Domestic User Authentication Redirection
 
-Domestic users can register a wallet using Nafath services. To enable redirection to the Nafath application, you need to add the following query scheme to your Info.plist:
+To support user authentication via **Nafath** services, add the following query scheme to your **Info.plist**:
 
 ```xml
 <key>LSApplicationQueriesSchemes</key>
@@ -95,11 +99,11 @@ Domestic users can register a wallet using Nafath services. To enable redirectio
 </array>
 ```
 
-This ensures that your app can check if the Nafath app is installed and seamlessly redirect users to complete the registration process.
+This allows your app to detect the **Nafath** app and redirect users for registration.
 
 #### Handling Navigation for Ordered Packages
 
-The domestic wallet does not provide built-in navigation functionality for displaying ordered packages. Therefore, you must handle navigation manually by supplying a navigation callback to the `setPackagesNavigationCallback` method on the StaqWalletManager class.
+The domestic wallet does not include built-in navigation for displaying ordered packages. You must manually handle navigation by providing a callback to `setPackagesNavigationCallback`:
 
 ```swift
 StaqWalletManager.setPackagesNavigationCallback {
@@ -109,7 +113,7 @@ StaqWalletManager.setPackagesNavigationCallback {
 
 ### Example Code to Start the Wallet Flow
 
-Below is a minimal implementation in your SceneDelegate to initialize the Wallet flow:
+Below is an example implementation within SceneDelegate:
 
 ```swift
 import StaqWallet
@@ -159,7 +163,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 # Staq Wallet Pay
 
-The `StaqWalletPay` class provides a comprehensive solution for integrating Wallet Pay functionality into your application. It offers tools for managing wallet balances, creating and retrieving payment orders, and presenting Wallet Pay-related user interfaces.
+The `StaqWalletPay` class provides Wallet Pay functionality, including balance management, payment order creation, and UI components.
 
 ### Overview
 
@@ -501,10 +505,7 @@ public static func getPaymentOrderDetails(
 - `PaymentOrderDetails`: An object containing detailed information about the payment order.
 
 <br />
-<br />
 
 ---
 
-<br />
-
-If you have any questions, need clarification, or want to discuss anything in more detail, feel free to reach out to me via email. I’m always happy to help and provide support. You can contact me at [d.lunov@staq.io], and I’ll do my best to respond promptly. Don’t hesitate to get in touch!
+If you have any questions or need assistance, reach out via email at [d.lunov@staq.io]. I’ll do my best to respond promptly!

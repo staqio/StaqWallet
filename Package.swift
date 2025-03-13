@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/innovatrics/dot-ios-sdk-spm", exact: "8.4.0"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.8.0")
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.11.0")
     ],
     targets: [
         .binaryTarget(
@@ -35,7 +35,11 @@ let package = Package(
             ],
             path: "Sources/StaqWalletTarget",
             sources: ["StaqWalletEmpty.m"],
-            publicHeadersPath: "Sources"
+            publicHeadersPath: "Sources",
+            linkerSettings: [
+                .linkedFramework("PassKit"),
+                .linkedFramework("StaqWallet")
+            ]
         )
     ]
 )
