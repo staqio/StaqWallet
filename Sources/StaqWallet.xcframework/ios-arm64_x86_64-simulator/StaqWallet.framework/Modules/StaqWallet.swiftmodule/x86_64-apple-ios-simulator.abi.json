@@ -20300,14 +20300,14 @@
       "kind": "StringLiteral",
       "offset": 673,
       "length": 7,
-      "value": "\"2.1.0\""
+      "value": "\"2.1.1\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 741,
       "length": 10,
-      "value": "1742580000"
+      "value": "1742810400"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
@@ -22853,49 +22853,49 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "StringLiteral",
-      "offset": 11282,
+      "offset": 11571,
       "length": 5,
       "value": "\"SAR\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "Dictionary",
-      "offset": 12574,
+      "offset": 12863,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "StringLiteral",
-      "offset": 12963,
+      "offset": 13252,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "FloatLiteral",
-      "offset": 12993,
+      "offset": 13282,
       "length": 6,
       "value": "250.45"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "FloatLiteral",
-      "offset": 13025,
+      "offset": 13314,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "IntegerLiteral",
-      "offset": 13053,
+      "offset": 13342,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/StaqWalletPay.swift",
       "kind": "StringLiteral",
-      "offset": 13080,
+      "offset": 13369,
       "length": 7,
       "value": "\"12345\""
     },
