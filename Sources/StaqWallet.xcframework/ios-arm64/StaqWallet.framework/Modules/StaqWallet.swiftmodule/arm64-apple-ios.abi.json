@@ -23661,8 +23661,8 @@
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/StaqWalletConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 337,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Theme.swift",
