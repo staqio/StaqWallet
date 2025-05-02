@@ -21546,14 +21546,21 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/OnboardingTermsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 316,
+      "offset": 321,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/OnboardingTermsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 353,
+      "offset": 358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/View\/OnboardingTermsView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 538,
       "length": 5,
       "value": "false"
     },
@@ -21876,6 +21883,13 @@
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/SignUpFlowCoordinator.swift",
       "kind": "BooleanLiteral",
       "offset": 834,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/SignUp\/SignUpFlowCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7132,
       "length": 5,
       "value": "false"
     },
@@ -24290,35 +24304,42 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6015,
+      "offset": 5092,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6265,
+      "offset": 7222,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6462,
+      "offset": 7472,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 6924,
+      "offset": 7669,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 7486,
+      "offset": 8131,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/FlowCoordinators\/IFlowCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8693,
       "length": 4,
       "value": "true"
     },
