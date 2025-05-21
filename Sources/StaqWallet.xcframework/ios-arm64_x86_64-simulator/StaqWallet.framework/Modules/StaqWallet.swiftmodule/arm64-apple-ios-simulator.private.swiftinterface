@@ -32,65 +32,6 @@ import _SwiftConcurrencyShims
 
 
 
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.Card : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
-}
-#else
-extension TrustlessSDK.Card : Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
-}
-#else
-extension TrustlessSDK.CardTransaction : Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias ID = Swift.String
-}
-#else
-extension TrustlessSDK.TrustlessError : Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias ID = Swift.String
-}
-#endif
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func endEditing()
-  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
-    get
-  }
-}
-extension UIKit.UIFont {
-  public static func registerCustomFonts()
-  public static func displayAllFonts()
-}
-extension UIKit.UIFont {
-  public static func registerFont(named filename: Swift.String, bundle: Foundation.Bundle)
-}
-extension UIKit.UINavigationController {
-  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-}
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
-    get
-    set
-  }
-}
 
 
 
@@ -497,79 +438,36 @@ extension DotDocument.DocumentDetector.Document : Swift.Encodable {
 }
 #endif
 
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension DotDocument.ImageParameters : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+public enum StaqKYCEnvironment {
+  case sandbox
+  case production
+  public static func == (a: StaqWallet.StaqKYCEnvironment, b: StaqWallet.StaqKYCEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
-#else
-extension DotDocument.ImageParameters : Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#endif
-
-
-@_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
+@_hasMissingDesignatedInitializers final public class LocalWalletConfig {
+  public static let shared: StaqWallet.LocalWalletConfig
+  final public var isEnabledLocalWallet: Swift.Bool
   @objc deinit
 }
-
-@_Concurrency.MainActor @preconcurrency public struct Shimmer : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public init(animation: SwiftUICore.Animation = Self.defaultAnimation, gradient: SwiftUICore.Gradient = Self.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3)
-  @_Concurrency.MainActor @preconcurrency public static let defaultAnimation: SwiftUICore.Animation
-  @_Concurrency.MainActor @preconcurrency public static let defaultGradient: SwiftUICore.Gradient
-  @_Concurrency.MainActor @preconcurrency public func body(content: StaqWallet.Shimmer.Content) -> some SwiftUICore.View
-  
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
+public class StaqWalletConfig {
+  public init(language: StaqWallet.SupportedLanguage, merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production, kycEnv: StaqWallet.StaqKYCEnvironment = .production)
+  @objc deinit
 }
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, animation: SwiftUICore.Animation = Shimmer.defaultAnimation, gradient: SwiftUICore.Gradient = Shimmer.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3) -> some SwiftUICore.View
-  
-  @available(*, deprecated, message: "Use shimmering(active:animation:gradient:bandSize:) instead.")
-  @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, duration: Swift.Double, bounce: Swift.Bool = false, delay: Swift.Double = 0.25) -> some SwiftUICore.View
-  
+public enum StaqWalletEnvironment {
+  case development
+  case production
+  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
-
-
-
-
-
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension DotCore.ImageSize : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+extension Swift.Array {
+  public func prefixThrough(_ index: Swift.Int) -> [Element]
 }
-#else
-extension DotCore.ImageSize : Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension DotCore.BgraRawImage : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#else
-extension DotCore.BgraRawImage : Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#endif
-
-extension TrustlessSDK.AccountTransaction {
-  public static func transactionDetails() -> TrustlessSDK.AccountTransaction?
-}
-
-
-
-
-
-
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension DotDocument.DocumentAutoCaptureResult : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#else
-extension DotDocument.DocumentAutoCaptureResult : Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-#endif
 
 
 
@@ -677,18 +575,63 @@ extension StaqWallet.StaqWalletPay {
     public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Swift.Double, feesAmount: Swift.Double? = nil, taxAmount: Swift.Double? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:])
   }
 }
-
-public class StaqWalletConfig {
-  public init(language: StaqWallet.SupportedLanguage, merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production)
-  @objc deinit
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.Card : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
 }
-public enum StaqWalletEnvironment {
-  case development
-  case production
-  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+#else
+extension TrustlessSDK.Card : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#else
+extension TrustlessSDK.CardTransaction : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
+  public var id: Swift.String {
     get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+}
+#else
+extension TrustlessSDK.TrustlessError : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+}
+#endif
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func endEditing()
+  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public static func registerCustomFonts()
+  public static func displayAllFonts()
+}
+extension UIKit.UIFont {
+  public static func registerFont(named filename: Swift.String, bundle: Foundation.Bundle)
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
+    get
+    set
   }
 }
 public class StaqWalletUser {
@@ -700,6 +643,80 @@ public class StaqWalletUser {
   public init(userId: Swift.String, secret: Swift.String, userType: Swift.String, nationalID: Swift.String, email: Swift.String)
   @objc deinit
 }
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension DotDocument.ImageParameters : @retroactive Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#else
+extension DotDocument.ImageParameters : Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#endif
+
+
+@_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
+  @objc deinit
+}
+
+@_Concurrency.MainActor @preconcurrency public struct Shimmer : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public init(animation: SwiftUICore.Animation = Self.defaultAnimation, gradient: SwiftUICore.Gradient = Self.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3)
+  @_Concurrency.MainActor @preconcurrency public static let defaultAnimation: SwiftUICore.Animation
+  @_Concurrency.MainActor @preconcurrency public static let defaultGradient: SwiftUICore.Gradient
+  @_Concurrency.MainActor @preconcurrency public func body(content: StaqWallet.Shimmer.Content) -> some SwiftUICore.View
+  
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, animation: SwiftUICore.Animation = Shimmer.defaultAnimation, gradient: SwiftUICore.Gradient = Shimmer.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3) -> some SwiftUICore.View
+  
+  @available(*, deprecated, message: "Use shimmering(active:animation:gradient:bandSize:) instead.")
+  @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, duration: Swift.Double, bounce: Swift.Bool = false, delay: Swift.Double = 0.25) -> some SwiftUICore.View
+  
+}
+
+
+
+
+
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension DotCore.ImageSize : @retroactive Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#else
+extension DotCore.ImageSize : Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension DotCore.BgraRawImage : @retroactive Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#else
+extension DotCore.BgraRawImage : Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#endif
+
+extension TrustlessSDK.AccountTransaction {
+  public static func transactionDetails() -> TrustlessSDK.AccountTransaction?
+}
+
+
+
+
+
+
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension DotDocument.DocumentAutoCaptureResult : @retroactive Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#else
+extension DotDocument.DocumentAutoCaptureResult : Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+#endif
+
 
 
 
@@ -710,10 +727,12 @@ extension StaqWallet.BaeErrorCodes : Swift.Equatable {}
 extension StaqWallet.BaeErrorCodes : Swift.Hashable {}
 extension StaqWallet.ErrorCode : Swift.Equatable {}
 extension StaqWallet.ErrorCode : Swift.Hashable {}
-extension StaqWallet.Shimmer : Swift.Sendable {}
+extension StaqWallet.StaqKYCEnvironment : Swift.Equatable {}
+extension StaqWallet.StaqKYCEnvironment : Swift.Hashable {}
+extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
+extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
 extension StaqWallet.WalletPayDetailsModalView : Swift.Sendable {}
 extension StaqWallet.WalletPayViewType : Swift.Equatable {}
 extension StaqWallet.WalletPayViewType : Swift.Hashable {}
 extension StaqWallet.WalletPayView : Swift.Sendable {}
-extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
-extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
+extension StaqWallet.Shimmer : Swift.Sendable {}
