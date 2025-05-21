@@ -15,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.0.0")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.1.0")
 ]
 ```
 
@@ -47,11 +47,18 @@ You **must** call `StaqWalletManager.initialize(withConfig:)` early in your appâ
 let config = StaqWalletConfig(
     language: .en, // or .ar
     merchantIdentifier: "merchant-identifier",
-    walletEnv: .production // or .development
+    walletEnv: .production, // or .development
+    kycEnv: .release // or .debug
 )
 
 StaqWalletManager.initialize(withConfig: config)
 ```
+
+**KYC Environment Options**
+
+- `.debug`: Use this when running the debug version of your app.
+- `.release`: Use this for production or release builds.
+
 
 **Step 2 â€“ Start the Wallet Flow**
 

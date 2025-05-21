@@ -1,0 +1,35 @@
+{
+    "version": "2.1",
+    "contract": {
+        "customer": "StaqTechnologies(DIFC)Ltd_Production",
+        "expiration": {
+            "day": 20,
+            "month": 9,
+            "year": 2025
+        },
+        "hwids": [
+            "AxPoFqWX5lK18pID"
+        ],
+        "products": [
+            "iface"
+        ],
+        "idkit": {
+            "database_size": 0,
+            "max_client_connections": 0
+        },
+        "dot": {
+            "mobile": {
+                "face": {
+                    "enabled": true
+                },
+                "document": {
+                    "enabled": true
+                },
+                "faceLite": {
+                    "enabled": true
+                }
+            }
+        }
+    },
+    "contract_signature": "CBmHnkifOVaAp8GOGFXNV4OPow88y26srJdR5ttdjH578Vam9qq8hbvky/AuNOpxXTPeVsnVZbFkGSwaAlPxBQytigBOGH41gXvh+FESVxJJAT/lkt7YqSGSKlrnwqjex3TUKEMKAEZSrrlSooJ9hfrELCW5wNRKtJNPOQfZvWs="
+}
