@@ -10863,8 +10863,8 @@
           },
           {
             "kind": "Var",
-            "name": "production",
-            "printedName": "production",
+            "name": "debug",
+            "printedName": "debug",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -10894,8 +10894,45 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10StaqWallet0A14KYCEnvironmentO10productionyA2CmF",
-            "mangledName": "$s10StaqWallet0A14KYCEnvironmentO10productionyA2CmF",
+            "usr": "s:10StaqWallet0A14KYCEnvironmentO5debugyA2CmF",
+            "mangledName": "$s10StaqWallet0A14KYCEnvironmentO5debugyA2CmF",
+            "moduleName": "StaqWallet"
+          },
+          {
+            "kind": "Var",
+            "name": "release",
+            "printedName": "release",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StaqWallet.StaqKYCEnvironment.Type) -> StaqWallet.StaqKYCEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StaqKYCEnvironment",
+                    "printedName": "StaqWallet.StaqKYCEnvironment",
+                    "usr": "s:10StaqWallet0A14KYCEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StaqWallet.StaqKYCEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StaqKYCEnvironment",
+                        "printedName": "StaqWallet.StaqKYCEnvironment",
+                        "usr": "s:10StaqWallet0A14KYCEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10StaqWallet0A14KYCEnvironmentO7releaseyA2CmF",
+            "mangledName": "$s10StaqWallet0A14KYCEnvironmentO7releaseyA2CmF",
             "moduleName": "StaqWallet"
           },
           {
@@ -12842,6 +12879,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
       },
       {
         "kind": "TypeDecl",
@@ -22868,14 +22912,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3113,
+      "offset": 3110,
       "length": 1045,
       "value": "\"Bearer aW5rXzZmYWRkYTY4YjBkNGI5ZjRiNGJjOWE1ZWZkM2ZjODQ4Omluc19leUp0WlhSaFpHRjBZU0k2SUhzaVkyeHBaVzUwSWpvZ2V5SnBaQ0k2SUNJMk16a3lNV1UwTlMwMFltTmhMVFE1TnpBdFlUYzRZeTAzTkRNMFlXVXdZekJsWkdJaUxDQWlibUZ0WlNJNklDSlRkR0Z4SUZSbFkyaHViMnh2WjJsbGN5QW9SRWxHUXlrZ1RIUmtJbjBzSUNKc2FXTmxibk5sWDJOMWMzUnZiVjl3Y205d1pYSjBhV1Z6SWpvZ2V5SXZZMjl1ZEhKaFkzUXZaRzkwTDJScGN5OWxibUZpYkdWa0lqb2dJblJ5ZFdVaUxDQWlMMk52Ym5SeVlXTjBMMlJ2ZEM5a2FYTXZabVZoZEhWeVpYTXZjbVZoYkZScGJXVlVjbUZ1YzJGamRHbHZibEpsY0c5eWRHbHVaMUpsY1hWcGNtVmtJam9nSW5SeWRXVWlMQ0FpTDJOdmJuUnlZV04wTDJSdmRDOXlaV0ZzVkdsdFpWUnlZVzV6WVdOMGFXOXVVbVZ3YjNKMGFXNW5VbVZ4ZFdseVpXUWlPaUFpZEhKMVpTSXNJQ0l2WTI5dWRISmhZM1F2Wkc5MEwyUnBjeTlzYVdObGJuTmxWbVZ5YzJsdmJpSTZJQ0l6SW4wc0lDSmpjbVZoZEdsdmJsOTBhVzFsYzNSaGJYQWlPaUFpTURndk1UWXZNakF5TkNBeE9EbzBPRG8wTnlCVlZFTWlMQ0FpZG1Gc2FXUmZkRzhpT2lBaU1USXZNekF2TWpBeU5DQXdNRG93TURvd01DQlZWRU1pZlN3Z0luTnBaMjVoZEhWeVpTSTZJQ0pWYjIxTVdUVkxNMEpSVTNNMmJtcFBPWFphTDFwaGFWb3ZSUzg1WkZCRlJsTlBWV00yTlhRelpYUlVia3BIWTBkTmEzZDVUbGRJVFRsSlVtNW1WakJGVW1KbGQxSlhXQzgyZEVGcU4waFdSWE4zU25CRFVUMDlJbjA9\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4208,
+      "offset": 4202,
       "length": 35,
       "value": "\"https:\/\/identity.baas.alahli.com\/\""
     },
@@ -23064,14 +23108,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/UI\/WalletPayViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 769,
+      "offset": 784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/WalletPay\/UI\/WalletPayViewState.swift",
       "kind": "BooleanLiteral",
-      "offset": 1141,
+      "offset": 1156,
       "length": 5,
       "value": "false"
     },
@@ -25540,637 +25584,637 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 737,
       "length": 14,
       "value": "\"AngryMadFace\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 877,
       "length": 10,
       "value": "\"ApplePay\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1035,
       "length": 21,
       "value": "\"ArrowRightArrowLeft\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1182,
       "length": 10,
       "value": "\"Asterisk\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1310,
       "length": 6,
       "value": "\"Bank\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1442,
       "length": 10,
       "value": "\"Calendar\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1574,
       "length": 8,
       "value": "\"CardBg\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1724,
       "length": 18,
       "value": "\"ChatMessageEmpty\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1862,
       "length": 7,
       "value": "\"Check\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1997,
       "length": 11,
       "value": "\"CheckMark\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2148,
       "length": 17,
       "value": "\"ChevronFarRight\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2303,
       "length": 16,
       "value": "\"ChevronLeftMid\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2453,
       "length": 14,
       "value": "\"ChevronRight\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2585,
       "length": 6,
       "value": "\"Copy\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2713,
       "length": 8,
       "value": "\"Credit\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2849,
       "length": 11,
       "value": "\"CreditPay\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2980,
       "length": 7,
       "value": "\"Cross\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3127,
       "length": 17,
       "value": "\"CustomerSupport\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3276,
       "length": 13,
       "value": "\"DashedArror\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3417,
       "length": 11,
       "value": "\"DoneCheck\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3558,
       "length": 12,
       "value": "\"Evaluation\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3692,
       "length": 8,
       "value": "\"Freeze\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3830,
       "length": 12,
       "value": "\"GradientBg\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3980,
       "length": 16,
       "value": "\"HappySmileFace\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4114,
       "length": 6,
       "value": "\"Home\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4246,
       "length": 10,
       "value": "\"HomeBank\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4392,
       "length": 15,
       "value": "\"InDevelopment\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4547,
       "length": 17,
       "value": "\"InDevelopmentBg\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4682,
       "length": 6,
       "value": "\"Info\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4818,
       "length": 12,
       "value": "\"JordanFlag\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4948,
       "length": 6,
       "value": "\"Lock\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5088,
       "length": 14,
       "value": "\"LockUnlocked\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5224,
       "length": 8,
       "value": "\"Logout\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5368,
       "length": 15,
       "value": "\"MadaColorLogo\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5509,
       "length": 10,
       "value": "\"MadaLogo\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5635,
       "length": 5,
       "value": "\"Mic\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5758,
       "length": 6,
       "value": "\"More\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5888,
       "length": 9,
       "value": "\"NeoLogo\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6025,
       "length": 11,
       "value": "\"NusukLogo\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6152,
       "length": 5,
       "value": "\"PIN\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6277,
       "length": 7,
       "value": "\"Phone\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6412,
       "length": 11,
       "value": "\"PhoneCall\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6541,
       "length": 6,
       "value": "\"Plus\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6673,
       "length": 10,
       "value": "\"Question\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6807,
       "length": 9,
       "value": "\"Setting\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6936,
       "length": 7,
       "value": "\"Slash\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7059,
       "length": 5,
       "value": "\"Sun\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7192,
       "length": 11,
       "value": "\"TapAndPay\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7321,
       "length": 6,
       "value": "\"Time\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7445,
       "length": 6,
       "value": "\"User\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7579,
       "length": 11,
       "value": "\"UserCheck\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7712,
       "length": 8,
       "value": "\"Wallet\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7878,
       "length": 26,
       "value": "\"WalletMainHeaderCardIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8022,
       "length": 6,
       "value": "\"Wind\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8154,
       "length": 10,
       "value": "\"Withdraw\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8294,
       "length": 12,
       "value": "\"creditIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8448,
       "length": 18,
       "value": "\"deleteNumberIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8608,
       "length": 18,
       "value": "\"faceVerification\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8762,
       "length": 15,
       "value": "\"filterBarIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8909,
       "length": 13,
       "value": "\"historyIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9060,
       "length": 16,
       "value": "\"inputClearIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9214,
       "length": 16,
       "value": "\"inputValidIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9390,
       "length": 27,
       "value": "\"localWithdrawConfirmation\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9555,
       "length": 16,
       "value": "\"locationMarker\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9697,
       "length": 10,
       "value": "\"madaIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9829,
       "length": 8,
       "value": "\"mcIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9969,
       "length": 13,
       "value": "\"mcSmallIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10136,
       "length": 24,
       "value": "\"navigationViewBackIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10306,
       "length": 20,
       "value": "\"onboardingBetaIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10476,
       "length": 22,
       "value": "\"onboardingFaceIdIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10646,
       "length": 21,
       "value": "\"onboardingNoticIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10833,
       "length": 30,
       "value": "\"onboardingSettingsFaceIdIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11017,
       "length": 24,
       "value": "\"onboardingSettingsIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11175,
       "length": 14,
       "value": "\"packagesIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11337,
       "length": 21,
       "value": "\"passCodeVewMainIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11508,
       "length": 22,
       "value": "\"passwordVerification\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11686,
       "length": 25,
       "value": "\"phoneCodeCloseSheetIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11859,
       "length": 21,
       "value": "\"phoneCodeSearchIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12022,
       "length": 18,
       "value": "\"phoneIsValidIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12184,
       "length": 19,
       "value": "\"pickPhoneCodeIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12329,
       "length": 10,
       "value": "\"plusIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12467,
       "length": 11,
       "value": "\"sadadIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12606,
       "length": 11,
       "value": "\"sarieIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12757,
       "length": 17,
       "value": "\"saudiArabiaIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 12910,
       "length": 15,
       "value": "\"searchBarIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13065,
       "length": 17,
       "value": "\"searchLocations\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13244,
       "length": 28,
       "value": "\"securitySettingsFaceIDIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13428,
       "length": 25,
       "value": "\"statusScreenFailureIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13609,
       "length": 25,
       "value": "\"statusScreenSuccessIcon\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13778,
       "length": 19,
       "value": "\"videoVerification\""
     },
     {
-      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/Release-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/dmitriylunev\/Library\/Developer\/Xcode\/DerivedData\/StaqWallet-cckrxglfwafgpvgxtblpflelwhvn\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphonesimulator\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 13923,
       "length": 10,
