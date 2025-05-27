@@ -24,13 +24,9 @@ import SwiftUI
 import SystemConfiguration
 import TrustlessSDK
 import UIKit
-import WebKit
 import _Concurrency
-import _PassKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
-
-
 
 
 
@@ -232,7 +228,6 @@ extension DotFaceCore.FaceQuality : Swift.Encodable {
 
 
 
-
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension DotCore.PointDouble : @retroactive Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
@@ -244,12 +239,10 @@ extension DotCore.PointDouble : Swift.Encodable {
 #endif
 
 
-
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class AppFlowCoordinator : StaqWallet.BaseFlowCoordinator {
   final public func start(forUser user: StaqWallet.StaqWalletUser, withConfig config: StaqWallet.StaqWalletConfig)
   @objc deinit
 }
-
 
 
 
@@ -272,14 +265,10 @@ extension DotDocument.DetectionPosition : Swift.Encodable {
 #endif
 
 
-
 @_hasMissingDesignatedInitializers final public class SecurityService {
   public static func checkSecurity()
   @objc deinit
 }
-
-
-
 
 
 
@@ -447,11 +436,6 @@ public enum StaqKYCEnvironment {
   public var hashValue: Swift.Int {
     get
   }
-}
-@_hasMissingDesignatedInitializers final public class LocalWalletConfig {
-  public static let shared: StaqWallet.LocalWalletConfig
-  final public var isEnabledLocalWallet: Swift.Bool
-  @objc deinit
 }
 public class StaqWalletConfig {
   public init(language: StaqWallet.SupportedLanguage, merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production, kycEnv: StaqWallet.StaqKYCEnvironment = .release)
@@ -654,7 +638,6 @@ extension DotDocument.ImageParameters : Swift.Encodable {
 }
 #endif
 
-
 @_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
   @objc deinit
 }
@@ -699,10 +682,6 @@ extension DotCore.BgraRawImage : Swift.Encodable {
 }
 #endif
 
-extension TrustlessSDK.AccountTransaction {
-  public static func transactionDetails() -> TrustlessSDK.AccountTransaction?
-}
-
 
 
 
@@ -717,7 +696,6 @@ extension DotDocument.DocumentAutoCaptureResult : Swift.Encodable {
   final public func encode(to encoder: any Swift.Encoder) throws
 }
 #endif
-
 
 
 
