@@ -1,5 +1,5 @@
 {
-  "originHash" : "4b274990f4aee9a73d9035fdcfc6302277e284ee8493285cb63b27aa60b7fff5",
+  "originHash" : "bd2f27c2401e58b95b8c95c1a762f7784cb8c45f194908700a4fac96623634b5",
   "pins" : [
     {
       "identity" : "dot-ios-sdk-spm",
@@ -11,12 +11,21 @@
       }
     },
     {
+      "identity" : "posthog-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PostHog/posthog-ios",
+      "state" : {
+        "revision" : "1c2e98eb20aa9218be12a9fded58e22cc8451514",
+        "version" : "3.29.0"
+      }
+    },
+    {
       "identity" : "trustlesssdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/staqio/TrustlessSDK",
       "state" : {
-        "revision" : "0325326baf67a2d73c028eaace53a0a5750898e5",
-        "version" : "0.11.0"
+        "revision" : "58f39d7960ef1c9119dfb82bcc48ed68424ed0ec",
+        "version" : "0.13.0"
       }
     }
   ],

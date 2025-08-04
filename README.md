@@ -15,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.1.4")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.2.0")
 ]
 ```
 
@@ -45,7 +45,6 @@ You **must** call `StaqWalletManager.initialize(withConfig:)` early in your appâ
 
 ```swift
 let config = StaqWalletConfig(
-    language: .en, // or .ar
     merchantIdentifier: "merchant-identifier",
     walletEnv: .production, // or .development
     kycEnv: .release // or .debug
@@ -75,6 +74,7 @@ let userConfig = StaqWalletUser(
 
 StaqWalletManager.start(
     forUser: userConfig,
+    withLanguage: .ar, // or .en
     fromNavigationController: rootNavigationController!
 )
 ```
@@ -87,9 +87,9 @@ Used to configure the SDK during app launch. You must create and pass this confi
 
 | Name                | Type                    | Description                                                 |
 |---------------------|-------------------------|-------------------------------------------------------------|
-| language            | `SupportedLanguage`     | Wallet interface language (e.g. `.en`, `.ar`).              |
 | merchantIdentifier  | `String`                | Apple Pay merchant identifier.                              |
 | walletEnv           | `StaqWalletEnvironment` | SDK operating environment (`.production` or `.development`).|
+| kycEnv              | `StaqKYCEnvironment`    | KYC operating environment (`.release` or `.debug`).         |
 
 ### StaqWalletUser
 
@@ -204,6 +204,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         StaqWalletManager.start(
             forUser: userConfig,
+            withLanguage: .ar, // or .en
             fromNavigationController: navigationController
         )
     }

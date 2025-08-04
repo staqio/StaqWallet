@@ -16,7 +16,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/innovatrics/dot-ios-sdk-spm", exact: "8.4.0"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.13.0")
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.13.0"),
+        .package(url: "https://github.com/PostHog/posthog-ios", exact: "3.29.0")
     ],
     targets: [
         .binaryTarget(
@@ -31,6 +32,7 @@ let package = Package(
                 .product(name: "DotFaceDetectionFast", package: "dot-ios-sdk-spm"),
                 .product(name: "DotFaceExpressionNeutral", package: "dot-ios-sdk-spm"),
                 .product(name: "TrustlessSDK", package: "TrustlessSDK"),
+                .product(name: "PostHog", package: "posthog-ios"),
                 .target(name: "StaqWallet")
             ],
             path: "Sources/StaqWalletTarget",
