@@ -1,10 +1,10 @@
 {
     "version": "2.1",
     "contract": {
-        "customer": "StaqTechnologies(DIFC)Ltd_Production",
+        "customer": "StaqTechnologies(DIFC)Ltd_Demo",
         "expiration": {
-            "day": 20,
-            "month": 9,
+            "day": 6,
+            "month": 11,
             "year": 2025
         },
         "hwids": [
@@ -18,18 +18,34 @@
             "max_client_connections": 0
         },
         "dot": {
+            "evaluation": true,
             "mobile": {
                 "face": {
-                    "enabled": true
+                    "enabled": true,
+                    "features": {
+                        "matching": true,
+                        "passiveLiveness": true,
+                        "eyeGazeLiveness": true
+                    }
                 },
                 "document": {
                     "enabled": true
                 },
+                "nfc": {
+                    "enabled": true
+                },
                 "faceLite": {
+                    "enabled": true
+                },
+                "features": {
+                    "realTimeTransactionReportingEnabled": false,
+                    "realTimeAnalyticsReportingEnabled": true
+                },
+                "palm": {
                     "enabled": true
                 }
             }
         }
     },
-    "contract_signature": "CBmHnkifOVaAp8GOGFXNV4OPow88y26srJdR5ttdjH578Vam9qq8hbvky/AuNOpxXTPeVsnVZbFkGSwaAlPxBQytigBOGH41gXvh+FESVxJJAT/lkt7YqSGSKlrnwqjex3TUKEMKAEZSrrlSooJ9hfrELCW5wNRKtJNPOQfZvWs="
+    "contract_signature": "PGnkzOtcDE2UMWq0WicAHjG51XXFS4u63/MYr0/OiNrPvbsPYWj/yPSC5WPtLYiltd9gDS3ZvmgVbk28HEaBaCZBJY1Z6WVPcpZfL5OGY00YClLDNvCmG44o155m17YPRON6urU5+d2cK1ggt+aPQ95NFQB5Cwfykek8/oRLeyg="
 }
