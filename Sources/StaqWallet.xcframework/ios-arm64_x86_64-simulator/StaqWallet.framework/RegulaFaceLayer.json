@@ -1,0 +1,33 @@
+{
+    "objects": [
+        {
+            "label": {
+                "text": "onboarding.face.capture.message",
+                "position": { "h": 1.0, "v": 1.55 },
+                "background": "#00FFFFFF",
+                "fontColor": "#FF25272B",
+                "fontName": "Inter18pt-Regular",
+                "fontSize": 16,
+                "alignment": "center"
+            }
+        },
+        {
+            "button": {
+                "title": "",
+                "tag": 101,
+                "enabled": true,
+                "alpha": 1,
+                "backLayer": 0,
+                "fontColor": "#FF000000",
+                "background": "#00FFFFFF",
+                "margin": { "end": 0 },
+                "position": { "v": 0.15 },
+                "image": {
+                    "data": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEASURBVHgB7ddbEcIwEEbhXwISIgEJSMABSMABcUAdgBMkIAEJSIAudGnCcOtju+ebyQwMzUPPpAtIAAAAAAAAAAAAAACMyrZdl3btNNyy23vShJ3bde3WfsC+uR5xbF+jCUuqI/1zkso4BwWQVEfa/rjW4xwVSNLvSOU1NndmCiapPx2vkeyz0HFcOV88UlIf59y9D+01kr8mTmGhPhBx3rAZUw5tWyvhzuLYIC4fL18L4RnHH6uN6nk0V2B7vQ+RRaSPcVxWHSkpEPsP5jf/7XRkBfxmsx+DftPrP67PChRpaBzXqI40WUc95slawzXd3iwAAAAAAAAAAAAAAMbjBrdKaKj37rK7AAAAAElFTkSuQmCC",
+                    "placement": "start",
+                    "padding": 0
+                }
+            }
+        }
+    ]
+}

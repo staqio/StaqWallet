@@ -15,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.2.1")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.3.0")
 ]
 ```
 
@@ -46,18 +46,11 @@ You **must** call `StaqWalletManager.initialize(withConfig:)` early in your appâ
 ```swift
 let config = StaqWalletConfig(
     merchantIdentifier: "merchant-identifier",
-    walletEnv: .production, // or .development
-    kycEnv: .release // or .debug
+    walletEnv: .production // or .development
 )
 
 StaqWalletManager.initialize(withConfig: config)
 ```
-
-**KYC Environment Options**
-
-- `.debug`: Use this when running the debug version of your app.
-- `.release`: Use this for production or release builds.
-
 
 **Step 2 â€“ Start the Wallet Flow**
 
@@ -89,7 +82,6 @@ Used to configure the SDK during app launch. You must create and pass this confi
 |---------------------|-------------------------|-------------------------------------------------------------|
 | merchantIdentifier  | `String`                | Apple Pay merchant identifier.                              |
 | walletEnv           | `StaqWalletEnvironment` | SDK operating environment (`.production` or `.development`).|
-| kycEnv              | `StaqKYCEnvironment`    | KYC operating environment (`.release` or `.debug`).         |
 
 ### StaqWalletUser
 
@@ -183,7 +175,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
 
         let config = StaqWalletConfig(
-            language: .en, // or .ar
             merchantIdentifier: "merchant-identifier",
             walletEnv: .production // or .development
         )

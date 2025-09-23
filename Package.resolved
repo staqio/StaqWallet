@@ -1,13 +1,31 @@
 {
-  "originHash" : "bd2f27c2401e58b95b8c95c1a762f7784cb8c45f194908700a4fac96623634b5",
+  "originHash" : "7d8efadb21e4979e09e3c2df078747261d03eeed864d4d67cc432fbda34efa50",
   "pins" : [
     {
-      "identity" : "dot-ios-sdk-spm",
+      "identity" : "documentreaderbounds-swift-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/innovatrics/dot-ios-sdk-spm",
+      "location" : "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package",
       "state" : {
-        "revision" : "4795f4a9f1b8991f729a0c332049bee9e2712807",
-        "version" : "8.4.0"
+        "revision" : "fdc4394a74116ff30f8f86001bb02f7d6a6bcf05",
+        "version" : "8.2.13454"
+      }
+    },
+    {
+      "identity" : "facecorebasic-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package",
+      "state" : {
+        "revision" : "39669a7d9030e065a126ad713621cf0eadfba209",
+        "version" : "7.1.1501"
+      }
+    },
+    {
+      "identity" : "facesdk-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/regulaforensics/FaceSDK-Swift-Package",
+      "state" : {
+        "revision" : "2bf87a90043f2b1922c5c281df04b6c73fd72100",
+        "version" : "7.1.2940"
       }
     },
     {
@@ -20,12 +38,21 @@
       }
     },
     {
+      "identity" : "regulacommon-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git",
+      "state" : {
+        "revision" : "fd51eb815e5dc5d4ef7c896ba992e7f4e163d66e",
+        "version" : "8.2.1410"
+      }
+    },
+    {
       "identity" : "trustlesssdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/staqio/TrustlessSDK",
       "state" : {
-        "revision" : "58f39d7960ef1c9119dfb82bcc48ed68424ed0ec",
-        "version" : "0.13.0"
+        "revision" : "317ca05d728e1d42195163f20cd86eacffba338e",
+        "version" : "0.13.1"
       }
     }
   ],

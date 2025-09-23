@@ -1,0 +1,43 @@
+{
+    "objects": [
+        {
+            "label": {
+                "text": "onboarding.passport.scanning.title",
+                "position": {
+                    "h": 1.0,
+                    "v": 0.35
+                },
+                "background": "#00FFFFFF",
+                "fontColor": "#FFFFFFFF",
+                "fontName": "Inter18pt-Medium",
+                "fontSize": 20,
+                "alignment": "center",
+                "padding": {
+                    "start": 20,
+                    "end": 20
+                }
+            }
+        },
+        {
+            "label": {
+                "text": "onboarding.passport.scanning.message",
+                "position": {
+                    "h": 1,
+                    "v": 0.5
+                },
+                "background": "#338C714E",
+                "fontColor": "#FFC7AC8B",
+                "fontName": "Inter18pt-Regular",
+                "fontSize": 14,
+                "alignment": "center",
+                "borderRadius": 8,
+                "padding": {
+                    "start": 10,
+                    "end": 10,
+                    "top": 8,
+                    "bottom": 8
+                }
+            }
+        }
+    ]
+}
