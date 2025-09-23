@@ -15,32 +15,37 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/innovatrics/dot-ios-sdk-spm", exact: "8.4.0"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.13.0"),
-        .package(url: "https://github.com/PostHog/posthog-ios", exact: "3.29.0")
+        .package(url: "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package", exact: "8.2.13454"),
+        .package(url: "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package", exact: "7.1.1501"),
+        .package(url: "https://github.com/regulaforensics/FaceSDK-Swift-Package", exact: "7.1.2940"),
+        .package(url: "https://github.com/PostHog/posthog-ios", .upToNextMajor(from: "3.29.0")),
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "0.13.1")
     ],
     targets: [
         .binaryTarget(
             name: "StaqWallet",
             path: "Sources/StaqWallet.xcframework"
         ),
+        .binaryTarget(
+            name: "DocumentReader",
+            path: "Sources/DocumentReader.xcframework"
+        ),
         .target(
             name: "StaqWalletTarget",
             dependencies: [
-                .product(name: "DotDocument", package: "dot-ios-sdk-spm"),
-                .product(name: "DotFaceBackgroundUniformity", package: "dot-ios-sdk-spm"),
-                .product(name: "DotFaceDetectionFast", package: "dot-ios-sdk-spm"),
-                .product(name: "DotFaceExpressionNeutral", package: "dot-ios-sdk-spm"),
-                .product(name: "TrustlessSDK", package: "TrustlessSDK"),
+                .product(name: "Bounds", package: "documentreaderbounds-swift-package"),
+                .target(name: "DocumentReader"),
+                .product(name: "FaceCoreBasic", package: "facecorebasic-swift-package"),
+                .product(name: "FaceSDK", package: "facesdk-swift-package"),
                 .product(name: "PostHog", package: "posthog-ios"),
+                .product(name: "TrustlessSDK", package: "TrustlessSDK"),
                 .target(name: "StaqWallet")
             ],
             path: "Sources/StaqWalletTarget",
             sources: ["StaqWalletEmpty.m"],
             publicHeadersPath: "Sources",
             linkerSettings: [
-                .linkedFramework("PassKit"),
-                .linkedFramework("StaqWallet")
+                .linkedFramework("PassKit")
             ]
         )
     ]

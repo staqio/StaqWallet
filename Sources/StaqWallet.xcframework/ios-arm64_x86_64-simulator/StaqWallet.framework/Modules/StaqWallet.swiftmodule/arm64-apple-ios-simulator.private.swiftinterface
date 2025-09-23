@@ -1,19 +1,15 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-bare-slash-regex -module-name StaqWallet
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AudioToolbox
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CommonCrypto
 import DeveloperToolsSupport
-import DotCore
-import DotDocument
-import DotFaceBackgroundUniformity
-import DotFaceCore
-import DotFaceDetectionFast
-import DotFaceExpressionNeutral
+import DocumentReader
+import FaceSDK
 import Foundation
 import LocalAuthentication
 import NetworkExtension
@@ -34,6 +30,26 @@ import _SwiftConcurrencyShims
 
 
 
+public struct StaqWalletConfig {
+  public init(merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production)
+}
+public enum StaqWalletEnvironment {
+  case development
+  case production
+  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct StaqWalletUser {
+  public let userId: Swift.String
+  public let secret: Swift.String
+  public let userType: Swift.String
+  public let nationalID: Swift.String
+  public let email: Swift.String
+  public init(userId: Swift.String, secret: Swift.String, userType: Swift.String, nationalID: Swift.String, email: Swift.String)
+}
 public enum SupportedLanguage : Swift.String {
   case en
   case ar
@@ -47,47 +63,6 @@ public enum SupportedLanguage : Swift.String {
 
 
 
-@_hasMissingDesignatedInitializers public class KycSDKApi {
-  public var sdkErrors: StaqWallet.KycSDKErrors {
-    get
-  }
-  public var sdkState: StaqWallet.KycSDKState {
-    get
-  }
-  public func similarity() throws -> Swift.Bool
-  public func similarityAsync(completion: @escaping (Swift.Result<Swift.Bool, StaqWallet.BaeError>) -> Swift.Void)
-  public func getSelfiePhoto() throws -> StaqWallet.ImageCrop
-  public func getDocumentPortrait() throws -> StaqWallet.ImageCrop
-  public func getDocumentPortraitAsync(completion: @escaping (Swift.Result<StaqWallet.ImageCrop, StaqWallet.BaeError>) -> Swift.Void)
-  public func getDocumentBackCrop() throws -> StaqWallet.ImageCrop
-  public func getDocumentBackCropAsync(completion: @escaping (Swift.Result<StaqWallet.ImageCrop, StaqWallet.BaeError>) -> Swift.Void)
-  public func getDocumentFrontCrop() throws -> StaqWallet.ImageCrop
-  public func getDocumentFrontCropAsync(completion: @escaping (Swift.Result<StaqWallet.ImageCrop, StaqWallet.BaeError>) -> Swift.Void)
-  public func getDocumentFields() throws -> StaqWallet.GetCustomerResponse
-  public func getDocument() throws -> StaqWallet.KYCDocumentData
-  public func getDocumentFieldsAsync(completion: @escaping (Swift.Result<StaqWallet.GetCustomerResponse, StaqWallet.BaeError>) -> Swift.Void)
-  public func inspectDocuments() throws -> StaqWallet.DocumentInspectionResponse
-  public func inspectDocumentsAsync(completion: @escaping (Swift.Result<StaqWallet.DocumentInspectionResponse, StaqWallet.BaeError>) -> Swift.Void)
-  public func awaitForQueueToFinish()
-  public func removeCustomerID()
-  @objc deinit
-}
-public struct KycSDKErrors {
-  public var frontScanError: StaqWallet.BaeError?
-  public var backScanError: StaqWallet.BaeError?
-  public var selfieCaptureError: StaqWallet.BaeError?
-  public var initializationError: StaqWallet.BaeError?
-}
-public struct KycSDKState {
-  public var frontScan: Foundation.Data?
-  public var backScan: Foundation.Data?
-  public var selfieScan: Foundation.Data?
-  public var video: Foundation.URL?
-}
-public struct KYCDocumentData : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 
 @_hasMissingDesignatedInitializers final public class StaqWalletManager {
   public static func initialize(withConfig config: StaqWallet.StaqWalletConfig)
@@ -98,82 +73,69 @@ public struct KYCDocumentData : Swift.Codable {
 
 
 
-@_hasMissingDesignatedInitializers public class BaeError : Foundation.LocalizedError {
-  final public var code: StaqWallet.BaeErrorCodes
-  final public var message: Swift.String
-  public var errorDescription: Swift.String? {
+
+extension Swift.Array {
+  public func prefixThrough(_ index: Swift.Int) -> [Element]
+}
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.Card : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
+}
+#else
+extension TrustlessSDK.Card : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#else
+extension TrustlessSDK.CardTransaction : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
+  public var id: Swift.String {
     get
   }
-  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
 }
-public enum BaeErrorCodes {
-  case UNKNOWN_ERROR
-  case NO_FILE_SELECTED
-  case CAMERA_NOT_FOUND
-  case NOT_ABLE_TO_RECORD_VIDEO
-  case NOT_ABLE_TO_READ_FILE
-  case NOT_ABLE_TO_MAKE_REQUEST
-  case VIDEO_EXCEEDS_LENGTH
-  case NOT_INITIALIZED
-  case NO_CARD_CORNERS_DETECTED
-  case PAGE_DOESNT_MATCH_DOCUMENT_TYPE_OF_PREVIOUS_PAGE
-  case NO_FACE_FOUND
-  case USER_DID_NOT_SCAN_HIS_FACE
-  case TIMEOUT
-  case CANCELED
-  public static func == (a: StaqWallet.BaeErrorCodes, b: StaqWallet.BaeErrorCodes) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+#else
+extension TrustlessSDK.TrustlessError : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+}
+#endif
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func endEditing()
+  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
     get
   }
 }
-
-extension DotFaceCore.FaceAttribute : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+extension UIKit.UIFont {
+  public static func registerCustomFonts()
+  public static func displayAllFonts()
 }
-extension DotFaceCore.FaceAspects : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+extension UIKit.UIFont {
+  public static func registerFont(named filename: Swift.String, bundle: Foundation.Bundle)
 }
-extension DotFaceCore.FaceImageQuality : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
 }
-extension DotFaceCore.HeadPoseAttribute : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
+    get
+    set
+  }
 }
-extension DotFaceCore.HeadPose : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotFaceCore.Wearables : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotFaceCore.Glasses : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotFaceCore.Expression : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotFaceCore.EyesExpression : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotFaceCore.FaceQuality : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-
-
-
-
-
-
-
-
-extension DotCore.PointDouble : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-
-
-
-
-
 
 
 
@@ -208,6 +170,7 @@ extension DotCore.PointDouble : @retroactive Swift.Encodable {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B19PayDetailsModalViewV4bodyQrvp", 0) __
 }
 public enum WalletPayViewType {
@@ -224,6 +187,7 @@ public enum WalletPayViewType {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B7PayViewV4bodyQrvp", 0) __
 }
 
@@ -253,6 +217,7 @@ final public class WalletPayViewState : Foundation.ObservableObject {
     set
   }
   public init(isSelected: Swift.Bool = false, balance: Swift.Double? = nil)
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -286,9 +251,18 @@ extension StaqWallet.StaqWalletPay {
     public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Swift.Double, feesAmount: Swift.Double? = nil, taxAmount: Swift.Double? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:])
   }
 }
-extension DotDocument.DetectionPosition : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @_hasMissingDesignatedInitializers final public class SecurityService {
@@ -299,187 +273,8 @@ extension DotDocument.DetectionPosition : @retroactive Swift.Encodable {
 
 
 
-public enum StaqKYCEnvironment {
-  case sandbox
-  case debug
-  case release
-  public static func == (a: StaqWallet.StaqKYCEnvironment, b: StaqWallet.StaqKYCEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct StaqWalletConfig {
-  public init(merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production, kycEnv: StaqWallet.StaqKYCEnvironment = .release)
-}
-public enum StaqWalletEnvironment {
-  case development
-  case production
-  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct StaqWalletUser {
-  public let userId: Swift.String
-  public let secret: Swift.String
-  public let userType: Swift.String
-  public let nationalID: Swift.String
-  public let email: Swift.String
-  public init(userId: Swift.String, secret: Swift.String, userType: Swift.String, nationalID: Swift.String, email: Swift.String)
-}
-public struct DocumentInspectionResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct FaceResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum ErrorCode : Swift.Codable {
-  case noCorners
-  case faceDoesNotMatchPreviousDocument
-  case networkError
-  public static func == (a: StaqWallet.ErrorCode, b: StaqWallet.ErrorCode) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct GetCustomerResponse : Swift.Codable {
-  public let customer: StaqWallet.Customer
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Customer : Swift.Codable {
-  public let age: StaqWallet.BioMetricMultiValueAttribute?
-  public let gender: StaqWallet.BioMetricMultiValueAttribute?
-  public let givenNames: StaqWallet.MultiValueAttribute?
-  public let surname: StaqWallet.MultiValueAttribute?
-  public let fullName: StaqWallet.MultiValueAttribute?
-  public let dateOfBirth: StaqWallet.MultiValueAttribute?
-  public let personalNumber: StaqWallet.MultiValueAttribute?
-  public let citizenship: StaqWallet.MultiValueAttribute?
-  public let nationality: StaqWallet.MultiValueAttribute?
-  public let document: StaqWallet.CustomerDocumentLinks?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CustomerDocumentLinks : Swift.Codable {
-  public let type: StaqWallet.DocumentTypeCustomer?
-  public let pageTypes: [Swift.String]?
-  public let dateOfIssue: StaqWallet.MultiValueAttribute?
-  public let dateOfExpiry: StaqWallet.MultiValueAttribute?
-  public let documentNumber: StaqWallet.MultiValueAttribute?
-  public let issuingAuthority: StaqWallet.MultiValueAttribute?
-  public let additionalTexts: [Swift.String : StaqWallet.MultiValueAttributeWithoutMrz]?
-  public let mrz: StaqWallet.Mrz?
-  public let links: StaqWallet.CustomerDocumentLinksCustomerDocumentLinks
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CustomerDocumentLinksCustomerDocumentLinks : Swift.Codable {
-  public let portrait: Swift.String?
-  public let ghostPortrait: Swift.String?
-  public let signature: Swift.String?
-  public let fingerprint: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct DocumentTypeCustomer : Swift.Codable {
-  public let country: Swift.String?
-  public let edition: Swift.String?
-  public let type: Swift.String?
-  public let machineReadableTravelDocument: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct BioMetricMultiValueAttribute : Swift.Codable {
-  public let visualZone: Swift.String?
-  public let mrz: Swift.String?
-  public let selfie: Swift.String?
-  public let documentPortrait: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct MultiValueAttributeWithoutMrz : Swift.Codable {
-  public let visualZone: Swift.String?
-  public let barcode: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct MultiValueAttribute : Swift.Codable {
-  public let mrz: Swift.String?
-  public let visualZone: Swift.String?
-  public let barcode: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Mrz : Swift.Codable {
-  public let td1: StaqWallet.Td?
-  public let td2: StaqWallet.Td?
-  public let td3: StaqWallet.Td?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Td : Swift.Codable {
-  public let documentCode: Swift.String
-  public let issuingAuthority: Swift.String
-  public let surname: Swift.String
-  public let givenNames: Swift.String
-  public let documentNumber: Swift.String
-  public let nationality: Swift.String
-  public let dateOfBirth: Swift.String
-  public let gender: Swift.String
-  public let dateOfExpiry: Swift.String
-  public let optionalDataFirstLine: Swift.String?
-  public let optionalDataSecondLine: Swift.String?
-  public let personalNumberOrOptionalDataSecondLine: Swift.String?
-  public let checkDigitsValidity: StaqWallet.Td1MrzCheckValidity
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Td1MrzCheckValidity : Swift.Codable {
-  public let documentNumberCheckDigitValid: Swift.Bool
-  public let dateOfBirthCheckDigitValid: Swift.Bool
-  public let dateOfExpiryCheckDigitValid: Swift.Bool
-  public let compositeCheckDigitValid: Swift.Bool
-  public let personalNumberCheckDigitValid: Swift.Bool?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct ImageCrop : Swift.Codable {
-  public let data: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CreateFaceResponse : Swift.Codable {
-  public let id: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct FaceSimilarityResponse : Swift.Codable {
-  public let score: Swift.Double
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct CreateTemplate : Swift.Codable {
-  public let data: Swift.String
-  public let version: Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 
-extension DotDocument.DocumentDetector.Document : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
 
-extension DotDocument.ImageParameters : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
 
 @_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
   @objc deinit
@@ -491,6 +286,7 @@ extension DotDocument.ImageParameters : @retroactive Swift.Encodable {
   @_Concurrency.MainActor @preconcurrency public static let defaultGradient: SwiftUICore.Gradient
   @_Concurrency.MainActor @preconcurrency public func body(content: StaqWallet.Shimmer.Content) -> some SwiftUICore.View
   
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
 }
 extension SwiftUICore.View {
@@ -502,79 +298,25 @@ extension SwiftUICore.View {
 }
 
 
-extension Swift.Array {
-  public func prefixThrough(_ index: Swift.Int) -> [Element]
-}
-extension UIKit.UIFont {
-  public static func registerCustomFonts()
-  public static func displayAllFonts()
-}
-extension UIKit.UIFont {
-  public static func registerFont(named filename: Swift.String, bundle: Foundation.Bundle)
-}
-extension UIKit.UINavigationController {
-  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-}
-extension TrustlessSDK.Card : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
-}
-extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
-}
-extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  public typealias ID = Swift.String
-}
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
-    get
-    set
-  }
-}
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func endEditing()
-  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
-    get
-  }
-}
-
-
-
-extension DotCore.ImageSize : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-extension DotCore.BgraRawImage : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
 
 
 
 
 
 
-extension DotDocument.DocumentAutoCaptureResult : @retroactive Swift.Encodable {
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
 
 
 
+
+
+
+extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
+extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
 extension StaqWallet.SupportedLanguage : Swift.Equatable {}
 extension StaqWallet.SupportedLanguage : Swift.Hashable {}
 extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
-extension StaqWallet.BaeErrorCodes : Swift.Equatable {}
-extension StaqWallet.BaeErrorCodes : Swift.Hashable {}
 extension StaqWallet.WalletPayDetailsModalView : Swift.Sendable {}
 extension StaqWallet.WalletPayViewType : Swift.Equatable {}
 extension StaqWallet.WalletPayViewType : Swift.Hashable {}
 extension StaqWallet.WalletPayView : Swift.Sendable {}
-extension StaqWallet.StaqKYCEnvironment : Swift.Equatable {}
-extension StaqWallet.StaqKYCEnvironment : Swift.Hashable {}
-extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
-extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
-extension StaqWallet.ErrorCode : Swift.Equatable {}
-extension StaqWallet.ErrorCode : Swift.Hashable {}
 extension StaqWallet.Shimmer : Swift.Sendable {}

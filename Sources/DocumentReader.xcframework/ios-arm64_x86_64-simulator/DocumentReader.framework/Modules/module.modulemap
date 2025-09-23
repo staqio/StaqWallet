@@ -1,0 +1,23 @@
+//
+//  RGLDocumentReader.modulemap
+//  DocumentReader
+//
+//  Created by Serge Rylko on 18.04.25.
+//  Copyright © 2025 Regula. All rights reserved.
+//
+
+framework module DocumentReader {
+    umbrella header "DocumentReader.h"
+
+    export *
+    module * { export * }
+
+    explicit module Private {
+
+        header "RGLFunctionality+Private.h"
+        header "RGLCustomization+Private.h"
+        header "RGLProcessParams+Private.h"
+
+        export *
+    }
+}
