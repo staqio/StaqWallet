@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		U9FEA4cIrk20q1FRRNogyRnq0SY=
+		3lWD7U3zkKiDOWY4ZeOdA44Nbqk=
 		</data>
 		<key>Base.xcconfig</key>
 		<data>
@@ -32,9 +32,37 @@
 		<data>
 		VxYRnHBnOnp/2jvwA0u20H3AwQE=
 		</data>
+		<key>IBMPlexSansArabic-Bold.ttf</key>
+		<data>
+		mXX91LZGG/Rb4bXx0EpELUQ6r+I=
+		</data>
+		<key>IBMPlexSansArabic-ExtraLight.ttf</key>
+		<data>
+		GZiAFcUUAB/eY7MHH65OWMRU1jk=
+		</data>
+		<key>IBMPlexSansArabic-Light.ttf</key>
+		<data>
+		HP8ucTFXdP5UCgS0zRV235uCVZw=
+		</data>
+		<key>IBMPlexSansArabic-Medium.ttf</key>
+		<data>
+		pNZpDSX78ICEIrcZgZ5TktEh03w=
+		</data>
+		<key>IBMPlexSansArabic-Regular.ttf</key>
+		<data>
+		HObEuw+ynYIuw3TpvNFOVdnXlYM=
+		</data>
+		<key>IBMPlexSansArabic-SemiBold.ttf</key>
+		<data>
+		NqytGwG2dxadV47ndsttQjTnTq4=
+		</data>
+		<key>IBMPlexSansArabic-Thin.ttf</key>
+		<data>
+		3i5xzvzfgaSZb61RnrvFK1qkEPs=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		2npRhSOu0CAGIgtO89itb8ioHJY=
+		bQJxb24IWhFm/x9qSLfa8g8CMmc=
 		</data>
 		<key>Inter-Black.ttf</key>
 		<data>
@@ -110,43 +138,43 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8LsNrnHvV9YzObpHT3X0By6+oE=
+		sHqJvo4J3JrWhlRqxRmKpgTdmHQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dnkWiB/AldmXQQn4IdKjV3v/3wc=
+		e6p+EjQiS9MBRUs/xEbZ0L7yYnI=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HbReypWh10Z5g6GQdruX1+w+J/Q=
+		XuUziqrZ/SBaVjzWwdw5iZXCe+E=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dnkWiB/AldmXQQn4IdKjV3v/3wc=
+		e6p+EjQiS9MBRUs/xEbZ0L7yYnI=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4cEclvIyBZFDwDjTOxSn7uSFd2I=
+		RDo867VPzzqETDqA0spfRGLyg7U=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i8LsNrnHvV9YzObpHT3X0By6+oE=
+		sHqJvo4J3JrWhlRqxRmKpgTdmHQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qQrq5e5kISFGptg8dK9vd4C9qO8=
+		c/m5FAKFGP6P+3NjhpDheBHboXQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		a1KNsfahlXtn/3Xw+F9zI2tZMAM=
+		QoqbNPM7ttcj56slqQExmbRt47E=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qQrq5e5kISFGptg8dK9vd4C9qO8=
+		c/m5FAKFGP6P+3NjhpDheBHboXQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5R27M8YUsVFa+e0W40QVOfPvaCY=
+		Y2ndl33FlDWXZtCF64ELV1fWhIo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -154,11 +182,11 @@
 		</data>
 		<key>RegulaDocumentLayer.json</key>
 		<data>
-		ktpFxWAxhAWKBydLL9L2jLRD3bg=
+		MiUn3fXfH8p1heZtgKpPTwKti+M=
 		</data>
 		<key>RegulaFaceLayer.json</key>
 		<data>
-		cY8zJPwVuKeU9clxL3ZmHBnfO3A=
+		n9SDyJP0T1sVNG77mbHmZ19Rmqw=
 		</data>
 		<key>ReleaseProduction.xcconfig</key>
 		<data>
@@ -186,7 +214,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wyt88bFqjlyS0yakBe33IZ1n1OM=
+			/V+Y+1YaFkbim7EXcEcoLbfHd+s=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -199,7 +227,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C58BdV4UeeH8lUElA3ZiHMVOlmI=
+			2pQnyKjE3SnTzLlTShZ0PA/N5v4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -227,7 +255,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJlEsYZynG8Z/1cEzMEF41HebbNR9vas2cOphK1wxlI=
+			hck2zup8iZ7f4aj06bnhAI8njmxIfUY31Ri5q6Bku3A=
 			</data>
 		</dict>
 		<key>Base.xcconfig</key>
@@ -270,6 +298,55 @@
 			<key>hash2</key>
 			<data>
 			gKOZz5YJRsxr1KBJG8PZFz8yT+6abkcJqzqTbcp5FUY=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mZcJ1MxM3CVgPjyYB/cptv8qN7eJon+s6zYDGaA8XpI=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-ExtraLight.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tGPNmXZMn3aHvLtH1Eq5eKgKl89mKSFNYimsXT7z7II=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-Light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eeSn5WOBWC2a1D6JCEg60KHmgGUnrpOgGJCooCJRxmM=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-Medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6gQyj1pYgSjbvYR0tMWF+Kl5cm2vyIrbVMoCxu1X1Z4=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-Regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4XTDvhUKncEdlM4q5zqrMDjsuTpeWyhu4uq8pzAy1xk=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-SemiBold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GXjZVOupKEozbydH6QjkFYm0USc0pvtNNsZKLLu9+as=
+			</data>
+		</dict>
+		<key>IBMPlexSansArabic-Thin.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gBx7hhbbzyGg27wGFZbeasf0YOAlRYbzk/sMV2ZMDJI=
 			</data>
 		</dict>
 		<key>Inter-Black.ttf</key>
@@ -402,70 +479,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4OI4q09evYOsvp6gsOxODUhnfnxOlWDX1L1Y3OHN1yU=
+			LrXk6VHFT1Vz7ldFD95QHSxDPR9GCnCU8NArpfR19Z0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ltSdv6gfkWoUSu350dQr5VzXkEelh7BLdIVCA1RaEto=
+			+CuY7XPTz34bCqh4tEjQrnaDlA96YTOPSZVn+vEbQ5o=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xbMtas/raPv/ebl619Nz5QfZVRRdv5u03cvGt+gvraM=
+			hV9++Pfh+PuXg3jnunkscupU/30Fm6mn0ZpvzbSfrAQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ltSdv6gfkWoUSu350dQr5VzXkEelh7BLdIVCA1RaEto=
+			+CuY7XPTz34bCqh4tEjQrnaDlA96YTOPSZVn+vEbQ5o=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			m0SHWtoU/IjsS0xTdKDAVb3tZHnrg8LUDcbcX5zD5j4=
+			PDEEk5miXJ8p5a6AKNH0Opb+8bRIzQCeh5lXioenb8M=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4OI4q09evYOsvp6gsOxODUhnfnxOlWDX1L1Y3OHN1yU=
+			LrXk6VHFT1Vz7ldFD95QHSxDPR9GCnCU8NArpfR19Z0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YyjrACJSfJWFsNL32cP0rdWpzEurq2pZwRBt1UHlKTE=
+			qq2G95XyCVijTWd6+VNgWmPJtdTB5g7GBJuSkKgC5Mo=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rv3peaRL4xwscmrjLC8bAvLP/l7pzLVErcFz7Ts5rY4=
+			xO1N8QGcTiMRsjGaG/3dtnv1HMCk4W0zPA4CWprCBnU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YyjrACJSfJWFsNL32cP0rdWpzEurq2pZwRBt1UHlKTE=
+			qq2G95XyCVijTWd6+VNgWmPJtdTB5g7GBJuSkKgC5Mo=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			By6lM979tKUfG1OGYUoxBcnL1v4RqUMgMgHNGL6XrLI=
+			PUmKK17cnWFGSiFMpvMu88uZpwNAUh+wvUhcmUYJmTM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -479,14 +556,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			50xuabjgLiTiGAEheSSJ5TU+moh1uPClIEgWD6/G4HI=
+			HM9UpLDlHc2jEcdNpg4YGEV13M9ojiMKjDXcgIc6pN0=
 			</data>
 		</dict>
 		<key>RegulaFaceLayer.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YbPYxqMWVSfUZd5ZfSGJjqryR7UiR44P9yXHtW9X67k=
+			JQCeyemNyegfYydZZn/DajUZMS9UYt0dNG6ogGKsQi4=
 			</data>
 		</dict>
 		<key>ReleaseProduction.xcconfig</key>
@@ -518,7 +595,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0ZyI0fdfXEgVGpY2yJbdWS1W/YpzIdmqe+vWMv2JJQ=
+			UBvc1V/yo+W/BTb51JqMwrqAm9Qqy81WB/iT2VF2Rhk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -534,7 +611,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WG7M54wumB06J59aPMXSz4eYO4MVDv565kh2MpvLG0w=
+			TgYsX+K+bRttcsVr82WIEFHCEfNc8AdtIxhyBdvI3ZU=
 			</data>
 			<key>optional</key>
 			<true/>

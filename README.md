@@ -15,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "3.3.1")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "4.0.0-beta")
 ]
 ```
 
@@ -216,6 +216,30 @@ The `StaqWalletPay` class provides Wallet Pay functionality, including balance m
 - Wallet Management: Fetch the wallet balance with robust error handling.
 - Payment Order Management: Create and retrieve payment order details using asynchronous methods.
 
+## Register a user for Tier0
+
+Registers the user with the Tier0 program using the provided configuration.
+
+**Method Signature**
+
+```swift
+public static func registerUser(withConfig userConfig: StaqWalletUser) async throws
+```
+
+**Parameters**
+
+- `userConfig`: The user configuration to register.
+
+**Throws**
+
+- `WalletPayError.notInitialized`: If the SDK was not properly initialized.
+- `WalletPayError.server`: If the backend returns an error.
+- `WalletPayError.unexpected`: If any unexpected failures occur.
+
+**Notes**
+- Call after StaqWalletManager.initialize(...).
+- Performs a network request; must be called from an async context.
+
 ## Retrieve Wallet Balance
 
 Fetch the current wallet balance asynchronously.
@@ -228,7 +252,7 @@ public static func getWalletBalance(forUser userConfig: StaqWalletUser) async th
 
 **Parameters**
 
-- `forUser`: The user whose wallet balance to fetch.
+- `userConfig`: The user configuration for whose wallet balance to fetch.
 
 **Returns**
 
