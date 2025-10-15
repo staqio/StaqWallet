@@ -1,5 +1,5 @@
 {
-  "originHash" : "1361c35c835cb4de28bc661a99e7138e0206058169a606e7013b0e4cd0a5749f",
+  "originHash" : "33c314097064ef1f9168bf5252da4276b0ba4b91f948273843a014aef2adc6f9",
   "pins" : [
     {
       "identity" : "documentreaderbounds-swift-package",
@@ -26,15 +26,6 @@
       "state" : {
         "revision" : "2bf87a90043f2b1922c5c281df04b6c73fd72100",
         "version" : "7.1.2940"
-      }
-    },
-    {
-      "identity" : "posthog-ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/PostHog/posthog-ios",
-      "state" : {
-        "revision" : "1c2e98eb20aa9218be12a9fded58e22cc8451514",
-        "version" : "3.29.0"
       }
     },
     {

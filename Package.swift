@@ -18,20 +18,12 @@ let package = Package(
         .package(url: "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package", exact: "8.2.13454"),
         .package(url: "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package", exact: "7.1.1501"),
         .package(url: "https://github.com/regulaforensics/FaceSDK-Swift-Package", exact: "7.1.2940"),
-        .package(url: "https://github.com/PostHog/posthog-ios", .upToNextMajor(from: "3.29.0")),
         .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.0.0-beta.3")
     ],
     targets: [
         .binaryTarget(
             name: "StaqWallet",
             path: "Sources/StaqWallet.xcframework"
-        ),
-        .target(
-            name: "StaqWalletAnalytics",
-            dependencies: [
-                .product(name: "PostHog", package: "posthog-ios")
-            ],
-            path: "Sources/StaqWalletAnalytics"
         ),
         .binaryTarget(
             name: "DocumentReader",
@@ -41,12 +33,10 @@ let package = Package(
             name: "StaqWalletTarget",
             dependencies: [
                 .target(name: "StaqWallet"),
-                .target(name: "StaqWalletAnalytics"),
                 .target(name: "DocumentReader"),
                 .product(name: "Bounds", package: "documentreaderbounds-swift-package"),
                 .product(name: "FaceCoreBasic", package: "facecorebasic-swift-package"),
                 .product(name: "FaceSDK", package: "facesdk-swift-package"),
-                .product(name: "PostHog", package: "posthog-ios"),
                 .product(name: "TrustlessSDK", package: "TrustlessSDK")
             ],
             path: "Sources/StaqWalletTarget",
