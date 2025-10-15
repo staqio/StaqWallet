@@ -5,8 +5,8 @@
                 "text": "onboarding.face.capture.message",
                 "position": { "h": 1.0, "v": 1.55 },
                 "background": "#00FFFFFF",
-                "fontColor": "#FF25272B",
-                "fontName": "Inter18pt-Regular",
+                "fontColor": "#FF1A1A18",
+                "fontName": "IBMPlexSansArabic-Regular",
                 "fontSize": 16,
                 "alignment": "center"
             }

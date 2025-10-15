@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-bare-slash-regex -module-name StaqWallet
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name StaqWallet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AudioToolbox
@@ -14,7 +14,9 @@ import Foundation
 import LocalAuthentication
 import NetworkExtension
 import PassKit
+import Security
 @_exported import StaqWallet
+import StaqWalletAnalytics
 import Swift
 import SwiftUI
 import SystemConfiguration
@@ -29,27 +31,6 @@ import _SwiftConcurrencyShims
 
 
 
-
-public struct StaqWalletConfig {
-  public init(merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production)
-}
-public enum StaqWalletEnvironment {
-  case development
-  case production
-  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct StaqWalletUser {
-  public let userId: Swift.String
-  public let secret: Swift.String
-  public let userType: Swift.String
-  public let nationalID: Swift.String
-  public let email: Swift.String
-  public init(userId: Swift.String, secret: Swift.String, userType: Swift.String, nationalID: Swift.String, email: Swift.String)
-}
 public enum SupportedLanguage : Swift.String {
   case en
   case ar
@@ -66,84 +47,13 @@ public enum SupportedLanguage : Swift.String {
 
 @_hasMissingDesignatedInitializers final public class StaqWalletManager {
   public static func initialize(withConfig config: StaqWallet.StaqWalletConfig)
-  public static func start(forUser userConfig: StaqWallet.StaqWalletUser, withLanguage language: StaqWallet.SupportedLanguage, fromNavigationController rootNavigationController: UIKit.UINavigationController)
+  public static func start(forUser user: StaqWallet.StaqWalletUser, withLanguage language: StaqWallet.SupportedLanguage, fromNavigationController rootNC: UIKit.UINavigationController)
   public static func setPackagesNavigationCallback(_ callback: @escaping () -> Swift.Void)
   @objc deinit
 }
-
-
-
-
-extension Swift.Array {
-  public func prefixThrough(_ index: Swift.Int) -> [Element]
+extension StaqWallet.StaqWalletManager : TrustlessSDK.TrustlessDelegate {
+  final public func didSessionExpired()
 }
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.Card : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
-}
-#else
-extension TrustlessSDK.Card : Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
-}
-#else
-extension TrustlessSDK.CardTransaction : Swift.Equatable {
-  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
-}
-#endif
-#if compiler(>=5.3) && $RetroactiveAttribute
-extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias ID = Swift.String
-}
-#else
-extension TrustlessSDK.TrustlessError : Swift.Identifiable {
-  public var id: Swift.String {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias ID = Swift.String
-}
-#endif
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func endEditing()
-  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
-    get
-  }
-}
-extension UIKit.UIFont {
-  public static func registerCustomFonts()
-  public static func displayAllFonts()
-}
-extension UIKit.UIFont {
-  public static func registerFont(named filename: Swift.String, bundle: Foundation.Bundle)
-}
-extension UIKit.UINavigationController {
-  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
-}
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
-    get
-    set
-  }
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -223,6 +133,7 @@ final public class WalletPayViewState : Foundation.ObservableObject {
 }
 @_hasMissingDesignatedInitializers final public class StaqWalletPay {
   public static func presentWalletPayDetails(from parent: UIKit.UIViewController, balance: Swift.Double, params: StaqWallet.StaqWalletPay.PaymentOrderParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: () -> Swift.Void) -> Swift.Void)? = nil)
+  public static func registerUser(withConfig userConfig: StaqWallet.StaqWalletUser) async throws
   public static func getWalletBalance(forUser userConfig: StaqWallet.StaqWalletUser) async throws -> Swift.Double
   public static func createPaymentOrder(forUser userConfig: StaqWallet.StaqWalletUser, params: StaqWallet.StaqWalletPay.PaymentOrderParams) async throws -> TrustlessSDK.CreatePaymentOrderResponse
   public static func getPaymentOrderDetails(forUser userConfig: StaqWallet.StaqWalletUser, orderId: Swift.String) async throws -> TrustlessSDK.PaymentOrderDetails
@@ -253,21 +164,85 @@ extension StaqWallet.StaqWalletPay {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@_hasMissingDesignatedInitializers final public class SecurityService {
-  public static func checkSecurity()
-  @objc deinit
+public struct StaqWalletConfig {
+  public init(merchantIdentifier: Swift.String, walletEnv: StaqWallet.StaqWalletEnvironment = .production)
+}
+public enum StaqWalletEnvironment {
+  case development
+  case production
+  public static func == (a: StaqWallet.StaqWalletEnvironment, b: StaqWallet.StaqWalletEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct StaqWalletUser {
+  public let userId: Swift.String
+  public let secret: Swift.String
+  public let userType: Swift.String
+  public let nationalID: Swift.String
+  public let email: Swift.String
+  public init(userId: Swift.String, secret: Swift.String, userType: Swift.String, nationalID: Swift.String, email: Swift.String)
+}
+extension Swift.Array {
+  public func prefixThrough(_ index: Swift.Int) -> [Element]
+}
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.Card : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
+}
+#else
+extension TrustlessSDK.Card : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.Card, rhs: TrustlessSDK.Card) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#else
+extension TrustlessSDK.CardTransaction : Swift.Equatable {
+  public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
+}
+#endif
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension TrustlessSDK.TrustlessError : @retroactive Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+}
+#else
+extension TrustlessSDK.TrustlessError : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+}
+#endif
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public var foregroundActiveScene: UIKit.UIWindowScene? {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public static func registerCustomFonts()
+}
+extension UIKit.UIFont {
+  public static func registerFont(name: Swift.String, bundle: Foundation.Bundle)
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency public func pushVC(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popViewController(animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+  @_Concurrency.MainActor @preconcurrency public func popToViewController(_ vc: UIKit.UIViewController, animated: Swift.Bool = true, completion: @escaping () -> Swift.Void = {})
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public var walletIdentifier: Swift.String? {
+    get
+    set
+  }
 }
 
 
@@ -276,9 +251,43 @@ extension StaqWallet.StaqWalletPay {
 
 
 
-@_hasMissingDesignatedInitializers public class BaseFlowCoordinator {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@_hasMissingDesignatedInitializers final public class KeychainService {
   @objc deinit
 }
+extension StaqWallet.KeychainService {
+  public enum Biometry {
+    case none
+    case faceId
+    case passcode(code: Swift.String)
+  }
+  public static func enableFaceID(_ isEnabled: Swift.Bool)
+  public static var isEnabledFaceID: Swift.Bool {
+    get
+  }
+  public static func savePassCode(_ passCode: Swift.String)
+  public static func saveBiometryAuth(type: StaqWallet.KeychainService.Biometry)
+  public static func getAppPassCode() -> Swift.String?
+  public static func getBiometryAuthType() -> StaqWallet.KeychainService.Biometry
+  public static func clearPasscodeAndBiometry()
+}
+
 
 @_Concurrency.MainActor @preconcurrency public struct Shimmer : SwiftUICore.ViewModifier {
   @_Concurrency.MainActor @preconcurrency public init(animation: SwiftUICore.Animation = Self.defaultAnimation, gradient: SwiftUICore.Gradient = Self.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3)
@@ -292,9 +301,6 @@ extension StaqWallet.StaqWalletPay {
 extension SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, animation: SwiftUICore.Animation = Shimmer.defaultAnimation, gradient: SwiftUICore.Gradient = Shimmer.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3) -> some SwiftUICore.View
   
-  @available(*, deprecated, message: "Use shimmering(active:animation:gradient:bandSize:) instead.")
-  @_Concurrency.MainActor @preconcurrency public func shimmering(active: Swift.Bool = true, duration: Swift.Double, bounce: Swift.Bool = false, delay: Swift.Double = 0.25) -> some SwiftUICore.View
-  
 }
 
 
@@ -306,12 +312,6 @@ extension SwiftUICore.View {
 
 
 
-
-
-
-
-extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
-extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
 extension StaqWallet.SupportedLanguage : Swift.Equatable {}
 extension StaqWallet.SupportedLanguage : Swift.Hashable {}
 extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
@@ -319,4 +319,6 @@ extension StaqWallet.WalletPayDetailsModalView : Swift.Sendable {}
 extension StaqWallet.WalletPayViewType : Swift.Equatable {}
 extension StaqWallet.WalletPayViewType : Swift.Hashable {}
 extension StaqWallet.WalletPayView : Swift.Sendable {}
+extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
+extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
 extension StaqWallet.Shimmer : Swift.Sendable {}

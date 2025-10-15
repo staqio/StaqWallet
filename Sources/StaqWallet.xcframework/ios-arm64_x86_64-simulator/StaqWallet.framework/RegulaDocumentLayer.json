@@ -8,9 +8,9 @@
                     "v": 0.35
                 },
                 "background": "#00FFFFFF",
-                "fontColor": "#FFFFFFFF",
-                "fontName": "Inter18pt-Medium",
-                "fontSize": 20,
+                "fontColor": "#FF1A1A18",
+                "fontName": "IBMPlexSansArabic-Regular",
+                "fontSize": 18,
                 "alignment": "center",
                 "padding": {
                     "start": 20,
@@ -25,10 +25,10 @@
                     "h": 1,
                     "v": 0.5
                 },
-                "background": "#338C714E",
-                "fontColor": "#FFC7AC8B",
-                "fontName": "Inter18pt-Regular",
-                "fontSize": 14,
+                "background": "#FFFFFFFF",
+                "fontColor": "#FF171A1C",
+                "fontName": "IBMPlexSansArabic-Regular",
+                "fontSize": 12,
                 "alignment": "center",
                 "borderRadius": 8,
                 "padding": {
