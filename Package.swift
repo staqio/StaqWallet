@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package", exact: "8.2.13454"),
         .package(url: "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package", exact: "7.1.1501"),
         .package(url: "https://github.com/regulaforensics/FaceSDK-Swift-Package", exact: "7.1.2940"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.0.0-beta.3")
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.0.0-beta.4")
     ],
     targets: [
         .binaryTarget(

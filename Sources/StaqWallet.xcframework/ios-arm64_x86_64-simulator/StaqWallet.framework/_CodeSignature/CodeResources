@@ -138,43 +138,43 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i3XfVeJLwQecn6ZPkNC3HmADJcw=
+		wlQZ/Er7tFXTcKtGuGIhElVUwyc=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7cGWUNLHOexQA2OWEkRGe5kzyVg=
+		vFJTZWqSNSxFt0YmwBh6VPBs/YU=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XuUziqrZ/SBaVjzWwdw5iZXCe+E=
+		HZ1QppaHEucKtJ+hZUWmcgrw8v8=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7cGWUNLHOexQA2OWEkRGe5kzyVg=
+		vFJTZWqSNSxFt0YmwBh6VPBs/YU=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GruVOfh92jgf8iayUKv3fzHjqWI=
+		ba5F432EfrYXkqQ+HyQ8UVWlKwg=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i3XfVeJLwQecn6ZPkNC3HmADJcw=
+		wlQZ/Er7tFXTcKtGuGIhElVUwyc=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EYkkaDje8TDTLiEWGcKWewh2UxQ=
+		g3G5nf9YIXlgYVEGgD6ATSAYcdE=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QoqbNPM7ttcj56slqQExmbRt47E=
+		DZbhJhynHSFe/JGd2U4MYqVpGmQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EYkkaDje8TDTLiEWGcKWewh2UxQ=
+		g3G5nf9YIXlgYVEGgD6ATSAYcdE=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JZOsx0xxpCnezEW/IH4fXhqgeiA=
+		+JuBAGYCH1yT//+kgPqWvPvTXLk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -479,70 +479,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4GpbAzTtN3kGc6C2SZxuBxkjlj6XmKlc3/C2kXiDf0=
+			PV/q8fLlp2FKHJN1Gn0ksgA1oCWZMXVBaO+vvkRG6Lc=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wu0lW9NUs2Xq30wVr8zeOqGDDOHXulD3LJGMCmSHXvo=
+			wOCvexbIrXtGBl8Ok6Z1Kzx5ZXjPNOh4ZhBg4oDYJVs=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hV9++Pfh+PuXg3jnunkscupU/30Fm6mn0ZpvzbSfrAQ=
+			SzvK0zP515dqAsyEsPhBPWn8STVRkH/PiXwKlGjPCNQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wu0lW9NUs2Xq30wVr8zeOqGDDOHXulD3LJGMCmSHXvo=
+			wOCvexbIrXtGBl8Ok6Z1Kzx5ZXjPNOh4ZhBg4oDYJVs=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ax0D77yyNPPMn+M/JEjcbN2XxmF9af2JEtIF1A2POZY=
+			Dl93pVGUAUFi5qK60Q9tPz7bq51aAFyQ4Q4Gkg7pdXk=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4GpbAzTtN3kGc6C2SZxuBxkjlj6XmKlc3/C2kXiDf0=
+			PV/q8fLlp2FKHJN1Gn0ksgA1oCWZMXVBaO+vvkRG6Lc=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bMBd9mb3dSTzVeckqJLeyOK3dp8qrqAQ4G/++o2kUo4=
+			6ArnkAa7yEm2sIW9ZsuWegPcwBbCAl4OHFDSFZWRpQU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xO1N8QGcTiMRsjGaG/3dtnv1HMCk4W0zPA4CWprCBnU=
+			OzizDfvW8FtrQ8o201j+4O6rJPgMuotcUJcQRqDAL6o=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bMBd9mb3dSTzVeckqJLeyOK3dp8qrqAQ4G/++o2kUo4=
+			6ArnkAa7yEm2sIW9ZsuWegPcwBbCAl4OHFDSFZWRpQU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PD9UvpjH3guEqyqlgU7Fj9J6u0mOFfRbjRBDJu4xAOQ=
+			PyAavvdpRnxNFwxPBZk3dmUI0e1MhQFKhYaDUuoqbG8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
