@@ -47,111 +47,6 @@ public struct StaqWalletUser {
   public init(userId: Swift.String, secret: Swift.String, userType: Swift.String? = nil, nationalId: Swift.String? = nil, email: Swift.String)
 }
 
-
-
-
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class UIWalletPayView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public var isSelected: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public var balance: Swift.Double? {
-    get
-    set
-  }
-  @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, variant: StaqWallet.WalletPayViewType, state: StaqWallet.WalletPayViewState, params: StaqWallet.StaqWalletPay.PaymentOrderParams)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency public func setBalance(_ balance: Swift.Double)
-  @_Concurrency.MainActor @preconcurrency public func setSelected(_ isSelected: Swift.Bool)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers final public class StaqWalletPay {
-  public static func presentWalletPayDetails(from parent: UIKit.UIViewController, balance: Swift.Double, params: StaqWallet.StaqWalletPay.PaymentOrderParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: () -> Swift.Void) -> Swift.Void)? = nil)
-  public static func getWalletBalance(forUser userConfig: StaqWallet.StaqWalletUser) async throws -> Swift.Double
-  public static func createPaymentOrder(forUser userConfig: StaqWallet.StaqWalletUser, params: StaqWallet.StaqWalletPay.PaymentOrderParams) async throws -> TrustlessSDK.CreatePaymentOrderResponse
-  public static func getPaymentOrderDetails(forUser userConfig: StaqWallet.StaqWalletUser, orderId: Swift.String) async throws -> TrustlessSDK.PaymentOrderDetails
-  @objc deinit
-}
-extension StaqWallet.StaqWalletPay {
-  public enum WalletPayError : Foundation.LocalizedError {
-    case notInitialized
-    case notLoggedIn
-    case walletNotAvailable
-    case server(code: Swift.String, message: Swift.String)
-    case unexpected
-    public var errorDescription: Swift.String? {
-      get
-    }
-  }
-  public struct PaymentOrderParams {
-    public let idempotencyKey: Swift.String
-    public let externalId: Swift.String?
-    public let totalAmount: Swift.Double
-    public let feesAmount: Swift.Double?
-    public let taxAmount: Swift.Double?
-    public let currency: Swift.String
-    public let supplierId: Swift.String
-    public let metaData: [Swift.String : Swift.String]
-    public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Swift.Double, feesAmount: Swift.Double? = nil, taxAmount: Swift.Double? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:])
-  }
-}
-@_Concurrency.MainActor @preconcurrency public struct WalletPayDetailsModalView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(isPresented: SwiftUICore.Binding<Swift.Bool>, balance: Swift.Double, params: StaqWallet.StaqWalletPay.PaymentOrderParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: @escaping () -> Swift.Void) -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B19PayDetailsModalViewV4bodyQrvp", 0) __
-}
-public enum WalletPayViewType {
-  case inline
-  case breakdown
-  public static func == (a: StaqWallet.WalletPayViewType, b: StaqWallet.WalletPayViewType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@_Concurrency.MainActor @preconcurrency public struct WalletPayView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(variant: StaqWallet.WalletPayViewType, state: StaqWallet.WalletPayViewState, params: StaqWallet.StaqWalletPay.PaymentOrderParams)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B7PayViewV4bodyQrvp", 0) __
-}
-
-final public class WalletPayViewState : Foundation.ObservableObject {
-  @Combine.Published @_projectedValueProperty($isSelected) final public var isSelected: Swift.Bool {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $isSelected: Combine.Published<Swift.Bool>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  @Combine.Published @_projectedValueProperty($balance) final public var balance: Swift.Double? {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  final public var $balance: Combine.Published<Swift.Double?>.Publisher {
-    get
-    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
-    set
-  }
-  public init(isSelected: Swift.Bool = false, balance: Swift.Double? = nil)
-  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
-  @objc deinit
-}
-
-
-
-
 public enum SupportedLanguage : Swift.String {
   case en
   case ar
@@ -177,20 +72,49 @@ extension StaqWallet.StaqWalletManager : TrustlessSDK.TrustlessDelegate {
 }
 
 public struct StaqWalletTier0 {
-  public struct Balance {
+  public struct WalletBalance {
     public let currency: Swift.String
     public let currentBalance: Swift.Double
     public let blockedAmount: Swift.Double
     public let availableBalance: Swift.Double
+    public init(currency: Swift.String, currentBalance: Swift.Double, blockedAmount: Swift.Double, availableBalance: Swift.Double)
   }
-  public struct Transaction {
-    public let date: Swift.String
-    public let description: Swift.String
+  public struct WalletTransaction {
+    public let id: Swift.String
+    public let type: Swift.String
     public let amount: Swift.Double
     public let currency: Swift.String
+    public let description: Swift.String
+    public let date: Swift.String
+    public let valueDate: Swift.String
+    public init(id: Swift.String, type: Swift.String, amount: Swift.Double, currency: Swift.String, description: Swift.String, date: Swift.String, valueDate: Swift.String)
   }
-  public let balance: StaqWallet.StaqWalletTier0.Balance
-  public let transactions: [StaqWallet.StaqWalletTier0.Transaction]
+  public let id: Swift.String
+  public let balance: StaqWallet.StaqWalletTier0.WalletBalance
+  public let transactions: [StaqWallet.StaqWalletTier0.WalletTransaction]
+}
+public struct StaqWalletPaymentOrder {
+  public struct OrderStatus {
+    public var code: Swift.String
+    public var name: Swift.String
+    public var label: Swift.String
+    public var labelAr: Swift.String
+    public init(code: Swift.String, name: Swift.String, label: Swift.String, labelAr: Swift.String)
+  }
+  public var orderId: Swift.String
+  public var orderType: Swift.String
+  public var createdAt: Swift.String?
+  public var status: StaqWallet.StaqWalletPaymentOrder.OrderStatus
+  public var errorDescription: Swift.String?
+  public var currency: Swift.String
+  public var totalAmount: Swift.Double
+  public var feesAmount: Swift.Double?
+  public var taxAmount: Swift.Double?
+  public var localCurrencyAmount: Swift.Double
+  public var exchangeRate: Swift.Double
+  public var transactionId: Swift.String?
+  public var externalUniqueIdentifier: Swift.String?
+  public var orderMetaData: [Swift.String : Any]?
 }
 
 
@@ -224,6 +148,109 @@ extension TrustlessSDK.CardTransaction : @retroactive Swift.Hashable {
 extension TrustlessSDK.CardTransaction : @retroactive Swift.Equatable {
   public static func == (lhs: TrustlessSDK.CardTransaction, rhs: TrustlessSDK.CardTransaction) -> Swift.Bool
 }
+final public class WalletPayViewState : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isSelected) final public var isSelected: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  final public var $isSelected: Combine.Published<Swift.Bool>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($balance) final public var balance: Swift.Double? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  final public var $balance: Combine.Published<Swift.Double?>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public init(isSelected: Swift.Bool = false, balance: Swift.Double? = nil)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class StaqWalletPay {
+  public static func presentWalletPayDetails(from parent: UIKit.UIViewController, balance: Swift.Double, params: StaqWallet.StaqWalletPay.PaymentOrderParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: () -> Swift.Void) -> Swift.Void)? = nil)
+  public static func getWalletBalance(forUser userConfig: StaqWallet.StaqWalletUser) async throws -> Swift.Double
+  public static func createPaymentOrder(forUser userConfig: StaqWallet.StaqWalletUser, params: StaqWallet.StaqWalletPay.PaymentOrderParams) async throws -> TrustlessSDK.CreatePaymentOrderResponse
+  public static func getPaymentOrderDetails(forUser userConfig: StaqWallet.StaqWalletUser, orderId: Swift.String) async throws -> TrustlessSDK.PaymentOrderDetails
+  @objc deinit
+}
+extension StaqWallet.StaqWalletPay {
+  public enum WalletPayError : Foundation.LocalizedError {
+    case notInitialized
+    case notLoggedIn
+    case walletNotAvailable
+    case server(code: Swift.String, message: Swift.String)
+    case unexpected
+    public var errorDescription: Swift.String? {
+      get
+    }
+  }
+  public struct PaymentOrderParams {
+    public let idempotencyKey: Swift.String
+    public let externalId: Swift.String?
+    public let totalAmount: Swift.Double
+    public let feesAmount: Swift.Double?
+    public let taxAmount: Swift.Double?
+    public let currency: Swift.String
+    public let supplierId: Swift.String
+    public let metaData: [Swift.String : Swift.String]
+    public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Swift.Double, feesAmount: Swift.Double? = nil, taxAmount: Swift.Double? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:])
+  }
+}
+
+
+
+
+
+
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class UIWalletPayView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var isSelected: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var balance: Swift.Double? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, variant: StaqWallet.WalletPayViewType, state: StaqWallet.WalletPayViewState, params: StaqWallet.StaqWalletPay.PaymentOrderParams)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func setBalance(_ balance: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency public func setSelected(_ isSelected: Swift.Bool)
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct WalletPayDetailsModalView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(isPresented: SwiftUICore.Binding<Swift.Bool>, balance: Swift.Double, params: StaqWallet.StaqWalletPay.PaymentOrderParams, didDismiss: (() -> Swift.Void)? = nil, didTapConfirm: ((_ dismiss: @escaping () -> Swift.Void) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B19PayDetailsModalViewV4bodyQrvp", 0) __
+}
+public enum WalletPayViewType {
+  case inline
+  case breakdown
+  public static func == (a: StaqWallet.WalletPayViewType, b: StaqWallet.WalletPayViewType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct WalletPayView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(variant: StaqWallet.WalletPayViewType, state: StaqWallet.WalletPayViewState, params: StaqWallet.StaqWalletPay.PaymentOrderParams)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10StaqWallet0B7PayViewV4bodyQrvp", 0) __
+}
 
 
 
@@ -245,7 +272,6 @@ public enum KYCStep : Swift.Hashable {
     get
   }
 }
-
 @_hasMissingDesignatedInitializers final public class StaqTier0Wallet {
   public enum StaqWalletError : Foundation.LocalizedError {
     case notInitialized
@@ -270,7 +296,7 @@ public enum KYCStep : Swift.Hashable {
     public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Swift.Double, feesAmount: Swift.Double? = nil, taxAmount: Swift.Double? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:], entityId: Swift.String, userId: Swift.String, serviceId: Swift.String)
   }
   public static func getWallet(forUser user: StaqWallet.StaqWalletUser) async throws -> StaqWallet.StaqWalletTier0
-  public static func createPaymentOrder(forUser user: StaqWallet.StaqWalletUser, params: StaqWallet.StaqTier0Wallet.PaymentOrderParams) async throws -> TrustlessSDK.CreatePaymentOrderResponse
+  public static func createPaymentOrder(forUser user: StaqWallet.StaqWalletUser, params: StaqWallet.StaqTier0Wallet.PaymentOrderParams) async throws -> StaqWallet.StaqWalletPaymentOrder
   public static func makeTopUpView(user: StaqWallet.StaqWalletUser, onClose: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
   @objc deinit
@@ -281,10 +307,10 @@ public enum KYCStep : Swift.Hashable {
 
 extension StaqWallet.StaqWalletEnvironment : Swift.Equatable {}
 extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
+extension StaqWallet.SupportedLanguage : Swift.Equatable {}
+extension StaqWallet.SupportedLanguage : Swift.Hashable {}
+extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
 extension StaqWallet.WalletPayDetailsModalView : Swift.Sendable {}
 extension StaqWallet.WalletPayViewType : Swift.Equatable {}
 extension StaqWallet.WalletPayViewType : Swift.Hashable {}
 extension StaqWallet.WalletPayView : Swift.Sendable {}
-extension StaqWallet.SupportedLanguage : Swift.Equatable {}
-extension StaqWallet.SupportedLanguage : Swift.Hashable {}
-extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
