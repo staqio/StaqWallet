@@ -17,8 +17,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package", exact: "8.2.13454"),
         .package(url: "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package", exact: "7.1.1501"),
-        .package(url: "https://github.com/regulaforensics/FaceSDK-Swift-Package", exact: "7.1.2940"),
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.0.0-beta.6")
+        .package(url: "https://github.com/regulaforensics/FaceSDK-Swift-Package", exact: "7.1.2940")
+        // .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.0.0-beta.6")
     ],
     targets: [
         .binaryTarget(
@@ -29,15 +29,20 @@ let package = Package(
             name: "DocumentReader",
             path: "Sources/DocumentReader.xcframework"
         ),
+        .binaryTarget(
+            name: "TrustlessSDK",
+            path: "Sources/TrustlessSDK.xcframework"
+        ),
         .target(
             name: "StaqWalletTarget",
             dependencies: [
                 .target(name: "StaqWallet"),
                 .target(name: "DocumentReader"),
+                .target(name: "TrustlessSDK"),
                 .product(name: "Bounds", package: "documentreaderbounds-swift-package"),
                 .product(name: "FaceCoreBasic", package: "facecorebasic-swift-package"),
-                .product(name: "FaceSDK", package: "facesdk-swift-package"),
-                .product(name: "TrustlessSDK", package: "TrustlessSDK")
+                .product(name: "FaceSDK", package: "facesdk-swift-package")
+                // .product(name: "TrustlessSDK", package: "TrustlessSDK")
             ],
             path: "Sources/StaqWalletTarget",
             sources: ["Exports.swift"],
