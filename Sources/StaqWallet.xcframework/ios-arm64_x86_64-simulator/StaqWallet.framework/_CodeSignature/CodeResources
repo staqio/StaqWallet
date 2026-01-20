@@ -6,27 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		5ddyDDv9vW0NhYDMbBI8SAVrIRA=
-		</data>
-		<key>Base.xcconfig</key>
-		<data>
-		Udo1j4Axv5K7Z2Ho5Lzl/Wud+NA=
-		</data>
-		<key>DebugDevelopment.xcconfig</key>
-		<data>
-		39DXmhSOJ6P7Ang+4bbrb+A6SPs=
-		</data>
-		<key>DebugProduction.xcconfig</key>
-		<data>
-		WZrWWJ+4ccdaiCig66jFw4IpGV8=
-		</data>
-		<key>Displace2.0-Regular.ttf</key>
-		<data>
-		QZljvUfSWK5waIo+YIbSh/t50K0=
+		JtV2uuj+LhHqJ78Qgk1wVJvOXGQ=
 		</data>
 		<key>Headers/StaqWallet-Swift.h</key>
 		<data>
-		SBwAZAYzVoAl65rELIr4S/1wmi8=
+		Qh5vFVWdMIJpVDue5hU7XtGmANw=
 		</data>
 		<key>Headers/StaqWallet.h</key>
 		<data>
@@ -62,119 +46,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eVoL9emr4DjdcgWaKxIgP7aQpD0=
-		</data>
-		<key>Inter-Black.ttf</key>
-		<data>
-		Tb3ZuvmnBJg4zA5HLgE2xPMQzHg=
-		</data>
-		<key>Inter-BlackItalic.ttf</key>
-		<data>
-		HV6ugOxVtFT60rwA4xkOAG67258=
-		</data>
-		<key>Inter-Bold.ttf</key>
-		<data>
-		UYoDYaJFpmtJvCSuATfzgygZe9w=
-		</data>
-		<key>Inter-BoldItalic.ttf</key>
-		<data>
-		O+ek/dCikB9GB8tdWRQIbNh8NCE=
-		</data>
-		<key>Inter-ExtraBold.ttf</key>
-		<data>
-		0BtKmgHf222aXG7BU9Uo1wcG2IU=
-		</data>
-		<key>Inter-ExtraBoldItalic.ttf</key>
-		<data>
-		pEfOS3isoCwhg6anZfXhmb8gVmA=
-		</data>
-		<key>Inter-ExtraLight.ttf</key>
-		<data>
-		QuTLbKoLn7Upv2QGRam8KShNebI=
-		</data>
-		<key>Inter-ExtraLightItalic.ttf</key>
-		<data>
-		YQcvSCFODwlZ3FNWo5VZ5qtPOmQ=
-		</data>
-		<key>Inter-Italic.ttf</key>
-		<data>
-		7DbwtkMeFsrpwR+Tgy6ubbrUC0o=
-		</data>
-		<key>Inter-Light.ttf</key>
-		<data>
-		awQeb8YWVrkw2O9jigudagrI4IQ=
-		</data>
-		<key>Inter-LightItalic.ttf</key>
-		<data>
-		yJbkMJ9D6ICT4FimuCJpLUMSChg=
-		</data>
-		<key>Inter-Medium.ttf</key>
-		<data>
-		4tIc3Jcwzk1L3Ms0dkE6W3n+fVI=
-		</data>
-		<key>Inter-MediumItalic.ttf</key>
-		<data>
-		vnI3ts3NVzgAeh+3AjCeI739cSU=
+		Sik0/wVjenijWpdDOVsfGBmbxec=
 		</data>
 		<key>Inter-Regular.ttf</key>
 		<data>
 		vRl2wfAZhTq2FD7xJG4lqmb9mQ4=
 		</data>
-		<key>Inter-SemiBold.ttf</key>
-		<data>
-		8+RKvWZh1bhh5m2yL095psRmzQA=
-		</data>
-		<key>Inter-SemiBoldItalic.ttf</key>
-		<data>
-		a16ybIUMZHqqtC5+KZ4jEIQWyjI=
-		</data>
-		<key>Inter-Thin.ttf</key>
-		<data>
-		Tys8PJfmGBZmJ7TT//kyL6UZjoE=
-		</data>
-		<key>Inter-ThinItalic.ttf</key>
-		<data>
-		IhXFtCJOD2RrhbvApoTJhE2MjII=
-		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KF9iaQgz1Wuy8PJfbPUWy3oPkdM=
+		cZ+KuAMevFEQWqpE64itJLx5C1A=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3Eq2GdFgg3YqZglOMJe0WOCV8E8=
+		ML8agYxVcfm+2oD+Y8UgJO3S7kM=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		25JLbKBYLGhxSd3wSkQOuvqf0GQ=
+		xDa3oQ3PcYT6bROB5VJfwfjUXhQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3Eq2GdFgg3YqZglOMJe0WOCV8E8=
+		ML8agYxVcfm+2oD+Y8UgJO3S7kM=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6PUkKLo4EE4cPn14ZNmvVBZP/XI=
+		7qfGPMX2bTsNeH0XVsG+ug0CvSg=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KF9iaQgz1Wuy8PJfbPUWy3oPkdM=
+		cZ+KuAMevFEQWqpE64itJLx5C1A=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XiYUboQwLpB/IXOGJjnTOCOmtBY=
+		RC9JDjmJaVdyuZw6T3MbfQDi0k8=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dATxl7GuzfFXQYNwQc1ijD2B0cw=
+		NfkU103Av1kcSBj5fy7uuTua450=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XiYUboQwLpB/IXOGJjnTOCOmtBY=
+		RC9JDjmJaVdyuZw6T3MbfQDi0k8=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yRlyFYJl+Pvizm2kd7MPvDglZfc=
+		4nPijWOWVL/puU6lM9W3JBro3zA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -187,10 +103,6 @@
 		<key>RegulaFaceLayer.json</key>
 		<data>
 		n9SDyJP0T1sVNG77mbHmZ19Rmqw=
-		</data>
-		<key>ReleaseProduction.xcconfig</key>
-		<data>
-		hI6yuQx+UAUuIAUi3B9msvs8Wxc=
 		</data>
 		<key>ar.lproj/DocumentReaderLocalizable.strings</key>
 		<dict>
@@ -214,7 +126,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q2fRpehQUXanZAV+7ifzcJWD9Jc=
+			kIoDIVOGpCMrF4mDGwKRkrJN98w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -223,11 +135,29 @@
 		<data>
 		qygiBJOmUAEr4OwYyM8krnZFMNs=
 		</data>
+		<key>en.lproj/DocumentReaderLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			77iHD/iyjQwKHYpDAWqNYcju4Zc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/FaceSDKLocalizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VFEgt7gXm9IP9ElNXtQqqQRlzYA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zriwva80BdUyjr/6z0DSmJ6RwSY=
+			47ugc1VYDtfR3egR8YstjsOKDFA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -255,42 +185,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FLNljujsarM0whR1aNPmRI7ROnmc0/9Gy2+m3MMZY7c=
-			</data>
-		</dict>
-		<key>Base.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XMC6vTPZqcEj6JYrRb8aXSUyZm70Wn7TZ4msUNiDNdQ=
-			</data>
-		</dict>
-		<key>DebugDevelopment.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Nx7hbQ6Pm9xtSjHBkpfenKzLHRrwck7JG+mtJe0+GZU=
-			</data>
-		</dict>
-		<key>DebugProduction.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NzZt6a4NVnO7nbT/jfVnVkqVIwYOSW9FL0mYWgocoPU=
-			</data>
-		</dict>
-		<key>Displace2.0-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CJiz8WFr9JFy8F+aXjYuTz+HRMkymR0EeHRsMMcVCTs=
+			1nSb33YARTann7o08Tdl/ocoOMrhwaWvX89OlsUl7Fw=
 			</data>
 		</dict>
 		<key>Headers/StaqWallet-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rUijeBrsHaP3AWR+Db1Z9AkRGFQT9pTE24DH/56v7/0=
+			mQHcjiK4aNZclnM/G8eoHLifno0uGiyuX0sggy99eIo=
 			</data>
 		</dict>
 		<key>Headers/StaqWallet.h</key>
@@ -349,97 +251,6 @@
 			gBx7hhbbzyGg27wGFZbeasf0YOAlRYbzk/sMV2ZMDJI=
 			</data>
 		</dict>
-		<key>Inter-Black.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8EpDzeCdp6DsAVJjR9rDaJgAmEEDIauO3J5cYbnRxF8=
-			</data>
-		</dict>
-		<key>Inter-BlackItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OPBhT2UQdFeK9DFTHC8IHHqThvx01oxpXzBbpHkEIg8=
-			</data>
-		</dict>
-		<key>Inter-Bold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LHQCWj2rnL02tyCyhwCb76lQFtWhTBDttqmSg5Uw4LA=
-			</data>
-		</dict>
-		<key>Inter-BoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BlFHEN6QM6AFrxsEaMMk/oKm1R0eVvAkWsqaMJHM5rA=
-			</data>
-		</dict>
-		<key>Inter-ExtraBold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mfpwJhaLfNgHfJmjZe6wpX1zYpavyGbQMwOYF6p4f70=
-			</data>
-		</dict>
-		<key>Inter-ExtraBoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			uOK4V1XIh3vG5OVAsiskzIuYktadEixnTk6rWE+Vf2o=
-			</data>
-		</dict>
-		<key>Inter-ExtraLight.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hBDVuLaRrcHfBvyUbBHvyFljp+SsajWsux45Kpl8xzA=
-			</data>
-		</dict>
-		<key>Inter-ExtraLightItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PNnjR5JJRKyvWqiVi1nA7yJCCslzyU70TRCw1Y+uPVU=
-			</data>
-		</dict>
-		<key>Inter-Italic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			H+JtR8hA74dnY1lnrKpQ7kOld5T6AKA78ELuSqsnksQ=
-			</data>
-		</dict>
-		<key>Inter-Light.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8OgrUjJ+/LaOGxgQGa2B1nc7xe4q3bCzWI1XEnQAVM0=
-			</data>
-		</dict>
-		<key>Inter-LightItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j9PzjqPSSPtl2Z2xOoir2P6y3spRnvRU5e+Ns+eeKeQ=
-			</data>
-		</dict>
-		<key>Inter-Medium.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fHIGxFGomo+o8488IX9n5guDDbniFkXjYVXMYs0fmQM=
-			</data>
-		</dict>
-		<key>Inter-MediumItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m5hYc5xSiSMTLGz9uo60g21EtPrivsGQ+sNza6CVdGU=
-			</data>
-		</dict>
 		<key>Inter-Regular.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -447,102 +258,74 @@
 			Pl+QoBOLON5M9Nd5rXg5GXTqHfd2uRZIQr3Ltgzjg8U=
 			</data>
 		</dict>
-		<key>Inter-SemiBold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qLJ24luxPfo5z6zjXMkq/5p9XxuWFD8N+MZjUcz+0qQ=
-			</data>
-		</dict>
-		<key>Inter-SemiBoldItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y0wQFIh0KvyWYDNRmnFZVmYkxk56J4cPljFCK1QsupI=
-			</data>
-		</dict>
-		<key>Inter-Thin.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sa8iphrcibPLogUl/QqZ2Ls50RHmzMc7GrYSgQt1SCg=
-			</data>
-		</dict>
-		<key>Inter-ThinItalic.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B6l6zB5xo7+dqUQNUTfS92XVT88U81+fomvNn+N7Op8=
-			</data>
-		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlJdOonPSi9vLRyl9K4RlCaa3LZ5nOTel3gjqsZ3MUA=
+			agZLbj3MEtA4HOOtRNQtChqs+QmObzgXoVHFSjEpzdQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0sfX5gJ04clYn+y4WxYFW3T7z/GkqIA8WEuEQ5z0ww=
+			jPBCj5d6RC1AoLuDJU8Q+nwmWKotC+TWeMHpSYhMTm0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PCsMVfxSQLMQLWVGvOvGLNh0JZzfbJWrXeON3VVs4C0=
+			Zqi/d+3aoF/tbcYmnFXkRwiTpRowefxkjGgso1++tng=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0sfX5gJ04clYn+y4WxYFW3T7z/GkqIA8WEuEQ5z0ww=
+			jPBCj5d6RC1AoLuDJU8Q+nwmWKotC+TWeMHpSYhMTm0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QbZmFrGBnoKoSSwdkroKL1oYnxAr5Fft6sAbBTqeJB8=
+			JdpwqqiLY+lkU30s30vB3BfYbKb3ZaWU+awCWtCCNyU=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlJdOonPSi9vLRyl9K4RlCaa3LZ5nOTel3gjqsZ3MUA=
+			agZLbj3MEtA4HOOtRNQtChqs+QmObzgXoVHFSjEpzdQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZm9SlqHyOTs4ye56l3OFbSAIdaLNCu55D+RyPwA9z4=
+			y+hNHoSivGcdrAaLbZhuni0Oo+1E20v5Fmls5ikhGQQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TMwAt+Q9ItD8H4DsJqlOlGaJ/IO0ayAbkhUTTao3XPM=
+			pzrH+dFTy5jrwrdqgYyg2tyACdE4K5o3CXtQ+3d9o08=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZm9SlqHyOTs4ye56l3OFbSAIdaLNCu55D+RyPwA9z4=
+			y+hNHoSivGcdrAaLbZhuni0Oo+1E20v5Fmls5ikhGQQ=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QHJy8sRe+yyvJ6V4aTPcfZfdiWTCSkFPXBp+xzvHT/E=
+			pqJCJgQblgbsJZM0DU8PW9H4lTIeJlk7Nj1jME+LhAM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -564,13 +347,6 @@
 			<key>hash2</key>
 			<data>
 			JQCeyemNyegfYydZZn/DajUZMS9UYt0dNG6ogGKsQi4=
-			</data>
-		</dict>
-		<key>ReleaseProduction.xcconfig</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HmSvoyIBowb6AhJOT2pa8dP1UrBzDv4OnnRT6Hw364M=
 			</data>
 		</dict>
 		<key>ar.lproj/DocumentReaderLocalizable.strings</key>
@@ -595,7 +371,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JWyauGYCRpPW8yhKgHw4zA5ikdXA7tPK/3DDIClRhNQ=
+			5a1V+MTgIIZl3BzkkFDM7VtuQ2TVTm+Nh15MyQ9OLZ4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -607,11 +383,29 @@
 			v8GCN2U6+ww/EEdOVMn23Tu5gfQdHURm1gDjVzgVEP8=
 			</data>
 		</dict>
+		<key>en.lproj/DocumentReaderLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5umrTgnIPGKR+8ASyyTCKWpjqrqih23ArtSzPbrZ/Vc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/FaceSDKLocalizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UxEHWvxD6hn253G3wno+CCZaLnKbj6hQypfoUNTCDdg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nZVs8DkADZRJSe2vQ1e6rx32LZ6MKdeFXnKjSWwaenc=
+			lO22YIeCqiN1/M7T+zaSW8L/ddhu4m5pd+DKMPGb07g=
 			</data>
 			<key>optional</key>
 			<true/>
