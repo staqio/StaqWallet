@@ -3067,8 +3067,8 @@
               },
               {
                 "kind": "Var",
-                "name": "valueDate",
-                "printedName": "valueDate",
+                "name": "time",
+                "printedName": "time",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3078,8 +3078,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV9valueDateSSvp",
-                "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV9valueDateSSvp",
+                "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV4timeSSvp",
+                "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV4timeSSvp",
                 "moduleName": "StaqWallet",
                 "declAttributes": [
                   "HasStorage",
@@ -3101,8 +3101,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV9valueDateSSvg",
-                    "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV9valueDateSSvg",
+                    "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV4timeSSvg",
+                    "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV4timeSSvg",
                     "moduleName": "StaqWallet",
                     "implicit": true,
                     "accessorKind": "get"
@@ -3112,7 +3112,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(id:type:amount:currency:description:date:valueDate:)",
+                "printedName": "init(id:type:amount:currency:description:date:time:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3164,8 +3164,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV2id4type6amount8currency11description4date9valueDateAESS_SSSdS4Stcfc",
-                "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV2id4type6amount8currency11description4date9valueDateAESS_SSSdS4Stcfc",
+                "usr": "s:10StaqWallet0aB5Tier0V0B11TransactionV2id4type6amount8currency11description4date4timeAESS_SSSdS4Stcfc",
+                "mangledName": "$s10StaqWallet0aB5Tier0V0B11TransactionV2id4type6amount8currency11description4date4timeAESS_SSSdS4Stcfc",
                 "moduleName": "StaqWallet",
                 "declAttributes": [
                   "AccessControl"
@@ -11251,42 +11251,42 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/ConfirmCardPin\/ConfirmCardPinModel.swift",
       "kind": "StringLiteral",
-      "offset": 2903,
+      "offset": 2960,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/ConfirmCardPin\/ConfirmCardPinModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2948,
+      "offset": 3005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/PersonalInfoForm\/PersonalInfoFormModel.swift",
       "kind": "Array",
-      "offset": 3088,
+      "offset": 3017,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/PersonalInfoForm\/PersonalInfoFormModel.swift",
       "kind": "Array",
-      "offset": 3172,
+      "offset": 3101,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/PersonalInfoForm\/PersonalInfoFormModel.swift",
       "kind": "Array",
-      "offset": 3224,
+      "offset": 3153,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Onboarding\/Tier2\/PersonalInfoForm\/PersonalInfoFormModel.swift",
       "kind": "Array",
-      "offset": 3269,
+      "offset": 3198,
       "length": 2,
       "value": "[]"
     },
@@ -11559,42 +11559,42 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 319,
+      "offset": 383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "StringLiteral",
-      "offset": 587,
+      "offset": 649,
       "length": 20,
       "value": "\"general.label.date\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "StringLiteral",
-      "offset": 728,
+      "offset": 822,
       "length": 38,
       "value": "\"card.transaction.label.transactionId\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 847,
+      "offset": 941,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "StringLiteral",
-      "offset": 912,
+      "offset": 1006,
       "length": 33,
       "value": "\"card.transaction.label.category\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier1\/Flows\/Transactions\/TransactionDetails\/InternalTransactionDetailsView.swift",
       "kind": "StringLiteral",
-      "offset": 1063,
+      "offset": 1157,
       "length": 27,
       "value": "\"general.label.description\""
     },
@@ -11783,42 +11783,42 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Settings\/Elements\/SettingsVersionView.swift",
       "kind": "StringLiteral",
-      "offset": 923,
+      "offset": 1154,
       "length": 7,
       "value": "\"2.0.0\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Settings\/Elements\/SettingsVersionView.swift",
-      "kind": "StringLiteral",
-      "offset": 948,
-      "length": 12,
-      "value": "\"20.06.2024\""
+      "kind": "IntegerLiteral",
+      "offset": 1228,
+      "length": 10,
+      "value": "1718891903"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Transactions\/Transaction\/CardTransactionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1136,
       "length": 27,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Transactions\/Transaction\/CardTransactionViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1109,
+      "offset": 1203,
       "length": 20,
-      "value": "\"MMMM d, 'at' h:mma\""
+      "value": "\"d MMMM yyyy, h:mma\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Transactions\/Transactions\/CardTransactionsViewModel.swift",
       "kind": "Array",
-      "offset": 327,
+      "offset": 391,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Transactions\/Transactions\/CardTransactionsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1992,
+      "offset": 2146,
       "length": 27,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
     },
@@ -11846,35 +11846,28 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "StringLiteral",
-      "offset": 287,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
-      "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 4688,
       "length": 5,
       "value": "\"SAR\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2602,
+      "offset": 4725,
       "length": 7,
       "value": "4300000"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2637,
+      "offset": 4760,
       "length": 8,
       "value": "85000000"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2673,
+      "offset": 4796,
       "length": 2,
       "value": "24"
     },
@@ -11958,14 +11951,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/TransactionsView.swift",
       "kind": "StringLiteral",
-      "offset": 5054,
+      "offset": 5194,
       "length": 27,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/TransactionsView.swift",
       "kind": "StringLiteral",
-      "offset": 5125,
+      "offset": 5265,
       "length": 25,
       "value": "\"dd MMM yyyy '•' HH:mm\""
     },
@@ -12609,245 +12602,245 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6782,
+      "offset": 6780,
       "length": 25,
       "value": "\"IBMPlexSansArabic-Light\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6815,
+      "offset": 6813,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6849,
+      "offset": 6847,
       "length": 25,
       "value": "\"IBMPlexSansArabic-Light\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6882,
+      "offset": 6880,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 6912,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6949,
+      "offset": 6947,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 6980,
+      "offset": 6978,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7015,
+      "offset": 7013,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7048,
+      "offset": 7046,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7083,
+      "offset": 7081,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7124,
+      "offset": 7122,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7166,
+      "offset": 7164,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7208,
+      "offset": 7206,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7250,
+      "offset": 7248,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7292,
+      "offset": 7290,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7334,
+      "offset": 7332,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7376,
+      "offset": 7374,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7418,
+      "offset": 7416,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7460,
+      "offset": 7458,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7506,
+      "offset": 7504,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7552,
+      "offset": 7550,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7598,
+      "offset": 7596,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7644,
+      "offset": 7642,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7679,
+      "offset": 7677,
       "length": 24,
       "value": "\"IBMPlexSansArabic-Bold\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7711,
+      "offset": 7709,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7754,
+      "offset": 7752,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7797,
+      "offset": 7795,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7840,
+      "offset": 7838,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7883,
+      "offset": 7881,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7913,
+      "offset": 7911,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7948,
+      "offset": 7946,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 7989,
+      "offset": 7987,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8024,
+      "offset": 8022,
       "length": 2,
       "value": "82"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "StringLiteral",
-      "offset": 8068,
+      "offset": 8066,
       "length": 27,
       "value": "\"IBMPlexSansArabic-Regular\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Services\/ThemeManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8103,
+      "offset": 8101,
       "length": 2,
       "value": "52"
     },
@@ -13148,9 +13141,9 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/DateInput\/DateFieldView.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 476,
       "length": 13,
-      "value": "\"dd MMM YYYY\""
+      "value": "\"dd MMM yyyy\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
@@ -13533,84 +13526,84 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1397,
+      "offset": 1353,
       "length": 11,
       "value": "\"nusuk-dev\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1458,
+      "offset": 1414,
       "length": 12,
       "value": "\"nusuk-prod\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1475,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1595,
+      "offset": 1551,
       "length": 38,
       "value": "\"2c76eedf-f29f-457f-97cd-fd1f18c23a8d\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1687,
+      "offset": 1643,
       "length": 90,
       "value": "\"mTqx0mHcqoAqIioruaISCF5lPPHj9eTL00rxzUbPsqmSwnsnNyiLqGCvFC9V079QkCo7wrNL\/LJ9KgwB5gN7Qw==\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1774,
       "length": 27,
       "value": "\"https:\/\/dev-api.staq.tech\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1888,
+      "offset": 1844,
       "length": 38,
       "value": "\"379cc899-64c4-4eed-b9a3-dc5aa03029e6\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 1937,
       "length": 90,
       "value": "\"ELrfNe9wz4+zQBJirQ26u1hfUjY8qkjcfDexLAVL7XedqbYvj9CS12Rj3OiMh8vPxCuUk0XSTjMKx1lmasx1SQ==\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2113,
+      "offset": 2069,
       "length": 29,
       "value": "\"https:\/\/api.baas.alahli.com\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2205,
+      "offset": 2161,
       "length": 24,
       "value": "\"https:\/\/ipinfo.staq.io\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2248,
       "length": 15,
       "value": "\"nafath:\/\/home\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2343,
+      "offset": 2299,
       "length": 60,
       "value": "\"https:\/\/apps.apple.com\/sa\/app\/نفاذ-nafath\/id1598909871\""
     },
