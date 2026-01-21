@@ -116,8 +116,8 @@ public struct StaqWalletTier0 {
     public let currency: Swift.String
     public let description: Swift.String
     public let date: Swift.String
-    public let valueDate: Swift.String
-    public init(id: Swift.String, type: Swift.String, amount: Swift.Double, currency: Swift.String, description: Swift.String, date: Swift.String, valueDate: Swift.String)
+    public let time: Swift.String
+    public init(id: Swift.String, type: Swift.String, amount: Swift.Double, currency: Swift.String, description: Swift.String, date: Swift.String, time: Swift.String)
   }
   public let id: Swift.String
   public let sourceType: StaqWallet.StaqWalletTier0.WalletSourceType
