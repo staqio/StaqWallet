@@ -214,8 +214,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "StaqWallet",
         "declAttributes": [
@@ -10733,77 +10733,77 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 993,
       "length": 9,
       "value": "\"country\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1025,
       "length": 12,
       "value": "\"country_ar\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1196,
+      "offset": 1061,
       "length": 5,
       "value": "\"iso\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1229,
+      "offset": 1094,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1263,
+      "offset": 1128,
       "length": 8,
       "value": "\"format\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1393,
+      "offset": 1258,
       "length": 14,
       "value": "\"Saudi Arabia\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1425,
+      "offset": 1290,
       "length": 48,
       "value": "\"المملكة العربية السعودية\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1492,
+      "offset": 1357,
       "length": 4,
       "value": "\"SA\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1519,
+      "offset": 1384,
       "length": 6,
       "value": "\"+966\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/CountryDialingInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1413,
       "length": 13,
       "value": "\"XX XXX XXXX\""
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/SelectPhoneCode\/SelectPhoneCodeFullScreenView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5909,
+      "offset": 6064,
       "length": 1,
       "value": "0"
     },
@@ -13211,14 +13211,14 @@
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/TextInput\/TextFieldItem.swift",
       "kind": "BooleanLiteral",
-      "offset": 237,
+      "offset": 301,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dmitriylunev\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/TextInput\/TextFieldItem.swift",
       "kind": "Array",
-      "offset": 496,
+      "offset": 1345,
       "length": 2,
       "value": "[]"
     },
