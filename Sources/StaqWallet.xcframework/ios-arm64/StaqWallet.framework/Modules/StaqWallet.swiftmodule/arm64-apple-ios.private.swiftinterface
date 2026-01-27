@@ -66,6 +66,39 @@ extension TrustlessSDK.AccountTransaction : @retroactive Swift.Identifiable, @re
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public enum SupportedLanguage : Swift.String {
+  case en
+  case ar
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+
 public struct StaqWalletPaymentOrder {
   public struct OrderStatus {
     public var code: Swift.String
@@ -132,7 +165,7 @@ public struct StaqWalletTier0 {
 @_hasMissingDesignatedInitializers final public class StaqTier0Wallet {
   public enum WalletError : Foundation.LocalizedError {
     case notInitialized
-    case unauthorizedTierState
+    case unauthorizedAccess
     case walletDoesNotExist
     case server(_: Swift.String)
     case unknown
@@ -248,39 +281,9 @@ public struct StaqWalletUser : Swift.Hashable, Swift.Equatable {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-public enum SupportedLanguage : Swift.String {
-  case en
-  case ar
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-
-
-
+extension StaqWallet.SupportedLanguage : Swift.Equatable {}
+extension StaqWallet.SupportedLanguage : Swift.Hashable {}
+extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
 extension StaqWallet.StaqWalletTier0.WalletSourceType : Swift.Equatable {}
 extension StaqWallet.StaqWalletTier0.WalletSourceType : Swift.Hashable {}
 extension StaqWallet.StaqWalletTier0.WalletSourceType : Swift.RawRepresentable {}
@@ -289,6 +292,3 @@ extension StaqWallet.StaqWalletEnvironment : Swift.Hashable {}
 extension StaqWallet.StaqWalletUser.UserType : Swift.Equatable {}
 extension StaqWallet.StaqWalletUser.UserType : Swift.Hashable {}
 extension StaqWallet.StaqWalletUser.UserType : Swift.RawRepresentable {}
-extension StaqWallet.SupportedLanguage : Swift.Equatable {}
-extension StaqWallet.SupportedLanguage : Swift.Hashable {}
-extension StaqWallet.SupportedLanguage : Swift.RawRepresentable {}
