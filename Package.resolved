@@ -1,13 +1,22 @@
 {
-  "originHash" : "44a624ec829c0b641770eb33839a008ce15f3e0cba6479c8ef51f41fd52e6207",
+  "originHash" : "be2976c3feeec87d0fca23b49f216c50f1e023ff4ae3846d491e02486e398889",
   "pins" : [
+    {
+      "identity" : "documentreader-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/regulaforensics/DocumentReader-Swift-Package",
+      "state" : {
+        "revision" : "c31d2ad8ba93067334448faec6822b35d7d5e053",
+        "version" : "9.1.5702"
+      }
+    },
     {
       "identity" : "documentreaderbounds-swift-package",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package",
       "state" : {
-        "revision" : "fdc4394a74116ff30f8f86001bb02f7d6a6bcf05",
-        "version" : "8.2.13454"
+        "revision" : "4667c53195c0b7f4ee3f1d0532f3ab6ff4fc8ccc",
+        "version" : "9.1.15608"
       }
     },
     {
@@ -15,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package",
       "state" : {
-        "revision" : "39669a7d9030e065a126ad713621cf0eadfba209",
-        "version" : "7.1.1501"
+        "revision" : "efbd912cfc3d823ccc25ee623e26769ef21401c8",
+        "version" : "7.2.1622"
       }
     },
     {
@@ -24,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/regulaforensics/FaceSDK-Swift-Package",
       "state" : {
-        "revision" : "2bf87a90043f2b1922c5c281df04b6c73fd72100",
-        "version" : "7.1.2940"
+        "revision" : "9d657accbdd0e6f05554daddbfb1e3845f16fff8",
+        "version" : "7.2.3526"
       }
     },
     {
@@ -33,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/regulaforensics/RegulaCommon-Swift-Package.git",
       "state" : {
-        "revision" : "fd51eb815e5dc5d4ef7c896ba992e7f4e163d66e",
-        "version" : "8.2.1410"
+        "revision" : "59c0d6cf6260a839ec4718e135c95cad7be769a7",
+        "version" : "9.1.1844"
       }
     }
   ],
