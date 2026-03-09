@@ -1,5 +1,5 @@
 {
-  "originHash" : "be2976c3feeec87d0fca23b49f216c50f1e023ff4ae3846d491e02486e398889",
+  "originHash" : "b5dfa0180898526020cff83e7b4986d99588d1a03d0cfc4da85d86f57d84eec5",
   "pins" : [
     {
       "identity" : "documentreader-swift-package",
@@ -44,6 +44,15 @@
       "state" : {
         "revision" : "59c0d6cf6260a839ec4718e135c95cad7be769a7",
         "version" : "9.1.1844"
+      }
+    },
+    {
+      "identity" : "trustlesssdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/staqio/TrustlessSDK",
+      "state" : {
+        "revision" : "1fb1737e2c7cc15fd008d96e57a6c7c659956e65",
+        "version" : "1.0.0"
       }
     }
   ],
