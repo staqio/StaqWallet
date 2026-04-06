@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AVFoundation
 import SystemConfiguration.CaptiveNetwork
 import Combine
@@ -20,7 +20,7 @@ import SwiftUI
 import SystemConfiguration
 import TrustlessSDK
 import UIKit
-import WebKit
+@preconcurrency import WebKit
 import _Concurrency
 import _PassKit_SwiftUI
 import _StringProcessing
@@ -85,11 +85,9 @@ public enum StaqWalletPayError : Foundation.LocalizedError {
   case walletDoesNotExist
   case server(_: Swift.String)
   case unknown
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 @_hasMissingDesignatedInitializers final public class StaqWalletPay {
   public static func getWallet(forUser user: StaqWallet.StaqWalletUser) async throws -> StaqWallet.StaqWalletDetails
@@ -104,9 +102,7 @@ public struct StaqWalletDetails {
     case wallet
     case account
     case card
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -151,9 +147,7 @@ public struct CreateStaqWalletPaymentOrderParams {
   public let entityId: Swift.String
   public let userId: Swift.String
   public let serviceId: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(idempotencyKey: Swift.String = UUID().uuidString, externalId: Swift.String? = nil, totalAmount: Foundation.Decimal, feesAmount: Foundation.Decimal? = nil, taxAmount: Foundation.Decimal? = nil, supplierId: Swift.String, metaData: [Swift.String : Swift.String] = [:], entityId: Swift.String, userId: Swift.String, serviceId: Swift.String)
-  #endif
 }
 public struct StaqWalletPaymentOrder {
   public struct OrderStatus {
@@ -189,9 +183,7 @@ public struct StaqWalletPaymentOrder {
 public enum StaqWalletLanguage : Swift.String {
   case en
   case ar
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -212,9 +204,7 @@ public struct StaqWalletConfig {
 public struct StaqWalletUser : Swift.Hashable, Swift.Equatable {
   public enum UserType : Swift.String {
     case local, international
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -225,9 +215,7 @@ public struct StaqWalletUser : Swift.Hashable, Swift.Equatable {
   public let email: Swift.String
   public let userType: StaqWallet.StaqWalletUser.UserType?
   public let nationalId: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(userId: Swift.String, secret: Swift.String, email: Swift.String, userType: StaqWallet.StaqWalletUser.UserType? = nil, nationalId: Swift.String? = nil)
-  #endif
   public static func == (a: StaqWallet.StaqWalletUser, b: StaqWallet.StaqWalletUser) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
