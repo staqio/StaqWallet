@@ -1,9 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.3.3.20 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVFoundation
-import AudioToolbox
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CommonCrypto
@@ -80,13 +79,6 @@ extension TrustlessSDK.AccountTransaction : @retroactive Swift.Identifiable, @re
 
 
 
-
-
-
-
-
-
-
 public enum StaqWalletPayError : Foundation.LocalizedError {
   case notInitialized
   case unauthorizedAccess
@@ -102,7 +94,7 @@ public enum StaqWalletPayError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers final public class StaqWalletPay {
   public static func getWallet(forUser user: StaqWallet.StaqWalletUser) async throws -> StaqWallet.StaqWalletDetails
   public static func createPaymentOrder(forUser user: StaqWallet.StaqWalletUser, params: StaqWallet.CreateStaqWalletPaymentOrderParams) async throws -> StaqWallet.StaqWalletPaymentOrder
-  public static func getPaymentOrderDetails(forUser userConfig: StaqWallet.StaqWalletUser, orderId: Swift.String) async throws -> StaqWallet.StaqWalletPaymentOrder
+  public static func getPaymentOrderDetails(forUser user: StaqWallet.StaqWalletUser, orderId: Swift.String) async throws -> StaqWallet.StaqWalletPaymentOrder
   public static func makeTopUpView(user: StaqWallet.StaqWalletUser, onClose: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
   @objc deinit
@@ -191,12 +183,8 @@ public struct StaqWalletPaymentOrder {
   @_Concurrency.MainActor public static func changeLanguage(_ language: StaqWallet.StaqWalletLanguage)
   public static func makeStartView(user: StaqWallet.StaqWalletUser, onClose: @escaping () -> Swift.Void) -> some SwiftUICore.View
   
-  public static func makeStartViewController(user: StaqWallet.StaqWalletUser, onClose: @escaping () -> Swift.Void) async -> UIKit.UIViewController
   public static func setPackagesNavigationCallback(_ callback: @escaping () -> Swift.Void)
   @objc deinit
-}
-extension StaqWallet.StaqWalletManager : TrustlessSDK.TrustlessDelegate {
-  final public func didSessionExpired()
 }
 public enum StaqWalletLanguage : Swift.String {
   case en
@@ -246,6 +234,13 @@ public struct StaqWalletUser : Swift.Hashable, Swift.Equatable {
     get
   }
 }
+
+
+
+
+
+
+
 
 
 extension StaqWallet.StaqWalletDetails.WalletSourceType : Swift.Equatable {}

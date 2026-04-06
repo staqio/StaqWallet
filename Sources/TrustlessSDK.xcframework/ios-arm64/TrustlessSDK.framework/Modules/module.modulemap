@@ -1,4 +1,0 @@
-framework module TrustlessSDK {
-  header "TrustlessSDK-Swift.h"
-  requires objc
-}
