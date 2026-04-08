@@ -7,5 +7,4 @@ framework module StaqWallet {
 
 module StaqWallet.Swift {
   header "StaqWallet-Swift.h"
-  requires objc
 }
