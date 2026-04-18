@@ -10028,7 +10028,7 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/PassCodeView\/PassCodeView.swift",
       "kind": "StringLiteral",
-      "offset": 1772,
+      "offset": 2250,
       "length": 8,
       "value": "\"111111\""
     },
@@ -10054,37 +10054,37 @@
       "value": "6"
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecurritySettingsViewModel.swift",
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecuritySettingsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 240,
+      "offset": 238,
       "length": 41,
       "value": "\"onboarding.biometrics.label.securityKey\""
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecurritySettingsViewModel.swift",
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecuritySettingsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 310,
       "length": 50,
       "value": "\"onboarding.biometrics.label.securityInstructions\""
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecurritySettingsViewModel.swift",
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecuritySettingsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 397,
+      "offset": 395,
       "length": 31,
       "value": "\"securitySettings.label.faceID\""
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecurritySettingsViewModel.swift",
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecuritySettingsViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 478,
+      "offset": 476,
       "length": 40,
       "value": "\"securitySettings.button.createPassCode\""
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecurritySettingsViewModel.swift",
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/SecuritySettings\/SecuritySettingsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 576,
+      "offset": 574,
       "length": 5,
       "value": "false"
     },
@@ -10819,35 +10819,35 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/ActivateCard\/ActivateCardModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 328,
+      "offset": 385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "StringLiteral",
-      "offset": 2014,
+      "offset": 2118,
       "length": 5,
       "value": "\"SAR\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2051,
+      "offset": 2155,
       "length": 7,
       "value": "4300000"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2089,
+      "offset": 2193,
       "length": 8,
       "value": "85000000"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2125,
+      "offset": 2229,
       "length": 2,
       "value": "24"
     },
@@ -13871,35 +13871,42 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8593,
+      "offset": 8561,
+      "length": 6,
+      "value": "\"menu\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8717,
       "length": 22,
       "value": "\"onboardingFaceIdIcon\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8765,
+      "offset": 8889,
       "length": 22,
       "value": "\"passwordVerification\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8943,
+      "offset": 9067,
       "length": 25,
       "value": "\"statusScreenFailureIcon\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9124,
+      "offset": 9248,
       "length": 25,
       "value": "\"statusScreenSuccessIcon\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/Build\/DerivedData\/Build\/Intermediates.noindex\/ArchiveIntermediates\/StaqWallet\/IntermediateBuildFilesPath\/StaqWallet.build\/ReleaseProduction-iphoneos\/StaqWallet.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9293,
+      "offset": 9417,
       "length": 19,
       "value": "\"videoVerification\""
     }
