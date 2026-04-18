@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		U5YfhYBneH+8ZDON1OiI448fQDo=
+		AXqZNKd94XuN5pJE9zvsVCYeXTc=
 		</data>
 		<key>Headers/StaqWallet-Swift.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HwnAHPJAAYBPUXwJbZXZgSvVQqk=
+		x8ByfMStWPRJIIyqkpE3aSVqyiE=
 		</data>
 		<key>Inter-Regular.ttf</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		PE7MEy3JbevLsICVqtHK+kkLDE4=
+		qG1KlXtcf9H5XZ01f45ax6HiAYQ=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		0nVAcIuLcPniyuzWwDWk+SSZUfk=
+		9nfvDqhWwthgdbMpHDmqrYzg1bM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kwM1S3mOvxkk5EMkzNEXm+iCLj0=
+			MHzgz/9h183qopBAEABRTMTz+EY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VIsQQp2vMJX13fd22Hy+nkxqOUg=
+			mgzYd0sKMqITDlXU2UsrcUFAZZc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -165,7 +165,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hl1udVNGvQQu2/7GQ4IyqmMhmIsowFV2qsHow3JIG4E=
+			pj6xpMxw7fS7Z7e6ixDzXxj+M18BXMnFDjrlDSn3S9c=
 			</data>
 		</dict>
 		<key>Headers/StaqWallet-Swift.h</key>
@@ -242,7 +242,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+IZdxCCXHscM5C7DVWHaN5g9Qb+fHc7W5uF9ET6Ux7I=
+			G2ButQIwD5y28VOUjKuZx17vcYzANpduJwWRIdj+6Qk=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -270,7 +270,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fN+5ThG1ILkDmY7MKNOAt3a8KabCvCGhs0Co71Kpgwk=
+			fJM2YXfHVfTlpEDy+46AMZCPKzp/o7PkG5T72z4XQcU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -316,7 +316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NvCvaqlN/DMTo2EmPuWzkGjuFRytb4x0QgL4xh4wJYE=
+			/s6WCjwb1BxZ52t8Re7UanKynTXLZGtwKgE7aoUMvjo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -350,7 +350,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4grNyvASWBFwjhk1WHz/Zlb0M6T3iEmeDo1lYA8DoK8=
+			tAXjSjL7nTZBoCltcOJ5NUo2nkKTcyUjCT9C6Z3T1GM=
 			</data>
 			<key>optional</key>
 			<true/>

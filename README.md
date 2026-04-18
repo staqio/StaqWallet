@@ -5,7 +5,6 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 ## 🔧 Requirements
 
 - **Xcode**: 16.0+
-- **Swift**: 6.0+
 
 ## 📦 Installation
 
@@ -15,7 +14,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "4.0.1")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "4.0.2")
 ]
 ```
 
