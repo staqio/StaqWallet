@@ -248,8 +248,8 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "StaqWallet",
         "declAttributes": [
@@ -10007,21 +10007,21 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/VerifyOTP\/VerifyOTPView.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 2220,
       "length": 7,
       "value": "\"Title\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/VerifyOTP\/VerifyOTPView.swift",
       "kind": "StringLiteral",
-      "offset": 1716,
+      "offset": 2239,
       "length": 10,
       "value": "\"Subtitle\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Auth\/VerifyOTP\/VerifyOTPView.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 2312,
       "length": 11,
       "value": "\"+96612345\""
     },
@@ -10826,28 +10826,28 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2215,
       "length": 5,
       "value": "\"SAR\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2155,
+      "offset": 2252,
       "length": 7,
       "value": "4300000"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2193,
+      "offset": 2290,
       "length": 8,
       "value": "85000000"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/Views\/CardBalanceView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2229,
+      "offset": 2326,
       "length": 2,
       "value": "24"
     },
@@ -12639,49 +12639,42 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 233,
+      "offset": 299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
+      "offset": 333,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 327,
+      "offset": 360,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 457,
+      "offset": 745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "IntegerLiteral",
-      "offset": 492,
+      "offset": 780,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
       "kind": "BooleanLiteral",
-      "offset": 540,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/Inputs\/NumberCodeInput\/NumberCodeInputField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 572,
+      "offset": 856,
       "length": 5,
       "value": "false"
     },
