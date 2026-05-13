@@ -305,1300 +305,6 @@
       },
       {
         "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "LocalAuthentication",
-        "printedName": "LocalAuthentication",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "PassKit",
-        "printedName": "PassKit",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "PassKit",
-        "printedName": "PassKit",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "LocalAuthentication",
-        "printedName": "LocalAuthentication",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "LocalAuthentication",
-        "printedName": "LocalAuthentication",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "TrustlessSDK",
-        "printedName": "TrustlessSDK",
-        "declKind": "Import",
-        "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -6065,8 +4771,7 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "Custom"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7333,6 +6038,1300 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "TrustlessSDK",
+        "printedName": "TrustlessSDK",
+        "declKind": "Import",
+        "moduleName": "StaqWallet"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "StaqWallet",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8192,16 +8191,6 @@
         "printedName": "TrustlessSDK",
         "declKind": "Import",
         "moduleName": "StaqWallet"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "StaqWallet",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -10026,6 +10015,55 @@
       "value": "\"+96612345\""
     },
     {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 8,
+      "value": "\"WALLET\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 9,
+      "value": "\"ACCOUNT\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
+      "kind": "StringLiteral",
+      "offset": 323,
+      "length": 6,
+      "value": "\"CARD\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
+      "kind": "StringLiteral",
+      "offset": 4318,
+      "length": 5,
+      "value": "\"SAR\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
+      "kind": "Dictionary",
+      "offset": 5620,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletModels.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 4,
+      "value": "\"en\""
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletModels.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 4,
+      "value": "\"ar\""
+    },
+    {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/DeviceAuth\/Views\/PassCodeView\/PassCodeView.swift",
       "kind": "StringLiteral",
       "offset": 2250,
@@ -10761,55 +10799,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
-      "kind": "StringLiteral",
-      "offset": 261,
-      "length": 8,
-      "value": "\"WALLET\""
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
-      "kind": "StringLiteral",
-      "offset": 293,
-      "length": 9,
-      "value": "\"ACCOUNT\""
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
-      "kind": "StringLiteral",
-      "offset": 323,
-      "length": 6,
-      "value": "\"CARD\""
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
-      "kind": "StringLiteral",
-      "offset": 4318,
-      "length": 5,
-      "value": "\"SAR\""
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
-      "kind": "Dictionary",
-      "offset": 5620,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletModels.swift",
-      "kind": "StringLiteral",
-      "offset": 207,
-      "length": 4,
-      "value": "\"en\""
-    },
-    {
-      "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletModels.swift",
-      "kind": "StringLiteral",
-      "offset": 226,
-      "length": 4,
-      "value": "\"ar\""
-    },
-    {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Flows\/Withdraw\/WithdrawConfirm\/WithdrawConfirmViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 318,
@@ -10987,14 +10976,14 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/CardViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 9540,
+      "offset": 9552,
       "length": 13,
       "value": "\"card-status\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Flows\/Wallet\/Tier2\/Views\/Main\/CardViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 9627,
+      "offset": 9639,
       "length": 10,
       "value": "1711929600"
     },
@@ -12548,14 +12537,14 @@
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/ViewModifiers\/ToolBarModifier.swift",
       "kind": "BooleanLiteral",
-      "offset": 3107,
+      "offset": 3062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/ViewModifiers\/ToolBarModifier.swift",
       "kind": "BooleanLiteral",
-      "offset": 3543,
+      "offset": 3498,
       "length": 5,
       "value": "false"
     },
