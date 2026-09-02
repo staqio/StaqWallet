@@ -11,6 +11,7 @@ import DocumentReader
 import FaceSDK
 import Foundation
 import LocalAuthentication
+import Network
 import NetworkExtension
 import PassKit
 import Security
@@ -59,6 +60,21 @@ extension TrustlessSDK.AccountTransaction : @retroactive Swift.Identifiable, @re
     get
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 public enum StaqWalletPayError : Foundation.LocalizedError {
@@ -204,19 +220,6 @@ public struct StaqWalletUser : Swift.Hashable, Swift.Equatable {
     get
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
