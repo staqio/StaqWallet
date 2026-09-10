@@ -14,7 +14,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "4.1.0")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "4.2.0")
 ]
 ```
 
