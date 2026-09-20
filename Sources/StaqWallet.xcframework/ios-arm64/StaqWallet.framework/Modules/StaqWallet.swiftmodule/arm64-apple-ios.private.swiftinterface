@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.33.1 clang-2100.3.33.1)
-// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios16.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name StaqWallet
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import AVFoundation
 import SystemConfiguration.CaptiveNetwork
@@ -60,22 +60,6 @@ extension TrustlessSDK::AccountTransaction : @retroactive Swift::Identifiable, @
     get
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 public enum StaqWalletPayError : Foundation::LocalizedError {
   case notInitialized
@@ -213,13 +197,30 @@ public struct StaqWalletUser : Swift::Hashable, Swift::Equatable {
   public let email: Swift::String
   public let userType: StaqWallet::StaqWalletUser.StaqWallet::UserType?
   public let nationalId: Swift::String?
-  public init(userId: Swift::String, secret: Swift::String, email: Swift::String, userType: StaqWallet::StaqWalletUser.StaqWallet::UserType? = nil, nationalId: Swift::String? = nil)
+  public let idToken: Swift::String?
+  public init(userId: Swift::String, secret: Swift::String, email: Swift::String, userType: StaqWallet::StaqWalletUser.StaqWallet::UserType? = nil, nationalId: Swift::String? = nil, idToken: Swift::String? = nil)
   public static func == (a: StaqWallet::StaqWalletUser, b: StaqWallet::StaqWalletUser) -> Swift::Bool
   public func hash(into hasher: inout Swift::Hasher)
   public var hashValue: Swift::Int {
     get
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
