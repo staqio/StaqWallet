@@ -1,0 +1,3 @@
+# CI/CD workflow definitions require devops-team review.
+# Last-match-wins, so keep this rule at the end of the file.
+/.github/workflows/ @staqio/devops-team
