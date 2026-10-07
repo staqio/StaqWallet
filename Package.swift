@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.1.0"),
+        .package(url: "https://github.com/staqio/TrustlessSDK", exact: "1.2.0"),
         .package(url: "https://github.com/regulaforensics/DocumentReader-Swift-Package", exact: "9.1.5702"),
         .package(url: "https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package", exact: "9.1.15608"),
         .package(url: "https://github.com/regulaforensics/FaceCoreBasic-Swift-Package", exact: "7.2.1622"),
