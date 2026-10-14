@@ -4,7 +4,8 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ## 🔧 Requirements
 
-- **Xcode**: 16.0+
+- **iOS**: 16.0+
+- **Xcode**: 27.0+ (Swift 6.4)
 
 ## 📦 Installation
 
@@ -14,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "5.0.0")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "5.0.1")
 ]
 ```
 
@@ -40,63 +41,101 @@ Or in Xcode: File → Add Packages → paste the repo URL.
 
 **Step 1 – Initialize the SDK**
 
-You **must** call `StaqWalletManager.initialize(withConfig:)` early in your app’s lifecycle, typically in `AppDelegate.application(_:didFinishLaunchingWithOptions:)` or in your `@main` SwiftUI entry point.
+You **must** call `StaqWalletManager.initialize(withConfig:)` once, early in your app’s lifecycle, typically in `AppDelegate.application(_:didFinishLaunchingWithOptions:)` or in your `@main` SwiftUI entry point. Call it on the main actor.
 
 ```swift
 let config = StaqWalletConfig(
-    merchantIdentifier: "merchant-identifier",
+    merchantIdentifier: "merchant.com.example",
+    language: .en, // or .ar
     walletEnv: .production // or .development
 )
 
 StaqWalletManager.initialize(withConfig: config)
 ```
 
-**Step 2 – Start the Wallet Flow**
-
-After initializing, you can start the wallet UI:
+**Step 2 – Describe the User**
 
 ```swift
-let userConfig = StaqWalletUser(
+let user = StaqWalletUser(
     userId: "user-id",
     secret: "user-secret",
-    userType: "user-type",
-    nationalID: "user-national-id",
-    email: "user-email"
-)
-
-StaqWalletManager.start(
-    forUser: userConfig,
-    withLanguage: .ar, // or .en
-    fromNavigationController: rootNavigationController!
+    userType: .local, // or .international, or nil
+    nationalId: "user-national-id",
+    idToken: "id-token-from-your-backend"
 )
 ```
+
+**Step 3 – Present the Wallet**
+
+`StaqWalletManager.makeStartView(user:onClose:)` returns a SwiftUI view. Present it full screen and dismiss it in `onClose`:
+
+```swift
+struct ContentView: View {
+    let user: StaqWalletUser
+    @State private var isWalletPresented = false
+
+    var body: some View {
+        Button("Open Wallet") { isWalletPresented = true }
+            .fullScreenCover(isPresented: $isWalletPresented) {
+                StaqWalletManager.makeStartView(user: user) {
+                    isWalletPresented = false
+                }
+            }
+    }
+}
+```
+
+For UIKit, see [Minimum Example Code to Start the Wallet Flow](#minimum-example-code-to-start-the-wallet-flow).
 
 ## 🛠️ Usage
 
 ### StaqWalletConfig
 
-Used to configure the SDK during app launch. You must create and pass this config to `StaqWalletManager.initialize(...)` to initialize the wallet SDK before starting any flows.
+Used to configure the SDK during app launch. You must create and pass this config to `StaqWalletManager.initialize(withConfig:)` before starting any flows.
 
-| Name                | Type                    | Description                                                 |
-|---------------------|-------------------------|-------------------------------------------------------------|
-| merchantIdentifier  | `String`                | Apple Pay merchant identifier.                              |
-| walletEnv           | `StaqWalletEnvironment` | SDK operating environment (`.production` or `.development`).|
+| Name                | Type                    | Description                                                                   |
+|---------------------|-------------------------|-------------------------------------------------------------------------------|
+| merchantIdentifier  | `String`                | Apple Pay merchant identifier, used for Apple Pay top-ups.                    |
+| language            | `StaqWalletLanguage`    | Initial wallet language (`.en` or `.ar`).                                     |
+| walletEnv           | `StaqWalletEnvironment` | SDK operating environment (`.production` or `.development`). Defaults to `.production`. |
 
 ### StaqWalletUser
 
-Represents a specific user within the wallet flow. This struct is passed when starting the wallet experience and contains user-related data used for authentication, personalization, and request headers.
+Represents a specific user within the wallet. Pass it when presenting the wallet and when calling `StaqWalletPay` methods. It contains the data used for authentication, personalization, and request headers.
 
-| Name       | Type     | Description                                      |
-|------------|----------|--------------------------------------------------|
-| userId     | `String` | The unique identifier of the user.               |
-| secret     | `String` | Secret token used for authentication.            |
-| userType   | `String` | Type of user.                                    |
-| nationalID | `String` | National identification number.                  |
-| email      | `String` | User's email address.                            |
+| Name       | Type                       | Description                                                                                         |
+|------------|----------------------------|-----------------------------------------------------------------------------------------------------|
+| userId     | `String`                   | The unique identifier of the user.                                                                  |
+| secret     | `String`                   | Secret token used for authentication.                                                               |
+| userType   | `StaqWalletUser.UserType?` | `.local` (residents, verified with Nafath) or `.international` (foreign visitors). Optional: if `nil`, the user chooses during onboarding. |
+| nationalId | `String?`                  | National identification number. Optional.                                                          |
+| idToken    | `String`                   | Identity token issued by your backend or identity provider. The wallet exchanges it for a wallet session, which is the only way to sign in. |
 
-### Navigation Controller Setup
+Always pass a current `idToken`: the wallet uses it whenever the stored session can't be restored. The backend may ask the user to confirm the session with an OTP; the wallet handles that step.
 
-A `UINavigationController` must be provided to the SDK for navigation purposes. The navigation controller is used internally for presenting views. Ensure you pass a valid instance when starting the wallet flow.
+### Wallet Tiers
+
+| Tier   | Who                  | How the user gets it                                                                 |
+|--------|----------------------|--------------------------------------------------------------------------------------|
+| Tier 0 | Every wallet user    | Registered automatically the first time the user opens the wallet or uses `StaqWalletPay`. |
+| Tier 1 | Local users          | Upgraded inside the wallet, verified with Nafath.                                    |
+| Tier 2 | International users  | Upgraded inside the wallet with visa details and identity verification (document and face scan). |
+
+### Changing the Language
+
+Set the initial language in `StaqWalletConfig`. To change it later, call on the main actor:
+
+```swift
+StaqWalletManager.changeLanguage(.ar) // or .en
+```
+
+### Closing the Wallet
+
+The wallet calls the `onClose` closure passed to `makeStartView(user:onClose:)` when it closes: when the user closes it, or when it can't continue and has to be opened again (for example, with a fresh `idToken`). Dismiss the wallet view there.
+
+### Apple Pay Setup
+
+Tier 1 top-ups support Apple Pay. Add the **Apple Pay** capability to your app target with the merchant identifier you pass in `StaqWalletConfig.merchantIdentifier`.
 
 ### Face ID Setup
 
@@ -151,6 +190,7 @@ Below is an example implementation within `SceneDelegate`:
 
 ```swift
 import StaqWallet
+import SwiftUI
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -166,24 +206,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
 
         let rootViewController = UIViewController()
-        let navigationController = UINavigationController(
-            rootViewController: rootViewController
-        )
-
-        window.rootViewController = navigationController
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
 
         let config = StaqWalletConfig(
-            merchantIdentifier: "merchant-identifier",
+            merchantIdentifier: "merchant.com.example",
+            language: .ar, // or .en
             walletEnv: .production // or .development
-        )
-
-        let userConfig = StaqWalletUser(
-            userId: "user-id",
-            secret: "user-secret",
-            userType: "user-type",
-            nationalID: "user-national-id",
-            email: "user-email"
         )
 
         StaqWalletManager.initialize(withConfig: config)
@@ -192,11 +221,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // Implement your custom navigation logic here
         }
 
-        StaqWalletManager.start(
-            forUser: userConfig,
-            withLanguage: .ar, // or .en
-            fromNavigationController: navigationController
+        let user = StaqWalletUser(
+            userId: "user-id",
+            secret: "user-secret",
+            userType: .local, // or .international, or nil
+            nationalId: "user-national-id",
+            idToken: "id-token-from-your-backend"
         )
+
+        let walletViewController = UIHostingController(
+            rootView: StaqWalletManager.makeStartView(user: user) {
+                rootViewController.dismiss(animated: true)
+            }
+        )
+        walletViewController.modalPresentationStyle = .fullScreen
+
+        // Present once the window is on screen.
+        DispatchQueue.main.async {
+            rootViewController.present(walletViewController, animated: true)
+        }
     }
 }
 ```
@@ -205,107 +248,220 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 # Staq Wallet Pay
 
-The `StaqWalletPay` class provides Wallet Pay functionality, including balance management, payment order creation, and UI components.
+The `StaqWalletPay` class provides Wallet Pay functionality without opening the wallet.
 
 ### Overview
 
-`StaqWalletPay` is a singleton class designed to streamline Wallet Pay operations. It supports:
+`StaqWalletPay` exposes static methods for:
 
-- UI Management: Present modals for Wallet Pay details and actions.
-- Wallet Management: Fetch the wallet balance with robust error handling.
-- Payment Order Management: Create and retrieve payment order details using asynchronous methods.
+- Wallet: Fetch the user's wallet with its balance and transactions.
+- Payment Orders: Create payment orders and retrieve their details.
+- UI: Present a card top-up screen.
 
-## Register a user for Tier0
+Call `StaqWalletManager.initialize(withConfig:)` before using any of them. Each method performs network requests and must be called from an async context.
 
-Registers the user with the Tier0 program using the provided configuration.
+Each call restores the user's wallet session, or creates one from `StaqWalletUser.idToken`. If the backend requires the user to confirm the session with an OTP, the call throws `StaqWalletPayError.unauthorizedAccess`; open the wallet with `StaqWalletManager.makeStartView(user:onClose:)` so the user can confirm it.
 
-**Method Signature**
+## Get Wallet
 
-```swift
-public static func registerUser(withConfig userConfig: StaqWalletUser) async throws
-```
-
-**Parameters**
-
-- `userConfig`: The user configuration to register.
-
-**Throws**
-
-- `WalletPayError.notInitialized`: If the SDK was not properly initialized.
-- `WalletPayError.server`: If the backend returns an error.
-- `WalletPayError.unexpected`: If any unexpected failures occur.
-
-**Notes**
-- Call after StaqWalletManager.initialize(...).
-- Performs a network request; must be called from an async context.
-
-## Retrieve Wallet Balance
-
-Fetch the current wallet balance asynchronously.
+Registers the user for Tier 0 if needed, then returns the wallet for the user's current tier with its balance and transactions.
 
 **Method Signature**
 
 ```swift
-public static func getWalletBalance(forUser userConfig: StaqWalletUser) async throws -> Double
+public static func getWallet(forUser user: StaqWalletUser) async throws -> StaqWalletDetails
 ```
 
 **Parameters**
 
-- `userConfig`: The user configuration for whose wallet balance to fetch.
+- `user`: The user whose wallet to fetch.
 
 **Returns**
 
-The available balance of the wallet as a `Double`.
+A `StaqWalletDetails` describing the wallet, its balance, and its transactions.
 
 **Throws**
 
-- `WalletPayError.notInitialized`: If the SDK was not properly initialized.
-- `WalletPayError.walletNotAvailable`: If the user doesn't have a wallet account.
-- `WalletPayError.notLoggedIn`: If the session is expired or not established.
-- `WalletPayError.server`: If the backend returns an error.
-- `WalletPayError.unexpected`: If any unexpected failures occur.
-
-## Models
-
-### WalletPayError
-
-An enum representing errors that may occur during Wallet Pay operations such as retrieving wallet balance, creating a payment order, or fetching the details of an existing order.
-
-**Error Cases**
-
-- `notInitialized`: The SDK has not been initialized.
-- `notLoggedIn`: The user is not authenticated or their session is invalid or expired.
-- `walletNotAvailable`: The wallet account for the user could not be found, is missing, or inaccessible.
-- `server(code: String, message: String)`: A backend server error occurred, including an error code and message.
-- `unexpected`: An unknown or unexpected error occurred.
+- `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
+- `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.walletDoesNotExist`: If no wallet was found for the user.
+- `StaqWalletPayError.server`: If the backend returns an error.
+- `StaqWalletPayError.unknown`: If any unexpected failures occur.
 
 **Example Usage**
 
 ```swift
 do {
-    let balance = try await StaqWalletPay.getWalletBalance(forUser: ...)
-} catch let error as StaqWalletPay.WalletPayError {
+    let wallet = try await StaqWalletPay.getWallet(forUser: user)
+    print("Available balance: \(wallet.balance.availableBalance) \(wallet.balance.currency)")
+} catch let error as StaqWalletPayError {
     print("Wallet Pay Error: \(error.errorDescription ?? "Unknown error")")
 } catch {
     print("Other Error: \(error.localizedDescription)")
 }
 ```
 
----
+## Payment Order Management
 
-### PaymentOrderParams
+### Create Payment Order
 
-A struct representing the parameters required to create a payment order within the Wallet Pay.
+Creates a payment order paid from the user's wallet. Registers the user for Tier 0 if needed.
+
+**Method Signature**
+
+```swift
+public static func createPaymentOrder(
+    forUser user: StaqWalletUser,
+    params: CreateStaqWalletPaymentOrderParams
+) async throws -> StaqWalletPaymentOrder
+```
 
 **Parameters**
 
-- `idempotencyKey`: A unique key to ensure idempotency of the request.
+- `user`: The user for whom the payment order will be created.
+- `params`: A `CreateStaqWalletPaymentOrderParams` instance with the details of the payment order.
+
+**Returns**
+
+A `StaqWalletPaymentOrder` describing the created order.
+
+**Throws**
+
+- `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
+- `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.walletDoesNotExist`: If no wallet was found for the user.
+- `StaqWalletPayError.server`: If the backend returns an error.
+- `StaqWalletPayError.unknown`: If any unexpected failures occur.
+
+---
+
+### Get Payment Order Details
+
+Fetches the details of an existing payment order by its unique identifier.
+
+**Method Signature**
+
+```swift
+public static func getPaymentOrderDetails(
+    forUser user: StaqWalletUser,
+    orderId: String
+) async throws -> StaqWalletPaymentOrder
+```
+
+**Parameters**
+
+- `user`: The user associated with the payment order.
+- `orderId`: The unique identifier of the payment order.
+
+**Returns**
+
+A `StaqWalletPaymentOrder` with the current state of the order.
+
+**Throws**
+
+- `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
+- `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.server`: If the backend returns an error.
+- `StaqWalletPayError.unknown`: If any unexpected failures occur.
+
+## Top-Up UI
+
+Returns a SwiftUI screen where the user tops up their wallet with a bank card. The top-up registers the user for Tier 0 if needed.
+
+**Method Signature**
+
+```swift
+public static func makeTopUpView(
+    user: StaqWalletUser,
+    onClose: @escaping () -> Void
+) -> some View
+```
+
+**Parameters**
+
+- `user`: The user whose wallet to top up.
+- `onClose`: Called when the user closes the screen. Dismiss the view here.
+
+**Example Usage**
+
+```swift
+struct WalletScreen: View {
+    let user: StaqWalletUser
+    @State private var isTopUpPresented = false
+
+    var body: some View {
+        Button("Top Up") { isTopUpPresented = true }
+            .navigationDestination(isPresented: $isTopUpPresented) {
+                StaqWalletPay.makeTopUpView(user: user) {
+                    isTopUpPresented = false
+                }
+            }
+    }
+}
+```
+
+## Models
+
+### StaqWalletPayError
+
+An enum representing errors that may occur during Wallet Pay operations. It conforms to `LocalizedError`, so `errorDescription` holds a readable message.
+
+**Error Cases**
+
+- `notInitialized`: The SDK has not been initialized.
+- `unauthorizedAccess`: The session expired or is no longer valid; the user needs to confirm it with an OTP in the wallet.
+- `walletDoesNotExist`: No wallet was found for the user.
+- `server(_ message: String)`: The backend returned an error with the given message.
+- `unknown`: An unknown or unexpected error occurred.
+
+---
+
+### StaqWalletDetails
+
+The user's wallet for their current tier.
+
+| Name         | Type                  | Description                                                                 |
+|--------------|-----------------------|-----------------------------------------------------------------------------|
+| id           | `String`              | Identifier of the wallet, account, or card.                                 |
+| sourceType   | `WalletSourceType`    | `.wallet` (Tier 0 wallet), `.account` (Tier 1 account), or `.card` (Tier 2 card). |
+| balance      | `WalletBalance`       | The wallet balance.                                                         |
+| transactions | `[WalletTransaction]` | The latest wallet transactions.                                             |
+
+**WalletBalance**
+
+- `currency`: Currency code of the balance.
+- `currentBalance`: Current balance (`Decimal`).
+- `blockedAmount`: Amount on hold (`Decimal`).
+- `availableBalance`: Balance available to spend (`Decimal`).
+
+**WalletTransaction**
+
+- `id`: Transaction identifier.
+- `type`: Debit or credit indicator.
+- `amount`: Transaction amount (`Decimal`).
+- `currency`: Currency code of the transaction.
+- `description`: Transaction description.
+- `date`: Formatted transaction date.
+- `time`: Formatted transaction time.
+
+---
+
+### CreateStaqWalletPaymentOrderParams
+
+The parameters required to create a payment order.
+
+**Parameters**
+
+- `idempotencyKey`: A unique key to ensure idempotency of the request. Defaults to a new UUID string.
 - `externalId`: Optional external identifier for the order.
 - `totalAmount`: The total amount of the payment order.
 - `feesAmount`: Optional portion of the total amount representing fees.
 - `taxAmount`: Optional portion of the total amount representing taxes.
 - `supplierId`: Unique identifier of the supplier fulfilling the order.
 - `metaData`: Optional additional metadata for the order.
+- `entityId`, `userId`, `serviceId`: Identifiers sent with the order as `EntityId`, `UserId`, and `ServiceId`.
+
+The currency is always `SAR`.
 
 **Initializer**
 
@@ -313,280 +469,54 @@ A struct representing the parameters required to create a payment order within t
 public init(
     idempotencyKey: String = UUID().uuidString,
     externalId: String? = nil,
-    totalAmount: Double,
-    feesAmount: Double?,
-    taxAmount: Double?,
+    totalAmount: Decimal,
+    feesAmount: Decimal? = nil,
+    taxAmount: Decimal? = nil,
     supplierId: String,
-    metaData: [String: String] = [:]
-)
-```
-
-## Payment Order UI
-
-The Wallet Pay UI is a combination of SwiftUI and UIKit components that handle payment-related workflows. These components include views to display wallet details and modals to handle user interactions for payments.
-
-### WalletPayView
-
-**Overview**
-
-`WalletPayView` is a SwiftUI view that dynamically renders two types of layouts:
-
-- Inline View (`inline`): A compact representation of Wallet Pay details.
-- Breakdown View (`breakdown`): A detailed view showing payment order parameters.
-
-**Parameters**
-
-- `variant`: Specifies the layout type (`inline` or `breakdown`).
-- `state`: The state object that manages the Wallet Pay view's behavior and balance (`WalletPayViewState`).
-- `params`: The parameters for the payment order (`StaqWalletPay.PaymentOrderParams`).
-
-**Example Usage**
-
-```swift
-struct ContentView: View {
-    @StateObject var state = WalletPayViewState(
-        isSelected: false,
-        balance: 100.0
-    )
-
-    var body: some View {
-        WalletPayView(
-            variant: .breakdown,
-            state: state,
-            params: StaqWalletPay.PaymentOrderParams(...)
-        )
-        .onTapGesture {
-            state.isSelected.toggle()
-        }
-    }
-}
-```
-
----
-
-### UIWalletPayView
-
-**Overview**
-
-`UIWalletPayView` is a UIKit wrapper for embedding the `WalletPayView` into UIKit-based projects. It uses `UIHostingController` to integrate SwiftUI views seamlessly.
-
-**Properties**
-
-- `frame`: The frame rectangle for the view, measured in points.
-- `variant`: The layout type of the Wallet Pay view (`inline` or `breakdown`).
-- `state`: The state object that manages the Wallet Pay view's behavior and balance (`WalletPayViewState`).
-- `params`: The parameters for the payment order (`StaqWalletPay.PaymentOrderParams`).
-
-**Example Usage**
-
-```swift
-class ViewController: UIViewController {
-    var walletPayView: UIWalletPayView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        walletPayView = UIWalletPayView(
-            frame: CGRect(x: 0, y: 0, width: 300, height: 150),
-            variant: .inline,
-            state: WalletPayViewState(isSelected: false, balance: 100.0),
-            params: StaqWalletPay.PaymentOrderParams(...)
-        )
-
-        let tapGesture = UITapGestureRecognizer(
-            target: self,
-            action: #selector(handleTap)
-        )
-        walletPayView.addGestureRecognizer(tapGesture)
-
-        view.addSubview(walletPayView)
-        walletPayView.center = view.center
-    }
-
-    @objc private func handleTap() {
-        walletPayView.isSelected.toggle()
-    }
-}
-```
-
----
-
-### WalletPayDetailsModalView
-
-**Overview**
-
-`WalletPayDetailsModalView` is a SwiftUI modal for displaying detailed wallet payment information, such as the balance and payment parameters, with options for user interaction.
-
-**Parameters**
-
-- `isPresented`: A binding that determines whether the modal is presented.
-- `balance`: The current wallet balance to be displayed.
-- `params`: The parameters for the payment order (`StaqWalletPay.PaymentOrderParams`).
-- `didDismiss`: An optional closure that executes when the modal is dismissed.
-- `didTapConfirm`: An optional closure that executes when the confirm button is tapped. The closure receives a `dismiss` function to allow the modal to close programmatically.
-
-**Example Usage**
-
-```swift
-struct WalletPayDetailsExampleView: View {
-    @State private var isDetailsPresented = false
-
-    var body: some View {
-        VStack { ... }
-            .overlay {
-                WalletPayDetailsModalView(
-                    isPresented: $isDetailsPresented,
-                    balance: 150.0,
-                    params: StaqWalletPay.PaymentOrderParams(...),
-                    didDismiss: {
-                        print("Modal dismissed")
-                    },
-                    didTapConfirm: { dismiss in
-                        print("Confirm tapped")
-                        dismiss()
-                    }
-                )
-            }
-    }
-}
-```
-
----
-
-### Wallet Pay Details
-
-**Overview**
-
-Presents the Wallet Pay details modal, enabling users to review payment details, check wallet balance, and confirm actions.
-
-**Method Signature**
-
-```swift
-public static func presentWalletPayDetails(
-    from parent: UIViewController,
-    balance: Double,
-    params: StaqWalletPay.PaymentOrderParams,
-    didDismiss: (() -> Void)? = nil,
-    didTapConfirm: ((_ dismiss: () -> Void) -> Void)? = nil
-)
-```
-
-**Parameters**
-
-- `parent`: The parent View Controller from which the modal will be presented.
-- `balance`: The current balance of the wallet.
-- `params`: The parameters required for the Wallet payment operation (`StaqWalletPay.PaymentOrderParams`).
-- `didDismiss`: An optional closure that is called when the modal is dismissed.
-- `didTapConfirm`: An optional closure called when the confirm button is tapped. The closure provides a `dismiss` function that can be called to dismiss the modal.
-
-**Example Usage**
-
-```swift
-StaqWalletPay.presentWalletPayDetails(
-    from: self,
-    balance: 150.0,
-    params: params,
-    didDismiss: {
-        print("Modal dismissed")
-    },
-    didTapConfirm: { dismiss in
-        print("Payment confirmed")
-        dismiss()
-    }
+    metaData: [String: String] = [:],
+    entityId: String,
+    userId: String,
+    serviceId: String
 )
 ```
 
 ---
 
-### Supporting Components
+### StaqWalletPaymentOrder
 
-#### WalletPayViewType
+A payment order returned by `createPaymentOrder(forUser:params:)` and `getPaymentOrderDetails(forUser:orderId:)`.
 
-`WalletPayViewType` is an enum that specifies the layout type for `WalletPayView`.
+| Name                     | Type              | Description                                                     |
+|--------------------------|-------------------|-----------------------------------------------------------------|
+| orderId                  | `String`          | Unique identifier of the order.                                 |
+| orderType                | `String`          | Type of the order.                                              |
+| createdAt                | `String?`         | Creation date of the order.                                     |
+| status                   | `OrderStatus`     | Order status: `code`, `name`, `label`, and `labelAr`.           |
+| errorDescription         | `String?`         | Description of the failure, if the order failed.                |
+| currency                 | `String`          | Currency code of the order.                                     |
+| totalAmount              | `Decimal`         | Total amount of the order.                                      |
+| feesAmount               | `Decimal?`        | Fees part of the total amount.                                  |
+| taxAmount                | `Decimal?`        | Taxes part of the total amount.                                 |
+| localCurrencyAmount      | `Decimal`         | Amount in the local currency.                                   |
+| exchangeRate             | `Decimal`         | Exchange rate applied to the order.                             |
+| transactionId            | `String?`         | Identifier of the payment transaction.                          |
+| externalUniqueIdentifier | `String?`         | The `externalId` passed when the order was created.             |
+| orderMetaData            | `[String: Any]?`  | The metadata passed when the order was created.                 |
 
-**Cases**
+<br />
 
-- `.inline`: A compact representation of Wallet Pay.
-- `.breakdown`: A detailed view including payment order parameters.
+# Migrating from Earlier Versions
 
----
-
-#### WalletPayViewState
-
-`WalletPayViewState` is an observable object that tracks the state of the Wallet Pay view. It is designed to work seamlessly with SwiftUI, allowing dynamic updates when state changes.
-
-**Properties**
-
-- `isSelected`: A boolean indicating if the view is selected.
-- `balance`: The current wallet balance.
-
-## Payment Order Management
-
-### Overview
-
-The `StaqWalletPay` class provides functionality to manage payment orders, including creating new payment orders and retrieving details of existing ones.
-
-### Create Payment Order
-
-Creates a new payment order asynchronously for a specific user using the provided parameters.
-
-**Method Signature**
-
-```swift
-public static func createPaymentOrder(
-    forUser userConfig: StaqWalletUser,
-    params: StaqWalletPay.PaymentOrderParams
-) async throws -> CreatePaymentOrderResponse
-```
-
-**Parameters**
-
-- `forUser`: The user for whom the payment order will be created.
-- `params`: An instance of `PaymentOrderParams` containing the required details for the payment order.
-
-**Throws**
-
-- `WalletPayError.notInitialized`: If the SDK was not properly initialized.
-- `WalletPayError.walletNotAvailable`: If the user doesn't have a wallet account.
-- `WalletPayError.notLoggedIn`: If the session is expired or not established.
-- `WalletPayError.server`: If the backend returns an error.
-- `WalletPayError.unexpected`: If any unexpected failures occur.
-
-**Returns**
-
-A `CreatePaymentOrderResponse` containing the order ID and additional metadata related to the created payment.
-
----
-
-### Get Payment Order Details
-
-Fetches the details of an existing payment order by its unique identifier for a specific user.
-
-**Method Signature**
-
-```swift
-public static func getPaymentOrderDetails(
-    forUser userConfig: StaqWalletUser,
-    orderId: String
-) async throws -> PaymentOrderDetails
-```
-
-**Parameters**
-
-- `forUser`: The user associated with the payment order.
-- `orderId`: A `String` representing the unique identifier of the payment order.
-
-**Throws**
-
-- `WalletPayError.notInitialized`: If the SDK was not properly initialized.
-- `WalletPayError.walletNotAvailable`: If the user doesn't have a wallet account.
-- `WalletPayError.notLoggedIn`: If the session is expired or not established.
-- `WalletPayError.server`: If the backend returns an error.
-- `WalletPayError.unexpected`: If any unexpected failures occur.
-
-**Returns**
-
-A `PaymentOrderDetails` object containing detailed information about the payment order.
+| Removed                                                                 | Use instead                                                                                     |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| `StaqWalletManager.start(forUser:withLanguage:fromNavigationController:)` | `StaqWalletManager.makeStartView(user:onClose:)`. Set the language in `StaqWalletConfig` or with `changeLanguage(_:)`. |
+| `StaqWalletUser(userId:secret:userType:nationalID:email:)`              | `StaqWalletUser(userId:secret:userType:nationalId:idToken:)`.                                   |
+| `StaqWalletPay.registerUser(withConfig:)`                               | Not needed: the wallet and `StaqWalletPay` register the user for Tier 0 automatically.         |
+| `StaqWalletPay.getWalletBalance(forUser:)`                              | `StaqWalletPay.getWallet(forUser:)` and its `balance`.                                          |
+| `StaqWalletPay.WalletPayError`                                          | `StaqWalletPayError`.                                                                           |
+| `StaqWalletPay.PaymentOrderParams`                                      | `CreateStaqWalletPaymentOrderParams`.                                                           |
+| `CreatePaymentOrderResponse`, `PaymentOrderDetails`                     | `StaqWalletPaymentOrder`.                                                                       |
+| `WalletPayView`, `UIWalletPayView`, `WalletPayDetailsModalView`, `StaqWalletPay.presentWalletPayDetails(...)`, `WalletPayViewType`, `WalletPayViewState` | No replacement. Build the payment selection UI in your app.               |
 
 <br />
 

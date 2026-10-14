@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nWciOFYCMKKb5rJaA+Rey0V+m7w=
+		di+hKaDjMPjdXiLS/eTZr6MjA8M=
 		</data>
 		<key>Inter-Regular.ttf</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gCeULi7COWxR7o/OJ6hBS+qjwk4=
+		W+pDVPrPX5Wct1aFKideDfb/Sk8=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		w82SEsCTlDu0D12/1+jfXY9qQPA=
+		T/QeYZRAg+avAqjFZ/2R5462MEg=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gCeULi7COWxR7o/OJ6hBS+qjwk4=
+		W+pDVPrPX5Wct1aFKideDfb/Sk8=
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WbO8r1F/VZ9lKbFf5dpbAmr8njY=
+		u2/d1gOqA2s9cjckbhzzyINbYh8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -254,7 +254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q1P9w3vPTiaLE9obRGYuGUh6VmxpYxwsyh2gqxRFZcs=
+			szjQWH41EuJ0VM6wOUwQoywT/65rcUq1lIefQpy6OB0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -282,14 +282,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzAbY+hS6S3W/Ekruew3XXGWjNkajavgr6LJnHRYDtM=
+			Yl0lqvJ0HXBjBrOk0NFPm4JrEVA9ISS5tdU2/jcp0+8=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q1P9w3vPTiaLE9obRGYuGUh6VmxpYxwsyh2gqxRFZcs=
+			szjQWH41EuJ0VM6wOUwQoywT/65rcUq1lIefQpy6OB0=
 			</data>
 		</dict>
 		<key>Modules/StaqWallet.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -317,7 +317,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gn6Mf3mzbwKDc9fFrIT+l9IcauiMcAaMMShp40IjA6A=
+			P+6uC0MX0ClEpwyauArA/K3iIwoviDVFEkbeBVUdDmM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
