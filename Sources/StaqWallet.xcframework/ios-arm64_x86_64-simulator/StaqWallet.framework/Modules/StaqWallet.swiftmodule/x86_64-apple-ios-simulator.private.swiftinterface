@@ -83,6 +83,7 @@ extension TrustlessSDK::AccountTransaction : @retroactive Swift::Identifiable, @
 public enum StaqWalletPayError : Foundation::LocalizedError {
   case notInitialized
   case unauthorizedAccess
+  case idTokenExpired
   case walletDoesNotExist
   case server(_: Swift::String)
   case unknown
