@@ -15,7 +15,7 @@ A modular, embeddable wallet solution with support for onboarding, payments, KYC
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/staqio/StaqWallet", exact: "5.0.1")
+    .package(url: "https://github.com/staqio/StaqWallet", exact: "5.1.0")
 ]
 ```
 
@@ -111,7 +111,7 @@ Represents a specific user within the wallet. Pass it when presenting the wallet
 | nationalId | `String?`                  | National identification number. Optional.                                                          |
 | idToken    | `String`                   | Identity token issued by your backend or identity provider. The wallet exchanges it for a wallet session, which is the only way to sign in. |
 
-Always pass a current `idToken`: the wallet uses it whenever the stored session can't be restored. The backend may ask the user to confirm the session with an OTP; the wallet handles that step.
+Always pass a current `idToken`: the wallet uses it whenever the stored session can't be restored. If the backend rejects it as expired, the `StaqWalletPay` methods throw `StaqWalletPayError.idTokenExpired`; get a new token from your backend and call again. The backend may ask the user to confirm the session with an OTP; the wallet handles that step.
 
 ### Wallet Tiers
 
@@ -131,7 +131,7 @@ StaqWalletManager.changeLanguage(.ar) // or .en
 
 ### Closing the Wallet
 
-The wallet calls the `onClose` closure passed to `makeStartView(user:onClose:)` when it closes: when the user closes it, or when it can't continue and has to be opened again (for example, with a fresh `idToken`). Dismiss the wallet view there.
+The wallet calls the `onClose` closure passed to `makeStartView(user:onClose:)` when it closes: when the user closes it, or when the wallet ends the session and has to be opened again, for example when the `idToken` is no longer valid after the user resets a forgotten passcode. Dismiss the wallet view there.
 
 ### Apple Pay Setup
 
@@ -260,7 +260,7 @@ The `StaqWalletPay` class provides Wallet Pay functionality without opening the 
 
 Call `StaqWalletManager.initialize(withConfig:)` before using any of them. Each method performs network requests and must be called from an async context.
 
-Each call restores the user's wallet session, or creates one from `StaqWalletUser.idToken`. If the backend requires the user to confirm the session with an OTP, the call throws `StaqWalletPayError.unauthorizedAccess`; open the wallet with `StaqWalletManager.makeStartView(user:onClose:)` so the user can confirm it.
+Each call restores the user's wallet session, or creates one from `StaqWalletUser.idToken`. If the backend requires the user to confirm the session with an OTP, the call throws `StaqWalletPayError.unauthorizedAccess`; open the wallet with `StaqWalletManager.makeStartView(user:onClose:)` so the user can confirm it. If the backend rejects the `idToken` as expired, the call throws `StaqWalletPayError.idTokenExpired`; issue a new `idToken`, create a new `StaqWalletUser` with it, and call again.
 
 ## Get Wallet
 
@@ -284,6 +284,7 @@ A `StaqWalletDetails` describing the wallet, its balance, and its transactions.
 
 - `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
 - `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.idTokenExpired`: If the backend rejects the user's `idToken` as expired.
 - `StaqWalletPayError.walletDoesNotExist`: If no wallet was found for the user.
 - `StaqWalletPayError.server`: If the backend returns an error.
 - `StaqWalletPayError.unknown`: If any unexpected failures occur.
@@ -294,6 +295,10 @@ A `StaqWalletDetails` describing the wallet, its balance, and its transactions.
 do {
     let wallet = try await StaqWalletPay.getWallet(forUser: user)
     print("Available balance: \(wallet.balance.availableBalance) \(wallet.balance.currency)")
+} catch StaqWalletPayError.idTokenExpired {
+    // Get a new idToken from your backend, create a new StaqWalletUser with it, and call again.
+} catch StaqWalletPayError.unauthorizedAccess {
+    // Open the wallet with makeStartView so the user can confirm the session with an OTP.
 } catch let error as StaqWalletPayError {
     print("Wallet Pay Error: \(error.errorDescription ?? "Unknown error")")
 } catch {
@@ -329,6 +334,7 @@ A `StaqWalletPaymentOrder` describing the created order.
 
 - `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
 - `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.idTokenExpired`: If the backend rejects the user's `idToken` as expired.
 - `StaqWalletPayError.walletDoesNotExist`: If no wallet was found for the user.
 - `StaqWalletPayError.server`: If the backend returns an error.
 - `StaqWalletPayError.unknown`: If any unexpected failures occur.
@@ -361,6 +367,7 @@ A `StaqWalletPaymentOrder` with the current state of the order.
 
 - `StaqWalletPayError.notInitialized`: If the SDK was not properly initialized.
 - `StaqWalletPayError.unauthorizedAccess`: If the session expired or needs OTP confirmation.
+- `StaqWalletPayError.idTokenExpired`: If the backend rejects the user's `idToken` as expired.
 - `StaqWalletPayError.server`: If the backend returns an error.
 - `StaqWalletPayError.unknown`: If any unexpected failures occur.
 
@@ -410,6 +417,7 @@ An enum representing errors that may occur during Wallet Pay operations. It conf
 
 - `notInitialized`: The SDK has not been initialized.
 - `unauthorizedAccess`: The session expired or is no longer valid; the user needs to confirm it with an OTP in the wallet.
+- `idTokenExpired`: The `idToken` in `StaqWalletUser` is expired; issue a new one and call again.
 - `walletDoesNotExist`: No wallet was found for the user.
 - `server(_ message: String)`: The backend returned an error with the given message.
 - `unknown`: An unknown or unexpected error occurred.
@@ -506,6 +514,12 @@ A payment order returned by `createPaymentOrder(forUser:params:)` and `getPaymen
 <br />
 
 # Migrating from Earlier Versions
+
+## From 5.0.x to 5.1.0
+
+`StaqWalletPayError` has a new case, `idTokenExpired`, thrown when the backend rejects the user's `idToken` as expired. Your code compiles unchanged unless it switches over `StaqWalletPayError` without a `default`: add a case for `idTokenExpired` there. Nothing else in the public API changed.
+
+## Removed APIs
 
 | Removed                                                                 | Use instead                                                                                     |
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
