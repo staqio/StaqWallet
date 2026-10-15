@@ -13541,6 +13541,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/dmytrolunov\/Master\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/Views\/WebViewWrapper.swift",
+      "kind": "Array",
+      "offset": 2532,
+      "length": 18,
+      "value": "[\"https\", \"about\"]"
+    },
+    {
       "filePath": "\/Users\/dmytrolunov\/Master\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Sources\/WalletConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 349,
