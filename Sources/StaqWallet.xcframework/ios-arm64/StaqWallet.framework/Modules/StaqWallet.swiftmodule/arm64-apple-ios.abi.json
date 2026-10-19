@@ -1868,6 +1868,46 @@
           },
           {
             "kind": "Var",
+            "name": "idTokenExpired",
+            "printedName": "idTokenExpired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StaqWallet.StaqWalletPayError.Type) -> StaqWallet.StaqWalletPayError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StaqWalletPayError",
+                    "printedName": "StaqWallet.StaqWalletPayError",
+                    "usr": "s:10StaqWallet0aB8PayErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StaqWallet.StaqWalletPayError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StaqWalletPayError",
+                        "printedName": "StaqWallet.StaqWalletPayError",
+                        "usr": "s:10StaqWallet0aB8PayErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10StaqWallet0aB8PayErrorO14idTokenExpiredyA2CmF",
+            "mangledName": "$s10StaqWallet0aB8PayErrorO14idTokenExpiredyA2CmF",
+            "moduleName": "StaqWallet",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "walletDoesNotExist",
             "printedName": "walletDoesNotExist",
             "children": [
@@ -10893,6 +10933,13 @@
       "offset": 2326,
       "length": 2,
       "value": "24"
+    },
+    {
+      "filePath": "\/Users\/dmytrolunov\/Master\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayBootstrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4825,
+      "length": 8,
+      "value": "\"400686\""
     },
     {
       "filePath": "\/Users\/dmytrolunov\/Master\/Projects\/Staq\/staq-wallet-ios\/StaqWallet\/StaqWallet\/Public\/StaqWalletPay\/WalletPayModels.swift",
